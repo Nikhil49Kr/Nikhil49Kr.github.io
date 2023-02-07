@@ -34,11 +34,21 @@
 						<div class="inner">
 							<h1>Will ChatGPT replace Google ?</h1>
 							<p>Since OpenAI released ChatGPT, there has been a lot of speculation about what its killer app will be. And perhaps topping the list is online search. According to The New York Times, Google’s management has declared a “code red” and is scrambling to protect its online search monopoly against the disruption that ChatGPT will bring.
-
-							</p>
-							<ul class="actions">
-								<li><a href="#one" class="button scrolly">Learn more</a></li>
-							</ul>
+								<br/><br/> First, let's start by understanding what ChatGPT and Google are respectively.<br/>
+								<h1>Google</h1>
+Let’s begin with Google. Google is an internet search engine. It uses a proprietary algorithm that's designed to retrieve and order search results to provide the most relevant and dependable sources of data possible.
+Google's stated mission is to "organize the world's information and make it universally accessible and useful." It is the top search engine in the world, a position that has generated criticism and concern about the power it has to influence the flow of online information.
+<br/><br/><h1>ChatGPT</h1>ChatGPT is, in essence, a simple online artificial intelligence chatbot created by OpenAI in December 2022.ChatGPT is an AI language model developed by OpenAI, which is capable of generating human-like text based on the input it is given. The model is trained on a large corpus of text data and can generate responses to questions, summarize long texts, write stories and much more. It is often used in conversational AI applications to simulate a human-like conversation with users.You can use ChatGPT to message people on dating apps; to write essays; to create malware (yikes); and more.
+							<br/><br/><h1>So how is ChatGPT different from Google ?</h1>Let's explore the based on the following :<br/><br/>
+						<ul>
+							<li><h2>Up-To-Date Information</h2></li><p>Chat GPT is not up to date on information. The data in GPT is trained up to May 2020. Therefore, ChatGPT has no understanding of the world after May 2020. It goes without saying, Google is pretty up-to-date since I use it to check the weather, news, and GPS. As of today, it also cost between 10–20 million dollars in computing (server) costs and 1–3 months in time to train (teach) the ChatGPT algorithm this information. As you can see, that’s not sustainable for consistently updating data.</p>
+							<li><h2>Completeness Of Information</h2></li><p>ChatGPT only contains a fraction of the information indexed by Google. It uses a dataset called WebCrawl which contains about 75% of the information on the internet. Search engine data is constantly updated and, therefore relevant. People also actively submit information to search engines. In the future, this may change as AI capabilities advance, but ChatGPT will unlikely ever become as up-to-date and complete as a search engine.</p>
+							<li><h2>Accuracy of Information</h2></li><p>The information on ChatGPT is not always accurate. It is a synthesized best guess based on a large amount of data. Sometimes it misunderstands information similar to humans who concoct stories for semi-related topics( Ex: Lizard People). Search engines also do not always present accurate articles; however, they provide a large collection of content that the user can sort through and fact-check. There is no way to fact-check ChatGPT results since the sources are not listed!</p>
+							<li><h2>Information Format</h2></li><p>The information in Chat GPT is shown to the user as paragraphs. It is a summarized version of the data that exist on the topic. Information in a search engine is presented back as lists or tables. It provides links to articles and resources that might answer your question.</p>
+						</ul>
+					<br/>
+					This is likely where the crux of the argument for why Chat GPT is better than Google or whether it will replace Google exists. Chat GPT provides information that is easier and quicker to consume. However, for the reasons stated above, it fails to serve the purpose of a search engine for deeper questions that require accuracy. Chat GPT can not find you a doctor, it can not provide dating advice, it can not show current news events, and it is not 100% accurate. In the world of fake news, accuracy matters, and being able to determine what are real facts and what are opinions is a crucial task for human decision-making. So, will it replace Google or be integrated and inspire it to become better ? Let's see what the data we gathered from various discussion forums would tell us !
+					</p>
 						</div>
 					</section>
 
@@ -49,10 +59,32 @@
 							<div class="content">
 								<div class="inner">
 									<h2>Data Collection and Methodology</h2>
-									<p>For the purpose of this project, I decided to gather data from Reddit API, NewsAPI and scraped Medium(blogging site). The links to all the scrapers can be found <a href="#">here</a></p>
-									<ul class="actions">
-										<li><a href="generic.html" class="button">Learn more</a></li>
-									</ul>
+									<p>For the purpose of this project, I decided to gather data from Reddit API, NewsAPI and scraped Medium(blogging site). The links to all the scrapers :
+										<ul>
+											<li><a href="https://colab.research.google.com/drive/1zds8CocXlKJGBiksuOrJiRkdg_ZSBtT2?usp=sharing" target="_blank">Reddit Scraper</a></li>
+											<li><a href="https://colab.research.google.com/drive/1e7svi2NBulK0VTQz99T_BSJ9gJ7JB5tI?usp=sharing" target="_blank">Medium Scraper</a></li>
+											<li><a href="https://colab.research.google.com/drive/190QGPw6tooSHIDhLt_AN8vh4KVwCb0eA?usp=sharing" target="_blank">NewsAPI Scaper</a></li>
+										</ul>
+										For scraping Reddit,Reddit API was used and with the help of the PRAW library, data was scraped out from the following subreddits :
+										<ul>
+											<li>singularity</li>
+											<li>google</li>
+											<li>Futurology</li>
+											<li>technology</li>
+											<li>ChatGPT</li>
+											<li>artificial</li>
+											<li>ArtificialInteligence</li>
+											<li>Machinelearningnews</li>
+											<li>MachineLearning</li>
+											<li>datascience</li>
+											<li>MLQuestions</li>
+										</ul> 
+										The query used was : 'Will ChatGPT replace Google ?'. 
+										<br/><br/>For NewsAPI, the end point used was /everything. 
+										<br/><br/>For Medium the <a href="https://medium.com/search?q=will+chatGPT+replace+Google+search" target="_blank">link</a> was used to scrape the data from the articles/blogs that showed up after the search.
+									    <br/><br/> 
+									</p>
+									
 								</div>
 							</div>
 						</section>
@@ -61,10 +93,17 @@
 							<div class="content">
 								<div class="inner">
 									<h2>Data before cleaning</h2>
-									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
-									<ul class="actions">
-										<li><a href="generic.html" class="button">Learn more</a></li>
-									</ul>
+									<p>The data from all these sites was gathered in the form of csv files and was obtained as separate files. Then, a sample of content was collected concerning the topic at hand to arrive at the file that was 
+										finally used for the analysis. After that the final .csv file which is being used for analysis was labelled manually. The following four labels are being used to describe the views addressed about whether 
+									chatGPT will replace Google or not ?
+									<ul>
+										<li>Yes</li>
+										<li>No</li>
+										<li>Neutral</li>
+										<li>Maybe</li>
+									</ul> 
+								</p>
+									
 								</div>
 							</div>
 						</section>
@@ -73,10 +112,22 @@
 							<div class="content">
 								<div class="inner">
 									<h2>Data after cleaning</h2>
-									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
-									<ul class="actions">
-										<li><a href="generic.html" class="button">Learn more</a></li>
-									</ul>
+									<p>As expected, the data gathered can't be directly used for modeling purpose. It has to be cleaned.
+										Cleaning text-data is a typical pre-processing task for data science and machine learning. It consists of getting rid of the less useful parts of text through stopword removal, dealing with capitalization, special characters and other details.Specifically, 4 steps were taken to the same here :
+										<ul>
+											<li>Sneak peek into the data</li>
+											<li>Whitespace/Punctuation/Normalize Case</li>
+											<li>Stopwords removal</li>
+											<li>Stemming</li>
+											<li>Lemmatization</li>
+											<li>Link removal</li>
+											<li>Vectorization using CountVectorizer and TfidfVectorizer</li>
+										</ul>
+			
+										
+										
+									</p>
+							
 								</div>
 							</div>
 						</section>
