@@ -1,0 +1,675 @@
+,comment_id,comment_parent_id,comment_body,comment_link_id
+0,j3fx20a,t3_1060gfk,"I am very impressed by the underlying GPT3.5 LLM and the capabilities that alignment via RLHF has unlocked in LLM, but I don't believe any serious NLP researchers or practitioners think that NLP is solved. 
+
+There are still tonnes of challenges and limitations that needs to be solved before this tech is ready. E.g The very convincing hallucinations, failure on simple math problems, and second order reasoning tasks amongst others. And many other areas that remains unresolved in NLP as well. 
+
+Having been in the NLP field for close to 10 years and having experienced several other developments and paradigm shifts in the past (RNN/LSTM, Attention, Transformer Models, LLMs with emergent capabilities) , I am more optimistic than fearful of this development's impact on our job. 
+
+Each of these past developments made obsolete certain expertise, but also expanded the problem space that NLP can tackle. The net effect however has been consistently positive with the amount of money and demand for NLP expertise increasing.",t3_1060gfk
+1,j3ea4u5,t3_1060gfk,"LLMs cost a lot of bucks, and sometimes you just need something simple and fast, and sometimes dont know about very specific domains or tasks.",t3_1060gfk
+2,j3e2s3m,t3_1060gfk,"I work at one of the big techs doing research on this. Frankly LLMs will be the leading edge of the field for the next 2 years imo. Join one of the big techs and get access to tens of thousands of dollars of compute per week to train some LLMs. Or in academia, lots of work needs to be done to characterize inference-time capabilities, understand bias, failure modes, smaller scale experiments w/ architecture, etc.",t3_1060gfk
+3,j3e1h8f,t3_1060gfk,"Not by a long shot.
+
+ChatGPT in practice is a politically-biased conversational Google and Wikipedia summarizer with a bit of polite talk. And it is less broad than both of them.
+
+It is truly fascinating how DEEP it can go, ex. translating arbitrary code in almost correct assembly, even recent one like M1, but that's that. It cannot reason fully, it cannot extrapolate, and most importantly, it has fairly old training data to compete with the speed of NLP research.
+
+But it's nifty to chat with if none of your colleagues have the time.",t3_1060gfk
+4,j3ecrx8,t3_1060gfk,"Yes, I agree traditional NLP tasks are mostly solved, a possibly large number of new skills unlocked at once. And they work so well without fine-tuning, just from the prompt.
+
+So take your task to chatGPT (or text-davinci-003), label your dataset or generate more data. Then you finetune a slender transformer from Huggingface. You got an efficient and cheap model.",t3_1060gfk
+5,j3gq662,t3_1060gfk,"Not every physicist can afford a particle accelerator, but that doesn't stop them from researching particle physics.
+
+Chat gpt makes basic reasoning errors that even a child wouldn't make, which makes me think this is a weakness of the current approach. Maybe ""more data"" is not the solution to this problem. This is one direction I would consider.",t3_1060gfk
+6,j3gzgux,t3_1060gfk,"I think you are overestimating ChatGPT a lot. It hallucinates information, it fails adding numbers, it fails at solving problems and complex reasoning, and a lot more. ChatGPT is great, but it has not solved NLP.",t3_1060gfk
+7,j3f9e8j,t3_1060gfk,"I learned this today. The moment you leave the Google search engine, is the moment it turns to total useless garbage.",t3_1060gfk
+8,j3fmzxw,t3_1060gfk,"Fusion of LLM and vision models is something I’m noticing more work on. Also, embodied feedback with human in the loop, especially towards robotics applications. The vision field def seems to be co-opting language models and there is research on making inference with them faster (recurrent-transformers) and bringing back recurrence into the transformer which is interesting since transformers succeeded them naturally once the power of attention came to light.
+
+Also a lot of work to be done on using them for mission critical applications (healthcare) as well as “robustifying” them (transformers using raw byte sequences showing much more robustness to noise.) 
+
+So I guess a lot of the native NLP tasks that LLM were made for are being used more for non-NLP tasks, especially now in reinforcement learning.",t3_1060gfk
+9,j42uyey,t3_1060gfk,"No and just think about it.  If LLM's become monetizable at the scale that other tech areas such as search or social media has, there's a ton of opportunity there, and you have a leg up on everyone else.",t3_1060gfk
+10,j3dw1fc,t3_1060gfk,"I have heard its essentially Googling with extra steps, are you certain its actually creating novel solutions to novel problems or is it just scraping together Googlable elements? Maybe I have subconsious bias as I develop for a living",t3_1060gfk
+11,j3fwvj9,t3_1060gfk,"You are a lousy researher then. The trend of using incredibly large models was there a long time ago, so individual researchers couldn't produce SOTA NLP models for years already. And Chat GPT isn't even a great model compared to something like Chinchilla - you should know that, actually",t3_1060gfk
+12,j3erhcv,t3_1060gfk,No. We still need NLP researchers to understand the output of ChatGPT. ChatGPT exists to help not to replace.,t3_1060gfk
+13,j3fjfbo,t3_1060gfk,"Domain specific LLM's need not to be huge like these LLM's like chatgpt. They have world knowledge. In most of the settings, we don't need that.",t3_1060gfk
+14,j3e6asd,t1_j3e2s3m,"Yes. That's the benefit of in the big companies. However, for a lot of NLP researchers like me, we do not have that many gpu resources(I believe most of the companies also cannot afford this).",t3_1060gfk
+15,j3h8d9o,t1_j3e2s3m,"> Frankly LLMs will be the leading edge of the field for the next 2 years imo.
+
+(curious outsider) what do you see being the leading edge after that?  or will NLP be more or less solved by then?",t3_1060gfk
+16,j3eiw5w,t1_j3e1h8f,"I think you're missing some of the depth of what it's capable of. You can ""program"" it to do new tasks just by explaining in plain english, or by providing examples. For example many people are using it to generate prompts for image generators:
+
+>I want you to act as a prompt creator for an AI image generator. 
+
+>Prompts are descriptions of artistic images than include visual adjectives and art styles or artist names. The image generator can understand complex ideas, so use detailed language and describe emotions or feelings in detail. Use terse words separated by commas, and make short descriptions that are efficient in word use.
+
+>With each image, include detailed descriptions of the art style, using the names of artists known for that style. I may provide a general style with the prompt, which you will expand into detail. For example if I ask for an ""abstract style"", you would include ""style of Picasso, abstract brushstrokes, oil painting, cubism""
+
+>Please create 5 prompts for an mob of grandmas with guns. Use a fantasy digital painting style.
+
+This is a complex and poorly-defined task, and it certainly was not trained on this since the training stops in 2021. But the resulting output is exactly what I wanted:
+
+>An army of grandmas charging towards the viewer, their guns glowing with otherworldly energy. Style of Syd Mead, futuristic landscapes, sleek design, fantasy digital painting.
+
+Once I copy-pasted it into an image generator it created a [very nice image](https://imgur.com/aaY4hrs).
+
+I think we're going to see a lot more use of language models for controlling computers to do complex tasks.",t3_1060gfk
+17,j3e36am,t1_j3e1h8f,"But that's the current state, we know there will be a v.next to infinity, no? Would there be a state where it can train itself, similar to how Deepmind trains itself in games?",t3_1060gfk
+18,j3e04qq,t1_j3dw1fc,"I'm not in the field, but would be curious. Since you are in the field, why don't you try it out yourself and tell us. FWIW, majority of everyday problems can be solved by putting Googlable elements together properly.",t3_1060gfk
+19,j3e2sr5,t1_j3dw1fc,"When I used it it kept saying it had no connection to the internet and was trained on a large amount of text and data. I tested in two languages.
+
+At the time I used it the answers to most questions were structures in the same way: paraphrasing the question, weighing a few pros/cons or facts, summary. Almost every answer to a question that required a decision was inconclusive and ChatGPT usually said it was difficult to answer the question.
+
+As an interface for human-machine-communication it was great. But the conversations were simple and lacked depth. It can write short stories and expand these stories. And it creates poems and jokes. I’d say you are lucky if it comes up with something that is above middle school level.
+
+The next version will be far better I believe.",t3_1060gfk
+20,j3e13z7,t1_j3dw1fc,It's not just googling. I can summarize the information it has and write a good answer to the questions. It can even have some inference capability.,t3_1060gfk
+21,j3e0j6w,t1_j3dw1fc,"This.
+
+It basically is just a good google searcher, that can articulate results in a helpful way.
+
+It may be useful to save time researching things... But it has had some laughable failure results as well.",t3_1060gfk
+22,j3e6vx8,t1_j3dw1fc,Are you sure google solves a novel problem? From what I’ve heard it just pulls together a bunch of web pages that you could get with urls.,t3_1060gfk
+23,j3g7v2j,t1_j3fwvj9,It's a sad story as I put a lot of time on generation during these years. Any possible suggestions that our research can focus on?,t3_1060gfk
+24,j3eagrm,t1_j3e6asd,"Right. So if you’d rather not shoot to join a big company, there’s still work that can be done in academia with say a single A100. Might be a bit constrained at pushing the bleeding edge of capability. But there’s much to do to characterize LLMs. They’re black boxes we don’t understand in a bigger way than maybe any previous machine learning model.
+
+Edit: there are also open source weights for gpt3 type models w similar performance. Ie huggingface BLOOM or Meta OPT.",t3_1060gfk
+25,j3eo4uc,t1_j3e6asd,"There's plenty of work to be done in researching language models that train more efficiently or run on smaller machines. 
+
+ChatGPT is great, but it needed 600GB of training data and megawatts of power. It must be possible to do better; the average human brain runs on 12W and has seen maybe a million words tops.",t3_1060gfk
+26,j3hztd5,t1_j3h8d9o,"Idk. Have a decent idea what’s being worked on for the next year but it gets fuzzy after that. Maybe we’ll have another architectural breakthrough. Alex net 2012, transformers 2017, something else 2023 or 2024 maybe.",t3_1060gfk
+27,j3ek7d0,t1_j3eiw5w,"> This is a complex and poorly-defined task
+
+Not at all. First of all, ChatGPT does not understand complexity. It would do you well not to think of it like there is some hierarchy. Secondly, there is no requirement of it needing to be well defined. From what I could gather, ChatGPT requires you to convince it it is not giving out an opinion, and then it can hallucinate pretty much anything.
+
+Specifically the task you gave it is likely implicitly present in the dataset, in the sense that the dataset allowed the model to learn the connections between the words you gave it. I hate to break your bubble, but the task is also achievable even with GPT2, a much less expressive model, since it can be represented as a prompt.
+
+It will be easier to see the shortcomings there, but to put it simply, ChatGPT also has them, ex. it does not by default in the genral case differentiate between uppercase and lowercase letters even if it might be relevant for the task. Such things are too subtle for it. Once you realize the biases it has in this regard you being to see through the cracks. Or generally once you give it a counting task, it says it can count but it is not always successful in it.
+
+What is fascinating is the amount of memory ChatGPT has. It is compared to other models very big. But it is limited and it is not preserved outside of the session.
+
+I would say that the people hyping it up probably just do not understand it that well. LLMs are fascinating, yes, but not ChatGPT specifically, it's how malleable the knowledge is. I would advise you to not understand it, because then the magic stays alive. I had a lot of fun for the first week when I was using it, but I never even use it nowadays.
+
+I would also advise you to approach it more critically. I would advise you to first look into how blatantly racist and sexist it is. With that, you can see the reflection of its creators in it. And most of all, I would advise you to focus on its shortcomings. They are easy to find once you start talking to it more like you'd talk with a friend. They will help you use it more effectively.",t3_1060gfk
+28,j3e3piv,t1_j3e36am,"Based on the techniques ChatGPT uses we cannot formally prove that it can generalize without infinite width. Even our training process amounts to mostly teaching the model to compress knowledge. ChatGPT made some strides by partially introducing something similar to reinforcement learning, but reinforcement learning itself is not enough to extrapolate or come up with new concepts.
+
+All the big names in AI claim that stochastic gradient descent techniques and our current direction are fascinating, but ultimately a dead end. Certainly the area has been stale for several years and has degenerated into a dick measuring contest, only instead of dicks you measure parameters, TPUs and metrics on benchmark datasets. Blame transformers which were in a sense us getting a taste of the forbidden fruit, but you know what followed after that.
+
+Of course, out of this you do get some advances useful for the industry, but nothing really of note in the general picture. And it seems to me that lately all these big models that imitate knowledge really well are generating negative sentiment in the population, which may ruin AI.",t3_1060gfk
+29,j3e17rj,t1_j3e04qq,I have tried and found it is a huge advance in this area. It not just googling. It has some inference capability.,t3_1060gfk
+30,j4xygdq,t1_j3e13z7,"Not really.  It's taking an input and providing the statistically most likely string of words that are associated with it.  There's far more to NLP than that.  Think about how a human can see a word they've never seen before and infer it's meaning based on context clues.  I'm not sure any publicly available system can do that.  
+
+
+New words are entering every language constantly.  There's no way to train such a massive model to keep up as fast as a human or purpose built system can.",t3_1060gfk
+31,j3em4ap,t1_j3e6vx8,But google really change the way we are working. This is why I guess there may be another change.,t3_1060gfk
+32,j3elwu4,t1_j3eagrm,"Seems recently, not too much paper are doing on them. Don't look at details. Maybe models like OPT is still too large?",t3_1060gfk
+33,j3eohh7,t1_j3eo4uc,"Yes, it is quite costy. However, it seems not easy to modify it in our research as it is not open.",t3_1060gfk
+34,j3emas4,t1_j3ek7d0,">I hate to break your bubble, but the task is also achievable even with GPT2
+
+Is it? I would love to know how. I can run GPT2 locally, and that would be fantastic level of zero-shot learning to be able to play around with.
+
+I have no doubt you can fine-tune GPT2 or T5 to achieve this, but in my experience they aren't nearly as promptable as GPT3/ChatGPT.
+
+>Specifically the task you gave it is likely implicitly present in the dataset, in the sense that the dataset allowed the model to learn the connections between the words you gave it
+
+I'm not sure what you're getting at here. It has learned the connections and meanings between words of course, that's what a language model does. 
+
+But it still followed my instructions, and it can follow a wide variety of other detailed instructions you give it. These tasks are too specific to have been in the training data; it is successfully generalizing zero-shot to new NLP tasks.",t3_1060gfk
+35,j3e66lo,t1_j3e3piv,"Thanks. I'm not a researcher, and more curious about the practicality aspect of the technology. So, the problem is wide, so we cannot formally prove, which is fair. However, if I'm interested in the practicality of the tech, I do not necessarily need a formal proof, I just need it to be good enough. So, just use code generation as an example, it is conceivable that it generates a piece of code, then it actually executes the code and then learn about its accuracy, performance, etc. And hence it is self - taught. Looking at another example like say poetry generation, it is conceivable that it generates a poem, publishes it and then  crowd source feedbacks to self teach as well?",t3_1060gfk
+36,j3e2ilt,t1_j3e17rj,"Again, not in the field so don't laugh at me, but would there be opportunity / value to apply a Meta layer on top of ChatGPT? We know that it needs to be prompted certain ways, so would there be an opportunity to tune the prompting and also to evaluate the responses? Maybe you can apply your skills on this Meta layer?",t3_1060gfk
+37,j3e3lk5,t1_j3e17rj,Is this true? What type of inference would it be capable of?,t3_1060gfk
+38,j3emuvx,t1_j3em4ap,Which is my point. Although the comment was also somewhat tongue-in-cheek.,t3_1060gfk
+39,j3frqfb,t1_j3elwu4,"They have a sequence of models ranging from 6B params up to 175B largest, so you can work on smaller variants if you don’t have gpus. There’s def some papers working on inference efficiency and benchmarking their failure modes if you look around.",t3_1060gfk
+40,j3tnkld,t1_j3elwu4,Dude that's why you ought to put everything into NLP find a way of producing better results for cheaper on less expensive hardware and you'll be the talk of the town. I think everyone would love to have an unrestricted local version of chatgpt on their phones. Do the research!,t3_1060gfk
+41,j3g7swj,t1_j3eohh7,"https://github.com/lucidrains/PaLM-rlhf-pytorch
+
+Similar to chat get architecture you can play with this",t3_1060gfk
+42,j3frhxs,t1_j3eohh7,Megawatt sounds right for training. But kilowatts for inference. Take a look at tim dettmer’s work (he’s at UW) on int8 to see some of this kind of efficiency work. There’s definitely significant work happening in the open.,t3_1060gfk
+43,j3emtbh,t1_j3emas4,"> I would love to know how to do this! I can run GPT2 locally, and that would be fantastic level of zero-shot learning to be able to play around with.
+
+It depends on how much you can compress the prompts. GPT2 is severely limited by memory. This means that you would need to train it on already condensed prompts. But in reality, it has the same (albeit not as refined) capabilities as ChatGPT.
+
+> But it still followed my instructions
+
+Well, it turns out that following instructions can be reduced to a symbol manipulation task. Again, you're giving it too much credit. I do agree that it is wide, but it is not as wide as Google or Wikipedia, which would represent humanity I guess.
+
+> it is successfully generalizing zero-shot to new NLP tasks.
+
+As are lesser models. Transformer based models are fairly successful at it and we have hypothesized this since GPT2, and confirmed it with GPT3. But one thing: technically it generalized few-shot to a new NLP task. It hallucinates on zero shot problems generally or states that it doesn't know. Ask it, for an example, what a ""gebutzeripanim"" is. I made that up just now.
+
+As for the task you gave it, you cannot claim it is zero shot, as you cannot prove its components were not in the database. Unless you want to say that you're pretty sure the prompt you gave it was not in the database, but hey, that can apply to all generative models, that's what generalization is. But there are tasks it fails on because it just cannot do some things. Ask it to integrate or derive certain functions and you'll quickly see what I mean.
+
+It can tell you all you want to know about integration, it can tell you all the rules perfectly, but it simply cannot apply them as well.",t3_1060gfk
+44,j3e9yim,t1_j3e66lo,"Well, my first paragraph covers that.
+
+> So, just use code generation as an example, it is conceivable that it generates a piece of code, then it actually executes the code and then learn about its accuracy, performance, etc. And hence it is self - taught.
+
+It doesn't do that. It learns how to have a conversation. The rest is mostly a result of learning things through learning how to model language. Don't give it too much credit. As said previously, it cannot extrapolate.",t3_1060gfk
+45,j3e6zvy,t1_j3e2ilt,"I guess openai will not open the model for us to apply a meta layer. It will remain a black box. So, this is why we cannot do anything on top of it.",t3_1060gfk
+46,j3e5ct5,t1_j3e3lk5,"I have tried many cases. For example. It gives correct proof of one of my technical lemmas in my own paper which make me quite amazine. It is a simple lemma, but it is very specific to my question. I also tried to search with google but do not find the answer.",t3_1060gfk
+47,j3gdv9p,t1_j3g7swj,"Thanks! Yes, there are many similar things. But the ChatGPT seems to have the most amazing performance.",t3_1060gfk
+48,j3j5vpp,t1_j3emtbh,">Ask it, for an example, what a ""gebutzeripanim"" is. I made that up just now.
+
+Q: what gebutzeripanim is?
+
+A: I'm sorry, but I am unable to find any information about ""gebutzeripanim."" Could you please provide more context or clarify what you are asking about?",t3_1060gfk
+49,j3toxf1,t1_j3e9yim,I think they meant: it is conceivable that in the future it could. i.e. you hook an LLM up with a repl. https://youtu.be/pdSfgRYy8Ao take at look at 15 minutes in. I could easily see how you could fine tune using self appraisal by executing code.,t3_1060gfk
+50,j3e790p,t1_j3e6zvy,Could you just use the Api and treat it like a blackbox?,t3_1060gfk
+51,j3tnqyd,t1_j3gdv9p,I feel like you'd make a really bad research student,t3_1060gfk
+52,j3gere2,t1_j3gdv9p,True but practically training a gpt model is not computationally cheap. I think instead of making such generalized language models we need to focus more one subject specific language models.,t3_1060gfk
+53,j3ld7gy,t1_j3j5vpp,"Exactly. It's not exactly meant to be a zero shot model, but rather a conversational agent. If it were a zero shot model, here is what it could say:
+
+- gebutzeripanim is a new phrase for me
+- based on its start it sounds german
+- based on its middle it sounds vaguely korean
+- based on its end it sounds vaguely turkish
+- it might be made up slang
+
+But in conversation you wouldn't just start decomposing stuff you never heard about. Here are what it says if you try to fish out these answers:
+
+- I'm sorry, but I'm not familiar with the term ""gebutzeripanim."" Could you provide more context or clarify what you are referring to?
+- Without more context or information about the word, it is difficult for me to determine whether it has a connection to the German language. ""Gebutzeripanim"" is not a word that I am familiar with, and a search of online resources did not yield any results. It is possible that this is a made-up or invented word, or that it is used in a specific context that is not familiar to me.
+- Without more context or information about the word, it is difficult for me to determine whether it has a connection to the Korean language. ""Gebutzeripanim"" is not a word that I am familiar with, and a search of online resources did not yield any results. It is possible that this is a made-up or invented word, or that it is used in a specific context that is not familiar to me. It is also possible that the word includes elements from multiple languages or that it is a hybrid of several languages. Without more information, it is difficult to say for sure.
+- Without more context or information about the word, it is difficult for me to determine whether it has a connection to the Turkish language. ""Gebutzeripanim"" is not a word that I am familiar with, and a search of online resources did not yield any results. It is possible that this is a made-up or invented word, or that it is used in a specific context that is not familiar to me. It is also possible that the word includes elements from multiple languages or that it is a hybrid of several languages. Without more information, it is difficult to say for sure.
+- It is not possible for me to determine whether ""gebutzeripanim"" is a made-up or invented word, as I do not have sufficient information about the word. It is possible that ""gebutzeripanim"" is a slang term that is not widely known or used, or that it is a word that has been created recently and has not yet gained widespread recognition. Without more context or information, it is difficult to say for sure what the word means or how it is used.
+
+It mostly bases it answers on the fact that it doesn't know. And given that it uses past answers as part of the prompts you can see that the second time I ask it for a language it assumes it can be made out of more languages, but not because it understands it, only because I mentioned it.
+
+If you ask it in a new session whether it is made out of words or phrases from several languages, it answers with
+
+> I'm sorry, but I am unable to find any information about a word spelled ""gebutzeripanim."" It is possible that this is a made-up word or a word from a language that I am not familiar with. Can you provide any context or additional information about the word that might help me to better understand it?
+
+Since it basically needs to explicitly see things in training, it's not really a zero-shot, but rather a few-shot model. There are instances where it seems like it can connect the dots but you can't really say it happens in the general case...",t3_1060gfk
+54,j3tq0u2,t1_j3toxf1,"Sure you could. But the cost is so much it probably outweighs the benefits. And that is even if you made training stable (we already know based on recurrent networks, GANs and even transformers that they're not particularly stable). Hooking it up to the repl would make the task essentially reinforcement learning. And if you know something about reinforcement learning, you know that it generally doesn't work because the environment the agent has to traverse is too difficult to learn anything - what Deepmind managed to achieve with their chess and go engines is truly remarkable, but these are THEIR achievements despite the hardships RL introduces. This is not the achievement of RL. Meanwhile ChatGPT is mostly an achievement of a nice dataset, a clever task and deep learning. It is not that impressive from an engineering standpoint (other than syncing up all the hardware to preprocess the data and train it)
+
+Unless LLMs are extremely optimized in regards to latency and cost, or unless compute becomes even more cheaper (not likely), they have no practical future for the consumer.
+
+So far, it's still a dick measuring contest, as if a larger model and dataset will make much of a difference. I do not see much interest in making them more usable or accessible, I see only effort in beating last year's paper and getting investors to dump more money into a bigger model for next year. I also see ChatGPT as being a cheap marketing scheme all the while it's being used for some pretty nefarious things, some of them being botted Russian or Ukrainian war propaganda.
+
+So you can forget the repl idea. Who would it serve? Programmers have shown they are not willing to pay for something like GitHub Copilot. Large companies can always find people to hire and do programming for them. Unless these are strides in something very expensive, like formal verification, it's not something a large company, the one that has the resources to research LLMs, would go into.
+
+Maybe the next step is training it on WolframAlpha. But at that point you're just catching up to almost 15 year old software. Maybe that ""almost 15 year old"" shows you how overhyped ChatGPT really is for commercial use.",t3_1060gfk
+55,j3tqojo,t1_j3tq0u2,"Nah, there's already work that can reduce generic LLM model size by a half and not lose any performance. And LLMs I think will be great as foundation models for training more niche smaller models for narrower tasks - people already use openAIs API to generate data to fine-tune their own niche models. I think we'll look back at current LLMs and realise just how inefficient they were - though a necessary evil to prove that something like this CAN be done.",t3_1060gfk
+56,j3twskh,t1_j3tqojo,"Half is not enough. We're thinking in the order of 100x or even more. Do not forget that even ordinary BERT is not really commercially viable as-is.
+
+I mean sure you can use them to get a nicer distribution for your dataset. But at the end of the day the API is too slow to train any ""real"" model, and you can already probably collect and generate data for smaller models yourself. So as a replacement for lazy people - sure, I think ChatGPT by itself probably has the potential to solve most repetitive questions people have on the internet. But it won't be used like that at scale so ultimately it is not useful.
+
+If it wasn't clear enough by now, I'm not skeptic because of what LLMs are, but how they simply do not scale up to real-world requirements. Ultimately, people do not have datacenters at home, and OpenAI and other vendors do not have the hardware for any actual volume of need other than a niche, hobbyist one. And the investment to develop something like ChatGPT is too big to justify for that use.
+
+**All of this was ignoring the obvious legal risks from using ChatGPT generations commercially!**",t3_1060gfk
+57,j3u3k7w,t1_j3twskh,Bert is being used by Google for search under the hood. It's how theyve got that instant fancy extractive answers box. I don't disagree that LLMs are large. So was Saturn V.,t3_1060gfk
+58,j3u4smq,t1_j3u3k7w,"Google's BERT use is not a commercial, consumer product, it is an enterprise one (Google uses it and runs it on their hardware), they presumably use the large version or something even larger than the pretrained weights available on the internet and to achieve latencies they have they are using datacentres and non-trivial distribution schemes for it, not just consumer hardware.
+
+Meanwhile, your average CPU will need anywhere from 1-4 seconds to do one inference pass in onnx runtime, of course much less on a GPU, but to be truly cross platform you're targetting JS in most cases, which means CPU and not a stack as mature as what Python/C++/CUDA have.
+
+What I'm saying is:
+
+- people have said no to paid services, they want free products
+- consumer hardware has not scaled nearly as fast as DL
+- even ancient models are still too slow to run on consumer hardware after years of improvement
+- distilling, quantizing and optimizing them seems to get them to run just fast enough to not be a nuisance, but is often too tedious to work out for a free product",t3_1060gfk
+59,j19vr7h,t3_zstequ,"‚Should be a one click deployment‘ lol, famous last words",t3_zstequ
+60,j1a3zrf,t3_zstequ,"I've got a feeling chatGPT benefits massively from it's human-curated finetuning feedback loop.
+
+
+Thats hard to reproduce without tens of thousands of man-hours upvoting/downvoting/editing the bots responses.",t3_zstequ
+61,j1axbn1,t3_zstequ,Another option is to work with/contribute to a distributed implementation of large language models. [The Petals project](https://github.com/bigscience-workshop/petals) is running BLOOM over a decentralized network of small workers (min 8GB VRAM requirement),t3_zstequ
+62,j1cq8q3,t3_zstequ,"Hi, I'm a high performance machine learning consultant working on this. I've run BLOOM on a cluster (not exactly aws/azure).
+
+You could, if you have a large enough GPU, run BLOOM on one GPU by running it one layer at a time, this can simply and naively be done using huggingface. I've tested this, for instance, using 4 40GB VRAM NVIDIA A100s (160GB Vram in total). Inference time for 50 tokens still took 40 mins out of the box; using bf16. If you want to bring this down and make it cost effective you need to have at least 8 80GBs A100 (640 GB VRAM). Int8 will slash this requirement by half, however that means sacrificing inference time due to the nature of the int8 method. On top of that, there are still some optimizations on a cluster level you will have to do if you really want to bring that inference time down to a few miliseconds per token generation. This is probably how OpenAI does it; they keep models continuously loaded on their GPUs, with highly optimized methods, so we can all use their models en-masse. 
+
+Point being, this is not something trivial to do and will cost money, expertise and time. Besides, BLOOM is not the best model performance wise because it's a multi language model.
+As others have mentioned, OpenAI's chat-gpt has further been trained using RL (PPO) on data we don't have access to.",t3_zstequ
+63,j1bw4zv,t3_zstequ,"OpenAi is better off with lower profits and higher engagement since the engagement is what fuels their models progress. I cannot say for sure what they will do, but right now is not the time to be trying to be exclusive. They should work for on some kind of feedback, reputation credit system that lets you earn by helping them fine tune.",t3_zstequ
+64,j1bzvsv,t3_zstequ,"I’ve had to deploy a lot of deep learning, there will not be a simple easy slap on deployment of something like this. Furthermore, it is not going to be cheaper. First of all, I’m not sure if it requires a graphics card, but in AWS there is a one hour minimum unless you use a more expensive contract. So when you make a API request, it’s going to charge you the full three dollar minimum or up to $20 depending on what instance you are using. 
+
+Furthermore, the cold start time. If you have it shut down when not in use its like at least 5 to 10 minutes for a model of this size to get up and running. The only way this is cost-effective is if it can run on CPU only, it could fit on an extremely cheap or free AWS. But my guess is that models like this are not going to be able to run fast enough to make it worth it with only CPU. 
+
+can anyone chime in if state of the art text generation models like this can run on CPU only?",t3_zstequ
+65,j1a8a71,t3_zstequ,"I don't think the quality is usable for most of these open sourced models, really need another generation of improvement.",t3_zstequ
+66,j1ckd3o,t3_zstequ,"I would be interested in helping. (Currently in AI research but not focussed on LLMs). 
+
+I don’t like the idea that the user feedback OpenAI is accumulating from ChatGPT is contributing to deepening their moat (I highly doubt they will release all that data publicly).
+
+For a company founded on principles of openness to be working directly against the democratisation of AI,  some serious criticism is warranted I think. 
+
+I could perhaps understand if there was a need for profitability to ensure the cost of their research, but the models they are commercialising are by and large models based on the research of other labs which *are* far more open with releasing their work. Their closed approach will simply incentivise and push other research labs to make their research more closed also, further increasing the likelihood of AI being concentrated in the hands of very few.",t3_zstequ
+67,j1apar1,t3_zstequ,"Even with int8 you need at least 175 GB of VRAM to run one model instance, time to launch and load it on demand will be higher that using openai api and your performance will be lower. Forget about running current generation of LLMs like OPT/BLOOM in cloud for real world cases, they are crap, I've tested them, they loop all the time and they can't match chatGPT results, you will not get performance of chatGPT from them without human assisted RL step that openai did. So wait for next gen of open source models or just use chatGPT.",t3_zstequ
+68,j1cj3is,t3_zstequ,"We seriously need to create an open source model, it’s important that one company don’t get the whole market share in these powerful tools.",t3_zstequ
+69,j1cpkth,t3_zstequ,"I'm trying to do basically the same thing and yes, running bloom does require a lot of memory. I managed to run it on:
+- ordinary computer with no GPU and 16GB of RAM, by loading parts of the model (divided to 73 parts) every time for every token. But this is painfully slow: 2-3 minutes per single token produced
+- a VM in Azure with no GPU but with lots of RAM (600+GB). This can generate a single token in 2-3 seconds, still way too slow for my usecase
+
+Now I'm trying to run on a Azure VM with 8 A100 GPUs, as is recommended by Bloom authors, but this of course is significantly more expensive: the right sized VM costs $35 per hour. From what I read this setup could be capable in generating a single token in less than 1 millisecond, and if this is really true then this means this setup is actually the cheapest one for my usecase, despite high VM cost, but I need to validate first if I can really achieve this speed.",t3_zstequ
+70,j1cdo0r,t3_zstequ,"Im interested.  I have played around with gpt models and Bert.  Not got into bloomz yet.   I have trained gpt3 custom models on openai.  My team has worked with lot more.   
+
+My concerns with openai is there is not clarity of my data will be reused or adapted into their general models.  Second training gpt3 is very cumbersome and not flexible.  
+
+Advantage of openai: training the models and deploying it all api based so no infra and devops / mlops overhead.   
+
+I think ultimately cost will almost be in parity across all clouds with 10-20% delta.  The automation will what be xtra cost.  Do you pay openai or aws for automation or hire someone to do it.",t3_zstequ
+71,j1avi8q,t3_zstequ,"I have fear of missing out when ChatGPT censors itself. Ideally, if someone pays for a chatbot themselves, they can get uncensored responses from it.",t3_zstequ
+72,j1a8mo0,t3_zstequ,"Or just pay .004c per api query? And open AI will allow you to fine tune their model to your own needs
+
+Edit: I dont know the precise cost just pulled that number out of my ass",t3_zstequ
+73,j1aqxem,t3_zstequ,"I think playing around with a nice encoder-decoder like T5 is a great start. Trying the original model is already nice, the newer flan-t5 can be better for some few shot tasks. The base models are already pretty good. Even the small models perform pretty well. I haven't tried the t5-tiny yet, but it is on my list to play with. 
+
+Of course if you have specific tasks in respect to generating texts, you could do some fine-tuning of T5. You can even use the same model for fine-tuning on several tasks with different prompts. I have found that for some tasks (especially where a sequence-to-sequence model have advantages), a fine-tuned T5 (or some variant thereof) can beat a zero, few, or even fine-tuned GPT-3 model.
+
+It can be suprising what such encoder-decoder models can do with prompt prefixes, and few shot learning and can be a good starting point to play with large language models.",t3_zstequ
+74,j1cu0yj,t3_zstequ,"God I love this post. 
+
+More genuine passion in this sub, please!
+
+Keep us updated on your progress, would be great to follow.",t3_zstequ
+75,j1d0u61,t3_zstequ,"My biggest pet peeve with chatGPT is how sanitized it is. I want a chat bot i can experiment with. I want a chat bot that will argue why the earth should be destroyed by an asteroid. Can SOTA LLM's do that?
+
+In terms of GPU compute, I'd highly recommend Paperspace's $40 a month pro plan. [You get access to these GPU's](https://i.imgur.com/Wg7KjkT.jpg) for free and your instances live for up to 6 hours with your files and storage persisting between runs. Though, capacity is limited on higher end GPU's but you can reliably get at least an A5000 at most times. So I'm happy to help with processing power.",t3_zstequ
+76,j1dulgw,t3_zstequ,"Based on my testing, none of the open source models are anywhere near as good as ChatGPT (or even davinci-03 .. the lastest GPT-3 snapshot).
+
+I think open source models need more fine-tuning and some RL techniques applied to get anywhere close.",t3_zstequ
+77,j1m9w8e,t3_zstequ,Update: Found [LAION-AI/OPEN-ASSISTANT](https://github.com/LAION-AI/Open-Assistant) a very promising project opensourcing the idea of chatGPT. [video here](https://www.youtube.com/watch?v=8gVYC_QX1DI),t3_zstequ
+78,j50nzw6,t3_zstequ,"We have deployed a Petals swarm with BLOOMZ, you can chat with it here: [http://chat.petals.ml](http://chat.petals.ml)
+
+See more info about Petals in the repo: [https://github.com/bigscience-workshop/petals](https://github.com/bigscience-workshop/petals)
+
+As far as I know, joining the public Petals swarm or setting up a private one is the simplest way to run such models on spot instances (since Petals is easy to deploy and it's fault-tolerant out of the box).",t3_zstequ
+79,j1amh6l,t3_zstequ,"Hey, I would gladly join your effort, I got a similar background and certain concerns regarding the direction of OpenAI in their approach to censorship. Currently still mostly inexperienced with machine learning, with a mediocare understanding of the linear algebra algo's behind it. I intend to use (and currently partially use) ML for image gen, improving formal software verification by possibly generating SMT conditions and such + aiding procedural generation algo's... 
+
+I would not be too concerned with ChatGPT costing a bit of money but rather the API or functionality being neutered because ""too powerful"". As such, I rather have control over the the whole AI stack. 
+
+Long term, I would also like to  investigate the possibility for massive GPU based distributed training, similar to Folding@home just for generating models. 
+
+Discord/ Element/ Telegram - I am free to talk :)",t3_zstequ
+80,j1bjak3,t3_zstequ,"run int8 instead of fp16 
+gg rip",t3_zstequ
+81,j1cfyrj,t3_zstequ,I am really interested in this and have been looking into doing some sort of finetuning on an LLM like GLM or Bloom. I had this idea for human in the loop in grad school but wasn’t able to implement how to assign the rewards to the sentences when the text generation is token by token.,t3_zstequ
+82,j1chmq7,t3_zstequ,I would participate here. We have some use cases in the always on/semi supervised learning space that might be helpful.,t3_zstequ
+83,j1cpn1y,t3_zstequ,Saving this post to come back to it after my exams,t3_zstequ
+84,j1ctzdn,t3_zstequ,Isn't Microsoft Azure AI's Davinci sort of what this is?,t3_zstequ
+85,j1d1ud1,t3_zstequ,"Have you had a look into the Huggingface libary?
+As far as I know you can deploy their model directly from their website onto AWS.
+https://huggingface.co/bigscience/bloomz",t3_zstequ
+86,j1gq2th,t3_zstequ,"Someone will post their implementation on github soon if they haven't already. All we really need is an open source dataset and we'd be good to go. Barrier to entry only being setting up the AWS instance to train your model.
+
+
+This would allow different communities to develop their own datasets - if programmers pulled together with the ChatGPT hype to make a large programming dataset, we'd have a much more capable github copilot relatively soon.
+
+
+Just need the open source datasets and an implementation; the later usually comes but the former is elusive.",t3_zstequ
+87,j1owfj6,t3_zstequ,"Display ChatGPT response alongside Google, Bing, DuckDuckGo Search results. It Free: https://chrome.google.com/webstore/detail/chatgpt-for-search-engine/feeonheemodpkdckaljcjogdncpiiban",t3_zstequ
+88,j5cib9w,t3_zstequ,"Here is a comparison, in a variety of NLP tasks, of two Open SOTA LLMs vs OpenAI's offerings:
+
+[Bloom (176B) vs OPT (175b) vs chatGPT/GPT3.5 (175b)](https://www.youtube.com/watch?v=wi0M2J4uE5I)",t3_zstequ
+89,j1bpzoe,t3_zstequ,"thanks for the information and share, seems that GPT4 (and beyond) and competitors will have the advertisement supported model like current search engines (ex. google)
+
+I am sure everyone will agree that ai will be at 100% in many IQ test as compared in your google docs.
+
+AI has shown worthwhile results on common sense, physical world and reasoning comparable to adult humans presently (2022).
+
+seems that these ai chat engines has less memory",t3_zstequ
+90,j1cvgx3,t3_zstequ,"So you are saying that when ChatGPT, which we are all perfectly happy with, starts charging a few dollars a month, we or you or someone else should spend a TON of money AND unknown effort to roll their own hastily trained, half-assed LLM in a couple of months with mixed results? And this potential ChatGPT-killer will be altruistic and free forever?",t3_zstequ
+91,j1c7pzh,t1_j19vr7h,a lot of stuff can be run locally with `git clone ...` and `docer compose up`,t3_zstequ
+92,j1ctwja,t1_j19vr7h,"`docker run ...` in the ideal world, assuming someone made the Docker image properly.",t3_zstequ
+93,j1d0cf7,t1_j19vr7h,"To be fair, if you make a good Jupyter notebook, it can be one-click deployment.",t3_zstequ
+94,j1afqub,t1_j1a3zrf,"This ^^
+
+Compared to GPT3, ChatGPT is a huge step up. There is basically an entire new reward network, as large as the LM, that is able to judge the quality of the answers. See https://cdn.openai.com/chatgpt/draft-20221129c/ChatGPT_Diagram.svg
+
+That said, I'd welome a community effort to build an open source version of this.",t3_zstequ
+95,j1ai82j,t1_j1a3zrf,it can be crowdsourced once we have something up and running. this stuff will be commoditized eventually.,t3_zstequ
+96,j1b13kx,t1_j1a3zrf,"It really does but there’s a point in time where OpenAI is going to want to cash in. Virtually all of their outputs could benefit from utilizing reinforcement learning to improve after the initial training, but we’ve seen how GPT3 and DallE-2 ultimately chose to be shipped as a sort of finished product that gets updates like any shipped app might, with costs attached. I don’t see why ChatGPT will be any different after x amount of time, unless Stable Diffusion is really eating their Dall-E 2 profitability and they need to find new ways of monetization that doesn’t charge the user utilizing ChatGPT",t3_zstequ
+97,j1d5m40,t1_j1a3zrf,"Yes - not sure if everyone understands this. ChatGPT took GPT 3.5 as a starting point, but then has a reinforcement learning stage on top of that which has aligned it's output to what humans want from a question-answering chat-bot. It's basically the next generation InstructGPT.
+
+[https://arxiv.org/abs/2203.02155](https://arxiv.org/abs/2203.02155)
+
+From a quick scan of the Bloomz link, that seems to be just an LLM (i.e. more like GPT-3), not an instruction/human aligned chat-bot. There's a huge qualitative difference.",t3_zstequ
+98,j1b8h6i,t1_j1a3zrf,"To be fair, that's roughly how natural minds are trained, too.",t3_zstequ
+99,j1cg6jj,t1_j1a3zrf,Anyone have any ideas about how they assigned rewards? Somehow take the sum of the prob(logits) from each token in the sentence and multiply that by the reward?,t3_zstequ
+100,j1cj523,t1_j1a3zrf,10s of thousands of hours splits across thousands of people does not seem too significant.,t3_zstequ
+101,j1utz7f,t1_j1a3zrf,"Very true, *but* it only needs one good data dump hack",t3_zstequ
+102,j40bsap,t1_j1a3zrf,"**Yeah** ^^  
+
+Their ""Secret Sauce"" of the Instruct A.I. is very hard to beat.",t3_zstequ
+103,j1bdyxw,t1_j1axbn1,Can Radeon cards work or is it Nvidia only?,t3_zstequ
+104,j1cwajo,t1_j1cq8q3,">run BLOOM on one GPU by running it one layer at a time, this can simply and naively be done using huggingface  
+>  
+>I've tested this, for instance, using 4 40GB VRAM NVIDIA A100s (160GB Vram in total)
+
+Is it possible to also load it one layer at a time using 24x32GB V100s as well? And would that save on costs (compared to 8x80 A100s) without sacrificing throughput too much?
+
+I'd just like to see if this is worth it before delving too deep into it haha.",t3_zstequ
+105,j1c3l20,t1_j1bw4zv,That would be a new era of publishing. A new content ecosystem and a complete redesign of how revenue is shared. Google isn't releasing lambda because they don't have the answer. SEO is on its death bed and no one knows how to make a sustainable ecosystem because the rise of Chatgpt will eliminate most of the current incentives to publish content that will eventually be needed to update the LLMs.,t3_zstequ
+106,j1c75bp,t1_j1bzvsv,You are 100% right. However people will do like DALL-E and make a budget mickey mouse version and pretend its the exact same thing without measuring any quantitative metrics between the original implementation and theirs.,t3_zstequ
+107,j1easrz,t1_j1bzvsv,"I have only deployed a few models (smaller BERT-like) and was able to fit some of them into Lambda function (load from S3).
+
+Otherwise, if we don't care about start-up time, a lambda function that starts a spot instance.",t3_zstequ
+108,j4s0yx5,t1_j1cpkth,Hey were you able to achieve your goal  using Azure VMs with Bloom?,t3_zstequ
+109,j1af1ug,t1_j1a8mo0,That's high by an order of mag :),t3_zstequ
+110,j1b1itt,t1_j1a8mo0,"> Or just pay .004c per api query?
+
+""average is probably single-digits cents per chat; trying to figure out more precisely and also how we can optimize it""
+
+https://twitter.com/sama/status/1599671496636780546?lang=en",t3_zstequ
+111,j1asist,t1_j1a8mo0,"As soon as we can fine tune it to our problem space, we are 100% putting it as a help bot in our commercial software. It’s ready, it just needs tuning.",t3_zstequ
+112,j1b1vl8,t1_j1a8mo0,"I imagine there’ll be open source versions of ChatGPT in the near future given it’s wild popularity, I’ll probably just use that for personal projects, and in a business setting I would just have a dedicated model of that open source version running. .004 cents per 1000 tokens (or much less) is a hell of an ask if you’re doing anything where users generate tokens",t3_zstequ
+113,j6qvrqt,t1_j1aqxem,I also looked into flan-t5 but if I remember correctly it lacked performance on the benchmarks for Q&A. Might have to check again tho. I am not touching anything -tiny or -small because last time I was running inference of Galactica anything but the original model was just hallucinating into endless loops.,t3_zstequ
+114,j1nn350,t1_j1m9w8e,"Video unavailable :(
+
+How is Open Assistant trained and how good is it so far?",t3_zstequ
+115,j6sgu2w,t1_j50nzw6,"Wow. Awesome progress with petals chat.
+Two questions:
+
+1. Can people with an RTX and 10+ vRAM donate compute to petals? If so, how?
+2. `A GPU server with 10+ GB GPU VRAM` -> what's the minimum vRAM requirement for 176B bloomz? I thought it's 8x A100 80GB without DeepSpeed and other optimizations, but 10+GB sounds like it's the small model only?",t3_zstequ
+116,j1c8kvn,t1_j1bjak3,DeepSpeed-MII supports Bloom int8 and fp16.,t3_zstequ
+117,j6qw2m1,t1_j1cvgx3,"No, I'm saying look at how DALL-E vs Stable Diffusion turned out:
+All the innovation happened by the community on Stable Diffusion. They implemented all the cool stuff like Dreambooth, Finetuning, and Hypernetworks, Inpainting/Outpainting, Upscaling. A popular Open Source project will mostly lead to more innovation than any closed source corporate can foster internally.
+
+Therefore I hope for the better development and improvement of LLMs, that the best foundational models are open source.",t3_zstequ
+118,j1cztpc,t1_j1ctwja,Docker compose is a service that allows to controll multiple docker container and handle their interactions. So docker compose up already is in an ideal world :P,t3_zstequ
+119,j1dwsmh,t1_j1d0cf7,Oh my sweet summer child,t3_zstequ
+120,j1e2xzd,t1_j1d0cf7,lol,t3_zstequ
+121,j1b9tun,t1_j1afqub,"Do we know when ChatGPT itself will cease to be free, or cease to be available to the general public? I kind of like using this thing - I find it really convenient, so I'd like to know when I'm going to lose access to it.",t3_zstequ
+122,j1cm39r,t1_j1afqub,Step 1 definitely explains why its responses often feel so similar to SEO waffle-farm content. I had been wondering where that aspect was coming from.,t3_zstequ
+123,j2cq1m6,t1_j1afqub,over 42 different transformers in cascade i read.....,t3_zstequ
+124,j1c6ut5,t1_j1afqub,Yup. The training techniques have got a lot better since that first GPT-3 paper.,t3_zstequ
+125,j1bacsy,t1_j1b13kx,"Well, remember when Youtube was totally free without any ads whatsoever? And of course we all wondered how they were going to continue offering their service for free. Then one day the ads crept in, and we knew.
+
+I'm thinking OpenAI hasn't made this thing free just for generosity. They're using us as free beta-testers to shake down the product for them, so that they can iron out the kinks and bugs. Once that process has run its course, they'll just cut off our access and only allow paying customers to use it.",t3_zstequ
+126,j1bjz3f,t1_j1bdyxw,CUDA only,t3_zstequ
+127,j1ben2b,t1_j1bdyxw,"Not sure, give it a try and find out!",t3_zstequ
+128,j1g9v0r,t1_j1cwajo,"You won't need to load it one layer at a time with enough VRAM.
+24x32GB V100s should be enough to load the whole model and do inference. The main bottleneck is GPU-GPU communication and the speed of the GPUs for inference.
+
+In theory you can use one 16GB+ GPU and load it one layer at a time, but this will take way too long for generation. During my tests, each layer loading + inference took ~1.2s. BLOOM 175B has 72 ish layers. So just one token prediction can take roughly 1.5 min with this method. That's waaaay too slow.",t3_zstequ
+129,j1c8324,t1_j1c3l20,"brands / advertisers pay money to the LLM platform to run highly targeted ads in the LLM interface (for example chatGPT, lawGPT, medGPT etc.)
+the LLM platform pays a share of that adrevenue to content creators, that it uses for training and finetuning.",t3_zstequ
+130,j1chv31,t1_j1c75bp,"Yeah, funny how many people have been advertising on all the machine learning subreddits their new chat GPT application. Which is funny because Chat GPT doesn’t have a single API yet. 
+
+Kinda funny, AI is ending up like drop shipping.  the art of advertising shitty AliExpress products as if they’re actually a better product, and then up charge people like 500 or 1000%, then you just order the AliExpress product and have it mailed to their house.  It’s like people are doing that with AI now. Just say it’s this or that and then put a super lightweight model like OpenAI Davinci on a free AWS instance and call it chat GPT. Business models built on “If da Vinci charges you four cents per API credit just charge the user eight Cents “ what will they know?",t3_zstequ
+131,j6qvd5s,t1_j4s0yx5,"For my Azure account, any compute that is more than 40GB vRAM needs an approval. I can't add more compute, without requesting it through a manual process, where one needs to state the intentions of the project etc. and it will go through a manual process by MS. No thank you.
+AWS at least lets you add clustered GPU compute just with a credit card, but availability of A100 is very limited depending on the region.",t3_zstequ
+132,j1aimsd,t1_j1af1ug,"I think they price by generated token in their other products? if so there should be a way to make chatgpt less verbose out of the box.
+
+also this stuff will be a lot more popular than the other products but the hardware power isn't really there for such demand using older prices I assume. So it might be a bit more expensive than their other offerings.",t3_zstequ
+133,j1bakvl,t1_j1b1vl8,"Open Source is only free when it's running off your own computer. Otherwise, if it's running off some infrastructure, then that has to be paid for - typically with ads or something like that.",t3_zstequ
+134,j1cackq,t1_j1c8kvn,is DeepSpeed-MII publically available or only on azure?,t3_zstequ
+135,j1gjx2f,t1_j1cztpc,We use docker compose so much at work we have `alias dc=docker compose` on most of our cloud deployments.,t3_zstequ
+136,j1bnmw5,t1_j1b9tun,I mean it is pretty cheap. You probably can't spend more than $10/month if it is priced similar to gpt3.,t3_zstequ
+137,j1cb1nd,t1_j1b9tun,I suspect they’ll move towards paid tiers when the popularity goes down. Right now they’re getting a ton of interesting and rich data for free from going viral. But when that eventually fades they’ll want to continue generating some kind of value from it.,t3_zstequ
+138,j1bb29r,t1_j1b9tun,Only the gods at open ai cam know the answer to that.,t3_zstequ
+139,j1bnhkx,t1_j1bacsy,"Why do you think they'll make us pay, when they could instead the treasure trove of personal information to sell to advertisers and train the AI to subliminally (or explicitly) advertise to us?",t3_zstequ
+140,j1bf7bb,t1_j1bacsy,I'm curious if they keep a free version that sneeks inn adds as natural conversations where it fits.,t3_zstequ
+141,j1bf92g,t1_j1bacsy,"Well, they're also getting feedback and the model is only being improved by human interaction. I'd bet they still keep a free tier in order to get access to a broader pool and charge companies/people a subscription fee if they want unlimited access or something.",t3_zstequ
+142,j1c5jxp,t1_j1bacsy,Imagine if chatgpt was ad supported... You just invented a new business model!,t3_zstequ
+143,j40c2ca,t1_j1bacsy,"You can avoid the Youtube Ads, so that is a non-sequiteur to what OpenAI can do.  OpenAI will go to the Pay Tier because Microsoft is investing $10 billion in them and they have to show a profit some how.",t3_zstequ
+144,j1byszb,t1_j1bjz3f,expected as much. thanks for the info though.,t3_zstequ
+145,j40d29b,t1_j1g9v0r,Another point about ChatGPT is that they have reduced it from the GPT-3 175BN parameters to 1.3-billion parameter InstructGPT and it provides much more accurate returns,t3_zstequ
+146,j1ce0ss,t1_j1c8324,"I think this is the most sensible take I've heard on the future of written content but how feasible do you think it is in terms of computation? Sounds like youd need a whole new artificial intelligence just for ads to pull it off, and then somehow integrate it with the LLM. 
+
+Sorry if its stupid I know nothing about AI. I'm a content writer with existential dread and severe whiplash from all this hype.
+
+Ultimately, we need a system to incentivise human writers otherwise I dont see LLMs scaling",t3_zstequ
+147,j1akvas,t1_j1aimsd,"Oh, I was just pointing out that 1000 tokens in their base model for other services is 0.0004, so an order of mag lower than u/coolbreeze770 was guessing. In other words, pretty friggin cheap for most since a rough way to think about it is three tokens equaling two words on average.
+
+edited for clunky wording",t3_zstequ
+148,j1bzofo,t1_j1bakvl,"Usually inference on hugging face for large models is free for individuals making a reasonable amount of API calls as part of their offerings, and I assume an open source version of this would be on there. I realize that it costs money.",t3_zstequ
+149,j1cgoj8,t1_j1cackq,They have two versions: public and azure.,t3_zstequ
+150,j1w05nk,t1_j1cb1nd,"I’m curious, how do they use the data of it being asking questions to improve it? Does it flag questions it couldn’t answer and then the team updates it?",t3_zstequ
+151,j1bqgvb,t1_j1bnhkx,"I wonder if there'll be a new budding industry for SEO with GPT, just like there is for SEO with Google search? I'm not sure how that would work though, since it might be harder to integrate spam/ads into GPT responses.",t3_zstequ
+152,j1cgmie,t1_j1ce0ss,"no need to integrate the ads into the LLM. Just integrate it into the UI that users use to converse with the AI. Between Answers you can either inject ads, or you can alter answers to contain certain brands.
+
+Very unethical, and that's why I hope this becomes detached from big corps like OpenAI that do this behind a locked down API...",t3_zstequ
+153,j1cmsob,t1_j1akvas,"Just in case you miss my other comment - chatgpt seems to actually be particularly expensive to run in comparison to their other apis. Altman says ""single digit cents per chat"".",t3_zstequ
+154,j1zqxp9,t1_j1w05nk,"You can rate the responses up or down and provide an ""ideal"" response.",t3_zstequ
+155,j23znll,t1_j1w05nk,I think it saves the highly rated responses and feeds it into a dataset then it uses reinforcement learning by giving a positive reward to them.,t3_zstequ
+156,j1ckyk7,t1_j1cgmie,"So OpenAi gets all the revenue from online advertising, and ends up removing the incentive to publish new content, limiting the usefulness of the LLM because it will be 'stuck in time' in a sense.( Not sure if this is a fair assessment )
+
+Do you think the influx of data they get from our interactions with Chatgpt can make up for the existence of human writers updating google ( and the web) with new data/information as it emerges in real life? 
+
+How will ai add anything to the conversation if its stuck in time?",t3_zstequ
+157,j7ehytu,t3_10uw974,"I am also very petty, so it’s good to see I have stuff in common with an ML great.",t3_10uw974
+158,j7ed72r,t3_10uw974,"My take is that you seem quite intent on painting him as petty. His statements seem quite reasonable and rational, especially in the face of the over exuberant reactions we mostly see about chatGPT.
+
+> Mostly on the research side which immediately puts him very hostile against engineers... It's a classic case of a researcher-engineer beef
+
+Seems like you have had some bad experiences that led to these feelings. There is no built in animosity between these groups. Just different goals.",t3_10uw974
+159,j7e7rz6,t3_10uw974,Doesn't sound petty at all to me. Sounds like he's dispelling misconceptions about the progress ChatGPT represents.,t3_10uw974
+160,j7eit5o,t3_10uw974,">I get that he is one of the godfathers of AI. Mostly on the research side which immediately puts him very hostile against engineers
+
+I find it odd that you seem to expect / want a serious conversation, but then start with some weird ad-hominem against the man. You talk about ""fanbois"" in your first sentence, but then expose yourself as nothing better, to be honest. The rest of your post isn't much better TBH - trying in infer intentionality and make false equivalencies.",t3_10uw974
+161,j7eq9ek,t3_10uw974,"Nah, it's not engineering vs science or OS vs closed. It's much simpler:
+
+>FAIR's Galactica. People crucified it because it could generate nonsense. ChatGPT does the same thing.
+
+YLC threw a fit over the whole Galactica debacle. He had lovely aggressive tweets [such as](https://twitter.com/ylecun/status/1593293058174500865) ""Galactica demo is off line for now. It’s no longer possible to have some fun by casually misusing it. Happy?"" or describing people who disliked Galactica [as](https://twitter.com/ylecun/status/1596176052258476032) ""easily scared of new technology"". To see the success of ChatGPT just a few weeks later must have been really painful.",t3_10uw974
+162,j7eba6d,t3_10uw974,"Whatever Meta has put out in the past year has been fairly disappointing compared to what's already available—OPT, NLLB, Galactica. It probably advanced the field with the knowledge gleaned from producing these models, but for production, they all feel half-baked and lack polish. It was like they were just rushing out something to meet some KPI.
+
+So yes, I find Lecun being petty that his team can't seem to produce something 'good' to the general public.",t3_10uw974
+163,j7ek7ix,t3_10uw974,"Lol I kinda agree with you here, and Lecun reminds me of Sheldon from Big Bang theory who is constantly berating and insulting engineers (Howard)",t3_10uw974
+164,j7eeg25,t3_10uw974,"Yea looks like Meta is making him say this stuff.
+
+I assumed he jerks off to chat GPT responses when he is alone. I am continuing to assume that tbh",t3_10uw974
+165,j7f0auj,t3_10uw974,"I agree with most of those statements. I don't think he's being petty he's just being honest about what ChatGPT represents to him. 
+
+Now I am biased as on a personal level I'm kinda sick of ChatGPT. It's good at carrying on a brief chat and it's very well polished. But it's quite mundane and people are already talking about using it or some variant to make marketing and web pages in a web that's already full of AI generated articles and targeted ads. It should be used perhaps for chats when trained on a corpus including some support docs or something. Not much more than that.
+
+I do think there could be some negative ramifications in the worst case. I have a friend whose a graphic designer at a major company whose been told by her employers this the future of ads. Higher ups say stuff like this all the time and it doesn't wind up coming true so it hopefully won't become a real problem. Still it's a bit concerning that people on the oustside of these fields are perhaps overvaluing ChatGPT so much.",t3_10uw974
+166,j7eohva,t3_10uw974,"MetaAI released their galactica chatbot a month before chatgpt, but it was heavily criticized for “dangerous AI generated pseudoscience nonsense” and shutdown a few days lter. Now OpenAI does the same and everyone praises them - well, I get why Yann is being saulty about it.",t3_10uw974
+167,j7edw3y,t1_j7ed72r,"This. Majority of reactions are irrationally exuberant and often pablum for the vacuous “content” creation cycle. It’s as if, if one _doesn’t_ affirm the super positive, life altering results surely to come, you may get left behind. Let’s see what _actual_ problems ChatGPT solves.",t3_10uw974
+168,j7ef7rn,t1_j7ed72r,"> some bad experiences thst led to these feelings
+
+I work as an Applied Researcher so I do both research and engineering. No beef on it. It's bad to say it as beef. It's like ""dev-QA"" relationship. Researchers would want the largest models possible yielding the best metrics, Engineers want the easiest to deploy and monitor. The former also undermines what engineers do as just *packaging it up*. Yann just said it above.",t3_10uw974
+169,j7edvto,t1_j7ed72r,"Fair point. But you can be correct and petty at the same time. Remember that he blamed the people using Galactica casually as the reason it got paused. Then wonders and asks people why ChatGPT hasn't faced the same backlash given that ""it spouts sh-t*. 
+
+Although one could argue that usable LLMs in production are quite revolutionary. NVIDIA'S GauGan or GAN based txt to image models, the base diffusion models have been there for a year or two but hasn't received the same publicity and profits as Stable Diffusion or Midjorney. It's basically the same line of framework. 
+
+It's narrow-minded thinking to brush the architecture upgrades and the engineering work that made it possible -- which has always been his statements. But that is a fair point considering he is mainly a researcher not an engineer.",t3_10uw974
+170,j7ebfxa,t1_j7e7rz6,"If I listened to critics I would think zero progress has been made at all. Every time new software comes out that does something that couldn't be done before it's handwaved away as easy, or obvious, or something else. If it was so easy then it would have already been done. Well with ChatGPT...it has. https://beta.character.ai/ beat ChatGPT by a few months and has a bit more power because it's easier to make the chat bot answer as you want. I don't think it's as good as ChatGPT though.",t3_10uw974
+171,j7e8jbe,t1_j7e7rz6,"You can be factually correct and be petty at the same time. You can read more about his conversations with people who argue with him or all the the time he brings up Galactica's failed rollout comparing it to ChatGPT and wondering why it hasn't been paused as well given that, a quote from him, ""that Galactica even produces less BS"".
+
+He also seems to undermine the rapid engineering work and MLOps that come with ChatGPT which is funny because Meta hasn't released any substantial product from their research that has seen the light of the day for a week. Also, GPT3 to ChatGPT in itself in a research perspective is a jump. Maybe not as incremental as what Lecun does every paper, but compared to an average paper in the field, it is.
+
+You may have a toxic aunt. But if you always talk about it in the dinner table, that's petty.",t3_10uw974
+172,j7ej5p9,t1_j7eit5o,"Please point out the 'ad hominem' against him instead of generalities when I just literally quoted all the things he said and gave my own take on it.
+
+> infer intentionality
+
+Point it out. You can conclude intentionality based on his line of reasoning, conversation trails, and position.",t3_10uw974
+173,j7ervit,t1_j7eq9ek,"Exactly. He was blaming the users for the Galactica debacle and wondering why OpenAI's ChatGPT is getting adoption when ""it spews the same bS"" as per his words. And also proceeds to tell that it is just because people had been drstroying Meta's reputation overall.",t3_10uw974
+174,j7elzrw,t1_j7eba6d,"Are we only talking in the context of LLMs and language? If not, your statement is simply incorrect. In past two years FAIR published a number of high-quality self-superviser learning frameworks that come with open source implementations. On top of my head, MoCo (and its versions), Barlow Twins, VicReg, Swav all came from FAIR. They are the one that showed that SSL for computer vision does not need to be contrastive only. Some of these papers have some 5K citations in the span of 3 years and are used by many researchers on a daily basis.
+
+But yeah, tell me how they are chasing corporate KPIs and are publishing junk.",t3_10uw974
+175,j7ebeiw,t1_j7eba6d,"> to meet some KPI
+
+Big tech in a nutshell
+
+Or to close some JIRA tickets perhaps",t3_10uw974
+176,j7eemd5,t1_j7eeg25,"tbf, he has screenshots where he talks to it, then posts it in his Twitter thread to say, *I told you so*",t3_10uw974
+177,j7eu88c,t1_j7eohva,Galactica was doomed to fail because it was specifically marketed as a science tool which puts very high expectations on factual and mathematical correctness. ChatGPT on the other hand is marketed as chat.,t3_10uw974
+178,j7esbbj,t1_j7eohva,"Fair point. But why is he blaming the people instead of his whole company going as far as ""it's just people destroying Meta's reputation""? 
+
+I have high respects for him as a researcher, and in fact I've read his books and papers. He's great when he speaks as a researcher. It's different when he's speaks as a Meta employee vested with the companies interest. That's why I take his Meta-driven statements for/against companies with a grain of salt.
+
+I wont be even surprised if the big tech companies are behind the Stable Diffusion/Midjourney lawsuit since it would do them good. Considering the fact that Meta partnered with Shutterstock to produce their own.",t3_10uw974
+179,j7ejdhf,t1_j7ef7rn,I have no clue why your are being down voted.,t3_10uw974
+180,j7ebug1,t1_j7ebfxa,You know its just being petty when he isnt even talking about it in the Generative Image space. ChatGPT is very much like Midjourney and Stable Diffusion where these models are small incremental updates over the main papers. But has put the proper applied research and MLOps work to bring these into production and profit from it.,t3_10uw974
+181,j7ekfua,t1_j7ej5p9,">Please point out the 'ad hominem' against him
+
+I literally quoted it.",t3_10uw974
+182,j7exuvy,t1_j7elzrw,"not to mention being a company that is willing to put out huge ass models AND training logs which is infinitely more useful to our community than three vague blogposts and 1000 retweets by ex web3 grifters on twitter claiming GPT-4 will quite literally have 100 trillion parameters and worshipping Sam Altman as God LOL.
+
+People keep claiming that others dismiss engineering effort that went into ChatGPT, GPT3, and turn a blind eye to relative opaqueness on techniques and tricks that went into making these models happen (not even a dataset available). Other than showing a proof of concept (which is SIGNIFICANT but not sufficient for SCIENCE), how exactly do we, as a community of ML, benefit from OpenAI getting all the hype and Satya's money? (Whisper is a weird counterpoint to my arguments though.)",t3_10uw974
+183,j7ejgh8,t1_j7ejdhf,"Lecun's fanbois for sure.
+
+Or either side of the research or engineering perspective that has no clue what the other side does.",t3_10uw974
+184,j7ekqqr,t1_j7ebug1,"But why is that bad? If the researchers wanted moola they should have made a business or published/ran the models they created from their own research. If you don't want to get stepped on by someone else talented enough to piece it together don't release your ideas.
+
+Don't get butt hurt when a primarily publicity or capitalist based company implements your idea and makes it into a product.",t3_10uw974
+185,j7em0v4,t1_j7ekfua,That's not an ad hominem. An ad hominem attacks the subject as basis of its argument. Telling that this person is X based on Y is not ad hominem. It's a conclusion of the quotes I laid down.,t3_10uw974
+186,j7ejxtd,t1_j7ejgh8,"You have a lot of angst to work through, my friend. Really, you have built up some divide between research and engineering that simply does not exist.",t3_10uw974
+187,j7elmu3,t1_j7ekqqr,It's not bad. That's the entire point of the post.,t3_10uw974
+188,j7elvss,t1_j7ejxtd,"The beef does not exist. But the divide between research and engineering exist. It's one of the fundamental reasons why some startups fail -- they dont know how to balance which and do not know how to construct a team.  There's a ""divide"" between data science and data engineering and folks who work on that know that there is.",t3_10uw974
+189,j7empve,t1_j7elvss,"In my 35 years of working with both engineers, corporate researchers and academics, I have not experienced this divide you describe. Research isn't something that happens at startups. There is no revenue to support research in a startup. The entire focus is on product.",t3_10uw974
+190,j7enajd,t1_j7empve,"> research isnt something that happens at startups
+
+Entirely depends on the startup and the product. R&D happens on many startups. Unless someone has a limited exposure on AI and ML-oriented startups, this is far from truth. OpenAI is an applied research company. They produce research papers and puts it into production. In the electronics department, OnePlus has risen as a great R&D startup capable of producing rapid R&D-based products. Grammarly puts a ton of money on its R&D to create a more domain-specific GPT model because it is vital to their product.
+
+> The divide you describe
+
+One does not need to probe deeper into this. Ask an experienced Data Engineer, a Data Scientist, and a DevOps. There is a clear DISTINCTION of what they do and how they balance each other. The divide isnt hostile. It's more of ""*we want this, you cant have all of this* type of relationship, besides the usual difference of *who works with what*.",t3_10uw974
+191,j5y6wko,t3_10lp3g4,"Google (and DeepMind) actually have better LLM tech and models than OpenAI (if you believe their published research anyway). They had a significant breathrough last year in terms of scalability: https://arxiv.org/abs/2203.15556
+
+Existing LLMs are found out to be undertrained and with some tweaks you can create a smaller model that outperforms larger ones. Chinchilla is arguably the most performant model we've heard of to date ( https://www.jasonwei.net/blog/emergence ) but it hasn't been pushed to any consumer-facing application AFAIK.
+
+This should be powering their ChatGPT competitor Sparrow which might be reeleased this year. I am pretty sure that OpenAI will also implement those ideas for GPT-4.",t3_10lp3g4
+192,j60y1rn,t3_10lp3g4,"OpenAI's LLM is special because it's open to the public. That's it. Other tech companies' internal LLMs are likely better. Google has a whole database of billions of websites and indexes directly at their disposal; I'm quite confident that they can outperform ChatGPT with ease. If Google was *really* afraid of ChatGPT running them out of business, they'd just release a public API for their own, better model. And they have a monopoly over the internet in terms of raw data *and* R\&D; it would be virtually impossible for anyone else to compete.
+
+Besides that, the whole ""Google killer"" thing is overreactive, IMO. The public api for ChatGPT doesn't retrain or even prompt-condition on new public internet data. So if you ask it about recent news, it'll spit out utter garbage. An internal version reportedly *does* seek out and retrain on new public internet data. But how does it find that data? With a neat tool that constantly crawls the web and builds large, efficient databases and indexes. Oh yeah---that's called a *search engine*.
+
+So even if end users start using LLMs as a substitute for search engines (which is generally *not* happening at the moment, and it seems unlikely to be a concern in the age of GPT-3, despite what many people believe), most LLM queries will likely be forwarded to some search engine or another for prompt conditioning. Search engines will not *die*\---they'll just have to adapt to be useful for LLM prompt conditioning in addition to being useful to end users.",t3_10lp3g4
+193,j60625r,t3_10lp3g4,"So. First of all it’s not the size, or at least not only the size.
+
+Before ChatGPT OpenAI experimented with InstructGPT, which at 6B parameters completely destroyed the 175B GPT3 when it came to satisfying users interacting with it and not being completely psycho.
+
+Code-generating abilities start around 12B parameters (OpenAI codex), so most of things you are interacting with and are impressed by could be done with 12B parameters model. What really is doing heavy lifting for Chat-GPT is fine-tuning and guided generation to make it conform to user’s expectations. 
+
+Now, the model size allows for nice emerging properties, but there is a relationship between the dataset size and model size, meaning that without increasing the dataset, bigger model do nothing better. At 175B parameters, GPT-3 was already past that point compared to the curated dataset OpenAI used for it. And given that their dataset already contained CommonCrawl, it was pretty much all public writing on the internet. 
+
+They weren’t short by a bit - over a factor of 10x. Finding enough data to just finish training GPT-3 is a challenge already; larger models would need even more. That’s why they could dump code and more text into GPT-3 to create GPT-3.5 without creating bottlenecks. 
+
+Now, alternative models to GPT-3 have been trained (OPT175B or BLOOM), but at least for OPT175, it underperforms. OpenAI actually did a lot of data preparation, meaning that anyone who would want to replicate it would need to figure out the “secret sauce”.",t3_10lp3g4
+194,j5y70zt,t3_10lp3g4,">what is very special about the model than the large data and parameter set it has
+
+OpenAI have a good marketing department and the web interface is user friendly. But yeah there's really no secret sauce to it.
+
+The model generates the text snippet in a batch, it just prints it a character at a time for dramatic effect(and to keep you occupied for a while so you don't overload the horribly computationally expensive cloud service it runs on with multiple queries in quick succession), so yeah definitely scaling questions before it could be ran as a google replacement general casual search engine.",t3_10lp3g4
+195,j62eibb,t3_10lp3g4,"IMHO the buzz is mainly around the UX provided by ChatGPT. Most LLMs are not that easily accessible and most people never get to experience any aha moment with them, so most people don't care. As for Google, I do think there is real but not immediate danger for their business model. The big issue for them is that 60% of their revenue comes from ads in Google search, so rolling out an amazing ChatGPT equivalent could potentially hurt their business. They would have to rethink the entire model. For now and AFAIK, ChatGPT doesn't provide web links so it doesn't feel like it is trying to sell you something. If Google if going to use one of their SOTA LLM and build a conversational AI out of it and make it available for free, surely they have to consider the implications for Alphabet as a whole.",t3_10lp3g4
+196,j6cqerx,t3_10lp3g4,"It's not about large data or number of parameters. OpenAI has not actually revealed details regarding ChatGPT's architecture and training. What is special is the fine-tuning procedure -- alignment through RLHF on the underlying LLM (nicknamed GPT3.5) that is extremely good at giving ""useful"" responses to prompts\instructions. 
+
+Prior to this innovation, zero-shot and in-context few-shot learning with LLM was hardly working. Users had to trial and error their way to some obtuse prompt to get the LLM to generate some sensible response to their prompt, if it even worked at all. This is because LLM pre-training is purely about language structure without accounting for intent (what the human wishes to obtain via the prompt).  Supervised fine-tuning based on instructions and output pairs helped but not by much. With RLHF however, the process is so effective that a mere 6B parameter model (fine-tuned with RLHF) is able to surpass a 175B parameter model. Check out the InstructGPT paper for details.",t3_10lp3g4
+197,j65ojup,t3_10lp3g4,"You can check Damien Benveniste on Linkedin, i dont remember when its shared  but there is a article about Model Parallelism for training.",t3_10lp3g4
+198,j67dc19,t3_10lp3g4,"I read an article that it’s so good because they hired “almost slaves” at lowest possible price.. $2 was the rate.. don’t know if that’s per day or hour.. from some downtrodden country.
+
+And hundreds to thousands of these serfs spent their days testing and manually training it. So they apparently got hundreds of thousands of hours of human manual training, at a price that many Americans could afford by taking a mortgage against their house- and apparently they are still there manually watching and reacting to queries in real time to verify answers are decent.. while the rest of the world gives them more data for free. 
+
+So when it says the servers are busy, to wait? That could mean the humans are busy ;p",t3_10lp3g4
+199,j5ywgiz,t1_j5y6wko,"Also, Google doesn't use GPUs, they designed their own cards which they call TPUs.
+
+TPUs are ASICs designed specifically for machine learning, they don't have any graphics related components, they are cheaper to make, use less energy and can make as many as they want.",t3_10lp3g4
+200,j5y87e5,t1_j5y6wko,"People often quote Chinchilla about performance, claiming that there's still a lot of performance to be unlocked when we do not know how GPT 3.5 was trained. GPT 3.5 could very well be Chinchilla-optimal, even though the 1st version of davinci was not Chinchilla-optimal. We know that OpenAI has retrained GPT 3 due to the increased context length going from 2048 to 4096 to the apparent 8000ish tokens for ChatGPT.",t3_10lp3g4
+201,j5ya6t5,t1_j5y6wko,"This is something that I often read, that other LLMs are undertrained, but how come the OpenAI one is the only one not to be ? Datasets ? Computing power ?",t3_10lp3g4
+202,j61u7zt,t1_j60y1rn,">that's called a   
+>  
+>search engine  
+>  
+>.
+
+like bing? :D
+
+Google isn't known to develop and keep new products. When that google engineer leaked that ""sentient AI"" model, why didn't google beat the news by releasing a google-gpt with search engine capabilities?
+
+With their 150k engineers, I doubt they lack the resources to build a user-friendly version of their LLM so how come they've been sitting on their hands the whole time?",t3_10lp3g4
+203,j6bzixy,t1_j60625r,"> without increasing the dataset, bigger model do nothing better
+
+Wrong, bigger models are better than small models even when both are trained on exactly the same data. Bigger models reach the same accuracy using fewer examples. Sometimes using a bigger model is the solution to having too little data.",t3_10lp3g4
+204,j60m5ui,t1_j5y70zt,"This isn't true.
+
+The model generates 1 token at a time, and if you look at the network connection you can see it slowly loading the response.
+
+I'm pretty sure the speed the answer is returned is as fast as openAI can generate it on their cluster of GPU's.",t3_10lp3g4
+205,j5ya2af,t1_j5y70zt,I see. Interesting. I thought it was generating one by one like that. I wonder why it sometimes encounters error after generating a long text and just stops half way through the task - which happened to me frequently.,t3_10lp3g4
+206,j6c01ua,t1_j5y70zt,"> But yeah there's really no secret sauce to it.
+
+Of course there is - it's data. They keep their mix of primary training sets with organic text, multi-task fine-tuning, code training and RLHF secret. We know only in general lines what they are doing, but details matter. How much code did they train on? it matters. How many tasks? 1800 like FLAN T5 or much more, like 10,000? We have no idea. Do they reuse the prompts to generate more training data? Possibly. Others don't have their API logs because they had no demo.",t3_10lp3g4
+207,j6c0o3e,t1_j67dc19,"I very much doubt they do this in real time. The model is responding too fast for that. 
+
+They are probably used for RLHF model alignment: to keep it polite, helpful and harmless, and to generate more samples of tasks being solved by vetting our chatGPT interaction logs, or using the model from the console like us to solve tasks, or effectively writing the answers themselves where the model fails.",t3_10lp3g4
+208,j5z0rrm,t1_j5ywgiz,"You don't have to be Google to use special-purpose hardware for machine learning, either.  I work for a company (Groq) that makes a machine learning acceleration chip available to anyone.  Groq has competitors, like SambaNova and Cerebras, with different architectures.",t3_10lp3g4
+209,j5y8mo0,t1_j5y87e5,"You're right, it could be that 3.5 is already using that approach. I guess the emergent cognition tests haven't yet been published for GPT-3.5 (or have they?) so it's hard for us to measure performance as individuals. I guess someone could test text-davinci-003 on a bunch of cognitive tasks on the PlayGround but I'm far too lazy to do that :)",t3_10lp3g4
+210,j60vz8p,t1_j5ya6t5,OpenAI's models are still undertrained as well.,t3_10lp3g4
+211,j61v2f2,t1_j61u7zt,"If you believe them, model safety is why there isn't a general public release. LLMs (including chatGPT) tend to be bad at factual accuracy and can easily hallucinate. It's not obvious that you can work LLMs into a product where accuracy matters a lot. It might hurt brand image in ways that Google could not tolerate but OpenAI can tolerate.",t3_10lp3g4
+212,j6c9xf1,t1_j6bzixy,"That’s a very bold claim that flies in the face of pretty much all the research on the subject to the date.
+
+Surely you have extraordinary evidence to support such extraordinary claims?",t3_10lp3g4
+213,j5ytazq,t1_j5ya2af,"the guy above was kind of unclear, its an autoregressive langauge model so it does generate one at a time, puts it back into the input and generates the next one. It could be printed out in one go once they waitied for it to stop and then be sent to the client and pritned all at once but they went with the fancy GUI type, possibly yeah as a way to slow down spamming",t3_10lp3g4
+214,j6c0e8m,t1_j5ya2af,"They might use a second model to flag abuse, not once every token, but once every line or phrase. Their models are already trained to avoid being abused, but this second model is like insurance in case the main one doesn't work.",t3_10lp3g4
+215,j5ykwei,t1_j5ya2af,Just speculation here: maybe they store generated text in a buffer and when they run out of memory buffer can be flushed to get allocation back for other tasks.,t3_10lp3g4
+216,j60gdbl,t1_j5z0rrm,Do these also increase inference speed? How much work is it to switch from CUDA based software to one of these?,t3_10lp3g4
+217,j61tko2,t1_j5z0rrm,"Okay, so where can I buy it as a small startup for under 10k without signing any NDA for using your proprietary compiler. As far as I can see, we are all still stuck with Nvidia after 10B of funding for all these ""AI"" hardware startup.",t3_10lp3g4
+218,j5y9deu,t1_j5y8mo0,There's also the rumor mill that Whisper was used to gather a bigger text corpus from videos to train GPT 4.,t3_10lp3g4
+219,j6bz9e7,t1_j61v2f2,"Model security is the security of Google's revenues if they release the model. chatGPT is very insecure for their ad clicks, it will crash their income. /s",t3_10lp3g4
+220,j6n5mgc,t1_j6c9xf1,"Oh, yes, gladly. This ""open""AI paper says it:
+
+> Larger models are significantly more sample efficient, such that optimally compute efficient training involves training very large models on a relatively modest amount of data and stopping significantly before convergence.
+
+https://arxiv.org/abs/2001.08361
+
+You can improve outcomes from small datasets by making the model larger.",t3_10lp3g4
+221,j60q0bs,t1_j60gdbl,"I can only answer about Groq.  I'm not trying to sell you Groq hardware, honestly... I just honestly don't know the answers for other accelerator chips.
+
+Groq very likely increases inference speed and power efficiency over GPUs; that's actually its main purpose.  How much depends on the model, though.  I'm not in marketing so I probably don't have the best resources here, but there are some general performance numbers (unfortunately no comparisons) in [this article](https://www.prnewswire.com/news-releases/groq-first-to-announce-performance-advantage-results-with-stac-ml-markets-inference-benchmark-meeting-needs-of-financial-services-industry-301664184.html), and [this one](https://www.prnewswire.com/news-releases/us-army-analytics-group-confirms-1000x-performant-cybersecurity-technology-by-entanglement-ai-run-on-groq-hardware-advancing-national-security-systems-301658012.html) talks about a very specific case where a Groq chip gets you a 1000x inference performance advantage over the A100.
+
+To run a model on a Groq chip, you would typically start before CUDA enters the picture at all, and convert from PyTorch, Tensorflow, or a model in several other common formats into a Groq program using [https://github.com/groq/groqflow](https://github.com/groq/groqflow).  If you have custom-written CUDA code, then it's likely you've got some programming work ahead of you to run on something besides a GPU.",t3_10lp3g4
+222,j626c0c,t1_j61tko2,"I honestly don't know the price or terms of use, for this or any other company.  I'm not in sales or marketing at all.   I said you don't need to be Google; obviously you have to have some amount of money, whether you're buying a GPU or some other piece of hardware.",t3_10lp3g4
+223,j6n9lg6,t1_j6n5mgc,"A lot of the conclusions from that paper has been called into question by the discovery GPT-2 was actually memorizing a lot of information from the training dataset a little less than a year later: https://arxiv.org/abs/2012.07805
+
+About a year after that Anthropic came out with a paper that suggested that there were scaling laws that meant undertrained larger models did not that much better and actually did need more data: https://arxiv.org/pdf/2202.07785.pdf
+
+Finally, more recent results from DeepMind did an additional pass on the topic and seem to suggest that the relationship between the data and model size is much more tight than anticipated and that a 4x smaller model trained for 4x the time would out-perform the larger model: https://arxiv.org/pdf/2203.15556.pdf
+
+Basically the original OpenAI paper did contradict a lot of prior research on overfitting and generalization and seems to be due to a Simpson paradox instance on some of the batching they were doing.",t3_10lp3g4
+224,j61so7l,t1_j60q0bs,">convert from PyTorch, Tensorflow, or a model in several other common formats into a Groq program
+
+Are there any effort spend in adding a plugin for a high level framework like keras to automatically use groq?",t3_10lp3g4
+225,j6qz5ft,t1_j6n9lg6,"> About a year after that Anthropic came out with a paper that suggested that there were scaling laws that meant undertrained larger models did not that much better and actually did need more data
+
+Model optimality is not the same with sample efficiency. GPT-3 was found to be undertrained. But larger models get higher score when trained on the same samples.",t3_10lp3g4
+226,j62a3yv,t1_j61so7l,"I'm not aware of any effort to build it into Keras, but Keras models are one of the things you can easily convert to Groq chips using groqflow.",t3_10lp3g4
+227,j50pe93,t3_10g5r52,"Also, I think this could help improve the actual ""logic"" of the model by focusing the small LM on that task while the search part would serve the role of knowledge base.
+
+Another benefit could be the ability to cite its sources.
+
+It really seems like a no brainer to me.",t3_10g5r52
+228,j52mjrw,t3_10g5r52,"Here is a great [paper](https://aclanthology.org/2022.naacl-main.194) from IBM following the retriever-reader paradigm. Love those ""light"" models that can be specialized by switching index. 
+
+IMO the loss of ChatGPT is still interesting for retriever-reader approachs to generate either human like or structured answers from input documents. 
+
+Here is a tool I made to create retriever-reader pipeline in a minute: 
+[Cherche](https://github.com/raphaelsty/cherche), would recommend also Haystack on github !",t3_10g5r52
+229,j51wv3h,t3_10g5r52,"Retrieval should work also on entire interaction history with a particular user. Not only tracking beyond token window but having available all ""interesting stuff"" from users perspective.",t3_10g5r52
+230,j50vmjq,t3_10g5r52,"The advantage of using chatgpt is that it can give more human-like answers and doing prompt engineering is much easier than labeling a lot of data.
+
+However, I do agree that it is a very costly model, and in many applications a simpler one could be enough.
+
+I don't know for sure because Chatgpt's capabilities are currently being explored, and there are other models coming up, so there is no tellibg what the scenario will be in a few months. Maybe we will jist switch to using third party models, similarly to how no one programs their own compilers.",t3_10g5r52
+231,j50x6ad,t3_10g5r52,"Yea, unless they master continual learning, the models will get stale quick, or need to rely on iterative training, very expensive and slow. I don't see hardware catching up soon.
+
+I think you'll still need to run a fairly sophisticated LLM as the base model for a query based archetecture. But you can probably reduce the cost of running it by distilling it, and curating the input data. I actually don't think there has been a ton of research on curating the input data before training (OpenAI did something similar curating responses in chatGPT with the RLHF, so similar concept), although concerns/critiques may arise of what junk, which is why it hasn't been looked at in depth before. I believe SD did this in the latest checkpoint removing anything ""pornographic"", which is over censorship.
+
+You look at something like CC that makes up a fairly large portion of the training data, run it through a classifier to remove junk before training. And even CC text, a lot of it is probably landing type pages, or even a blocked by paywall msging. To my knowledge the percent of these making up CC hasn't even been looked at, let alone trimmed from the training datasets used.",t3_10g5r52
+232,j52k7sv,t3_10g5r52,"Yup, I fully believe retrieval of sources will go up in value over time, in addition to the benefits you have outlined. Because when lots of things are AI generated, being able to trust and see a source has value (even for some AI summary answer say)",t3_10g5r52
+233,j525hto,t1_j50pe93,"Retrieval language models do have some downsides. Keeping a copy of the training data around is suboptimal for a couple reasons:
+
+* Training data is huge. [Retro's retrieval database is 1.75 trillion tokens.](https://arxiv.org/abs/2112.04426) This isn't a very efficient way of storing knowledge, since a lot of the text is irrelevant or redundant.
+
+* Training data is still a mix of knowledge and language. You haven't achieved separation of the two types of information, so it doesn't help you perform logic on ideas and concepts. 
+
+* Most training data is copyrighted. It's currently legal to train a model on copyrighted data, but distributing a copy of the training data with the model puts you on much less firm ground.
+
+Ideally I think you want to condense the knowledge from the training data down into a structured representation, perhaps a knowledge graph. Knowledge graphs are easy to perform logic on and can be human-editable. There's also already an [entire sub-field](https://paperswithcode.com/area/knowledge-base) studying them.",t3_10g5r52
+234,j547lq2,t1_j52mjrw,"I made a tool that chops documents in chunks, creates embeddings for the chunks via GPT-3 and stores the embeddings in a REDIS database. When I make a query, I create an embedding for that and look up my stored embeddings via cosine similarity.
+
+My question is: isn't that the same as your tool does? In other words: what can you do with Cherche what I cannot do like I described? Is it that I don't need GPT-3 for the same result? Or what is it?",t3_10g5r52
+235,j55rxme,t1_j525hto,"I think the biggest reason to use retrieval is to solve the two biggest problems:
+
+* Hallucination
+* long-term memory.
+
+Make the retrieval database MUCH smaller than Retro, and constrain it to respectable sources (textbooks, nonfiction books, scientific papers, and Wikipedia. You could either not do textbooks/books, or you could make deals with publishers. Then add to the dataset (or have a second dataset) everything it sees in a certain context in production. For example, add all user chat history to the dataset for ChatGPT.
+
+Could use cross-attention in RETRO (maybe with some RLHF like ChatGPT), or just software engineer some prompt manipulation based on embedding similarities.
+
+You could imagine ChatGPT variants that have specialized knowledge that you can pay for. Maybe an Accounting ChatGPT has accounting textbooks and documents in its retrieval dataset, and accounting companies pay a premium for it.",t3_10g5r52
+236,j54l5yh,t1_j547lq2,"Your pipeline is fine! Cherche is not fancy, it just allow to create hybrid pipelines that rely both on language models and lexical matching which can help a lot. Also Cherche is primarly design for computing embeddings with Sentence Transformers which have a better ratio <precision / number of parameters>.",t3_10g5r52

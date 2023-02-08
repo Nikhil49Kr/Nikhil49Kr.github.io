@@ -1,0 +1,92 @@
+,comment_id,comment_parent_id,comment_body,comment_link_id
+0,j19m9de,t3_zsraiw,The prompts for the SEO could come from a statistical analysis of the most popular words thus making it fully automated,t3_zsraiw
+1,j19hzrr,t3_zsraiw,"Nothing personal, but I'm not really interested in helping arm the SEO space with ML tools. Advertising was sufficiently manipulating before ML was involved and it's just gotten worse since (and is only going to get worse in ways I'd rather not describe to you because I don't want to give you ideas and accelerate the problems I foresee). Get out of SEO and let's talk.",t3_zsraiw
+2,j2659n1,t3_zsraiw,You are on the cutting edge of the next evolution of SEO. Most people in the field aren't going to adopt ChatGPT generated content. There is an art to crafting a prompt. Get as much practice as you can and you might be the future of SEO.,t3_zsraiw
+3,j1d02qb,t1_j19hzrr,"Admittedly not very educated about the overlap of SEO and advertising -- I mean is it more or less than 90%? -- but you've put it more politely than most would have.
+
+AFAIC people in Internet advertisement do not contribute anything useful. Not unlike ticks that not only live off their hosts, but are actively causing harm.",t3_zsraiw
+4,j1eqk1i,t1_j1d02qb,"The unfortunate truth of our industry is that the majority of opportunities for people with our skill set are applied to problems that generally boil down to some variation of ""maximize engagement"". Just look at information retrieval research, the entire problem domain has basically been subjugated by retail. This is a topic that used to be the exclusive domain of librarians (i.e. ""informatics"").",t3_zsraiw
+5,j20sz57,t1_j1d02qb,"Fortunately, in a world of competition and innovation, people will eventually manage to get themselves out from under Google's thumb. Newer platforms (duckduckgo) and new technologies (chatgpt) will come along, enabling people to move like rats fleeing a sinking ship.",t3_zsraiw
+6,j4nmta8,t3_10dlk5d,"There are folks trying to do an open source CHAT-GPT like model based on the models you mentioned!  
+
+
+Check out Open Assistant by LAION AI on Github.",t3_10dlk5d
+7,j0vekpp,t3_zpwxgg,"Be an early adopter. Play with ChatGPT and Stable Diffusion. Get a feel for how to interact with these tools and tools like them where you use a natural language interface to interact with generative AI.
+
+Think of it like how older generations struggle to do basic things with the internet vs. how fluently younger generations who grew up with it use it. It's not just a new technology, it's a new control interface and design language. Get your hands on it and get comfortable with it as soon as you can. Speaking as an ""insider"": a lot of the people who are currently the experts in this space are not people who have backgrounds in ML: they were just early adopters of the technology and have a year or two head start using it over the majority of people. 
+
+Study the curriculum that interests you. Develop the skills that are conventionally relevant to the jobs you are interested in. For the most part that stuff hasn't changed a lot. The main thing that changed is that there is a fundamentally new technology emerging that you should get comfortable with as a *user* more than anything. Using it will also help you understand it and develop for it as an ML engineer/researcher, but first and foremost: it's super important you play with it.",t3_zpwxgg
+8,j0v61qu,t3_zpwxgg,"Nothing serious, small repetitive tasks will get automated  and everything will be online, so we need more cyber security , encryption and we can see embedded chips in everything so vlsi, chip architecture etc",t3_zpwxgg
+9,j0wyx3w,t3_zpwxgg,"I have a gut feelling that this format of an AI that can conversationally answer questions, refine your work and help with the creation of things like writing or code will end up having as big or bigger of an impact as web brosers or touchscreen based smart phones did. 
+
+I think what the future will look like will be a kind of human machine collaboration like what Kasporov advocates, which means if someone is smart they will become good at the things the machine isn't, as an example in mathematics most of what we as non math majors learn is really just computation, the very thing that computers do insanely better than a person can, meanwhile math majors learn stuff like how to solve proofs and use of theory, the part that computers arn't good at. 
+
+So being good at strategy, how to ask the right questions, how to approach problem solving creatively, advanced mathematics and probably programming just to cover bases would be the best places to start probably",t3_zpwxgg
+10,j0zefhn,t1_j0wyx3w,"> I have a gut feelling that this format of an AI that can conversationally answer questions, refine your work and help with the creation of things like writing or code will end up having as big or bigger of an impact as web brosers or touchscreen based smart phones did.
+
+I think we are 90% there to something incredibly world changing like you describe, but as mathematically incorrect as it is to say, often the final 10% of a project ends up being most of the work.
+
+For example, it feels like we've also been on the cusp of self driving cars for quite a while.
+
+Most people predicting the future end up looking like idiots, so I'm going to sit on the fence. There is incredible potential, but who knows if it will ever be realised.",t3_zpwxgg
+11,iyzzfk6,t3_zd2j77,"There are lots of algorithmic type reasoning that gpt like models can’t do, like long algebra problems. Some of them can be done by prompt engineering, like breaking down the steps of the process into simpler parts and asking for the answers one at a time. 
+
+The programming is somewhat similar to this, if you ask for something like an implementation of quick sort, that’s the type of thing that exists on GitHub and the other code repositories used to train the predictive model. But if you asked it to make a code to do something more esoteric then it likely wouldn’t be able to, especially if it required a lot of procedural reasoning.",t3_zd2j77
+12,iz0jr5q,t3_zd2j77,">Do you think the entire chat thread is fed as the input for each query?
+
+Yes.
+
+>Does InstructGPT just recollect programs? more like an advanced search mechanism?
+
+I'm not quite sure what you mean here, but it's almost certain that ChatGPT has no search capability. Models that search the internet have been created before, but there's no reason to believe this is the case here.
+
+OpenAI haven't released a paper on the details of how ChatGPT was made so we can't say for sure, but it's probably a fine-tune of GPT-3 on a variety of data. [Google Brain made a blog post last week](https://ai.googleblog.com/2022/11/better-language-models-without-massive.html?m=1) detailing their fine tuning approach that produces similar results. It could be a new model, but that's unlikely since Chinchilla got us to move focus away from larger models.
+
+There is no explicit handling for code (beyond fine tuning) or complex reasoning, all of its capabilities are emergent properties of training a large language model on lots of data.
+
+Consider about how you speak. Human language has lots of complex rules, and grammar books detailing them get very large. Despite this, you don't have to put any particular effort in to follow them, your brain just does it automatically. LLMs work the same way.",t3_zd2j77
+13,iz0sdyw,t3_zd2j77,"I'm no expert but I think understanding each of recurrent neural networks (RNN), long short term memory (LSTM) and Transformers, and the evolution would be beneficial here. From what I gather, yes, Transformers are fed all the past data at once, although I don't think they can generally take input of arbitrarily long size but I may be wrong. I haven't fully grasped Transformers yet.",t3_zd2j77
+14,iz0xwyg,t1_iyzzfk6,"> Some of them can be done by prompt engineering, like breaking down the steps of the process into simpler parts and asking for the answers one at a time. 
+
+That sounds eerily like how college professors walk their students through problems.
+
+Wonder if some future iteration of GPT-X will be able to do that breaking-down-into-simpler-problems themselves; through a technique similar to [rubber duck progamming](https://en.wikipedia.org/wiki/Rubber_duck_debugging) so it won't need a human breaking the problem into smaller parts for it.",t3_zd2j77
+15,iz3v1fx,t1_iyzzfk6,">  Some of them can be done by prompt engineering, like breaking down the steps of the process into simpler parts and asking for the answers one at a time.
+
+Sounds like what is said here: https://lingo.csail.mit.edu/blog/arithmetic_gpt3/
+
+In the above case, the carry for each step is retained and it is able to perform accurate arithmetic operations.",t3_zd2j77
+16,iz3tmfi,t1_iz0jr5q,">Despite this, you don't have to put any particular effort in to follow them, your brain just does it automatically.
+
+This thought kept recurring in my head. It is still really confusing because, ChatGPT is able to understand the meaning of each word we type! Somehow this is possible. 
+
+Maybe this feels like magic to us because we don't understand how human languages work. 
+
+I've modified my post to add a conversation I had with chatGPT. It clearly shows that it knows how to follow our instructions.",t3_zd2j77
+17,iz3vt1f,t1_iz0sdyw,They do pass on the past conversation as input. Their limit is approximately 3000 words according to post: https://help.openai.com/en/articles/6787051-does-chatgpt-remember-what-happened-earlier-in-the-conversation,t3_zd2j77
+18,iz1mclz,t1_iz0xwyg,"My guess is it would be hard for abstract tasks with long processes without any specific mechanism beyond the word prediction gpt does, but who knows!",t3_zd2j77
+19,iz1v1xq,t1_iz1mclz,"I'm curious how a simple prompt like
+
+* ""Write a dialog of a professor teaching a student how to solve [hard math problem].""
+
+might work.  That might be enough for it to break the logic into small pieces.",t3_zd2j77
+20,iz3vmpp,t1_iz1mclz,"As long as the long the input sees the entire input of this long process, it will remain coherent. 
+
+Transformer networks with multiple heads can allow multiple combination of words to ""interact"" with each other, and pass on the result to a densely connected network for each transformer block. And ChatGPT will obviously have too many transformer blocks.",t3_zd2j77
+21,itrmedp,t3_yddg0y,"I’m not sure that can be answered that directly.
+
+As far as I know dropout is used to prevent the network from overfitting. But it’s not a guarantee and you’ll just have to try and compare.
+
+But I would love to hear some others pitch in on the matter.",t3_yddg0y
+22,itvtwxt,t3_yddg0y,"Probably not, The goal of dropout layer is to build some resilience into your model. Basically prevents model from ""binding"" to one dominant feature that exists in your input data and might not exist in life data. So instead model is forced to use several features in conjunction to get a result.
+
+The output layer is your result, so model pretty much already decided the answer. Most likely dropout layers are the most important somewhere in the middle of the model.",t3_yddg0y
+23,its67b2,t1_itrmedp,"Definitely a bad idea. If it’s a classification task then sometimes you’ll just drop out your gradients. If it’s a regression task you’ll sometimes zero out your prediction, again dropping your gradients. 
+
+Actually it makes no difference whether it’s a regression or classification task, you’ll just be giving nonsense gradients p (where p is your dropout prob) percent of the time.",t3_yddg0y
+24,ittpia9,t1_its67b2,Thanks for that. Can you add when and where dropout does make sense?,t3_yddg0y
+25,itugdgm,t1_its67b2,Thanks I was suspecting it would create complications.,t3_yddg0y
+26,itus2ga,t1_ittpia9,"Anywhere besides the output. The last hidden layer before the output is very popular. But you could put dropout on every hidden layer. You could even do dropout on the input, although this is sort of like adding bernoulli noise to input whereas it's more popular to add gaussian noise, so I also wouldn't recommend it, but it wouldn't be as bad as putting it on the output.
+
+Rule of thumb is that it's best to add it to your more wide layers, so if it's like a CNN you go from 3 dims to like 64 or 512 or 1024 (depending on how large your net is), it's on those latter ones that it makes the most sense to add it to.",t3_yddg0y
+27,itvkm3p,t1_itus2ga,Thank you. Very much appreciated.,t3_yddg0y

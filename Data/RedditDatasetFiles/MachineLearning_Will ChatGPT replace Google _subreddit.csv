@@ -1,0 +1,80 @@
+,title,score,id,url,comms_num,created,body
+0,[D] Will NLP Researchers Lose Our Jobs after ChatGPT?,1,1060gfk,https://www.reddit.com/r/MachineLearning/comments/1060gfk/d_will_nlp_researchers_lose_our_jobs_after_chatgpt/,61,1673127513.0,"Recently, ChatGPT has become one of the hottest tools in the NLP area. I have tried it and it gives me amazing and fancy results. I believe it will benefit most of the people and make a significant advance in our life. However, unfortunately, I, as an NLP researcher in text generation, feel all what I have done seems meaningless now. I also don't know what I can do as ChatGPT is already strong enough and can solve most of my previous concerns in text generation. Research on  ChatGPT also seems not possible as I believe it will not be an open-source project. Research on other NLP tasks also seems challenge as using a prompt in ChatGPT can solve most of the NLP tasks.  Any suggestions or comments are welcome."
+1,[D] When chatGPT stops being free: Run SOTA LLM in cloud,340,zstequ,https://www.reddit.com/r/MachineLearning/comments/zstequ/d_when_chatgpt_stops_being_free_run_sota_llm_in/,102,1671734370.0,"Edit: Found [LAION-AI/OPEN-ASSISTANT](https://github.com/LAION-AI/Open-Assistant) a very promising project opensourcing the idea of chatGPT. [video here](https://www.youtube.com/watch?v=8gVYC_QX1DI)
+
+**TL;DR: I found GPU compute to be [generally cheap](https://github.com/full-stack-deep-learning/website/blob/main/docs/cloud-gpus/cloud-gpus.csv) and spot or on-demand instances can be launched on AWS for a few USD / hour up to over 100GB vRAM. So I thought it would make sense to run your own SOTA LLM like Bloomz 176B inference endpoint whenever you need it for a few questions to answer. I thought it would still make more sense than shoving money into a closed walled garden like ""not-so-OpenAi"" when they make ChatGPT or GPT-4 available for $$$. But I struggle due to lack of tutorials/resources.**
+
+Therefore, I carefully checked benchmarks, model parameters and sizes as well as training sources for all SOTA LLMs [here](https://docs.google.com/spreadsheets/d/1O5KVQW1Hx5ZAkcg8AIRjbQLQzx2wVaLl0SqUu-ir9Fs/edit#gid=1158069878).
+
+Knowing since reading the Chinchilla paper that Model Scaling according to OpenAI was wrong and more params != better quality generation. So I was looking for the best performing LLM openly available in terms of quality and broadness to use for multilingual everyday questions/code completion/reasoning similar to what chatGPT provides (minus the fine-tuning for chat-style conversations).
+
+My choice fell on [Bloomz](https://huggingface.co/bigscience/bloomz) (because that handles multi-lingual questions well and has good zero shot performance for instructions and Q&A style text generation. Confusingly Galactica seems to outperform Bloom on several benchmarks. But since Galactica had a very narrow training set only using scientific papers, I guess usage is probably limited for answers on non-scientific topics.
+
+Therefore I tried running the original bloom 176B and alternatively also Bloomz 176B on AWS SageMaker JumpStart, which should be a one click deployment. This fails after 20min. On Azure ML, I tried using DeepSpeed-MII which also supports bloom but also fails due the instance size of max 12GB vRAM I guess.
+
+From my understanding to save costs on inference, it's probably possible to use one or multiple of the following solutions:
+
+- Precision: int8 instead of fp16
+- [Microsoft/DeepSpeed-MII](https://github.com/microsoft/DeepSpeed-MII) for an up 40x reduction on inference cost on Azure, this thing also supports int8 and fp16 bloom out of the box, but it fails on Azure due to instance size.
+- [facebook/xformer](https://github.com/facebookresearch/xformers) not sure, but if I remember correctly this brought inference requirements down to 4GB vRAM for StableDiffusion and DreamBooth fine-tuning to 10GB. No idea if this is usefull for Bloom(z) inference cost reduction though
+
+I have a CompSci background but I am not familiar with most stuff, except that I was running StableDiffusion since day one on my rtx3080 using linux and also doing fine-tuning with DreamBooth. But that was all just following youtube tutorials. I can't find a single post or youtube video of anyone explaining a full BLOOM / Galactica / BLOOMZ inference deployment on cloud platforms like AWS/Azure using one of the optimizations mentioned above, yet alone deployment of the raw model. :(
+
+I still can't figure it out by myself after 3 days.
+
+**TL;DR2: Trying to find likeminded people who are interested to run open source SOTA LLMs for when chatGPT will be paid or just for fun.**
+
+Any comments, inputs, rants, counter-arguments are welcome.
+
+/end of rant"
+2,[D] Yann Lecun seems to be very petty against ChatGPT,0,10uw974,https://www.reddit.com/r/MachineLearning/comments/10uw974/d_yann_lecun_seems_to_be_very_petty_against/,35,1675653753.0,"I know Lecun's fanbois are gonna go after me but here it goes...
+
+I get that he is one of the *godfathers* of AI. Mostly on the research side which immediately puts him very *hostile* against engineers. But I guess it is understandable given the fact that he works on Meta and Meta has faced a lot of backlash (for good and bad reasons), most especially with Galactica where their first rollout got so bad they had to close it immediately. It's also particularly funny given his political leaning that he is very spiteful of a company that uses *open-source knowledge* and builds on top of it.
+
+Lately, his social media and statements are barrages against ChatGPT and LLM's. Sure, he may have a point here and there but his statements look very petty. Here are some examples
+
+*""By releasing public demos that, as impressive & useful as they may be, have major flaws, established companies have less to gain & more to lose than cash-hungry startups.  If Google & Meta haven't released chatGPT-like things,* ***it's not because they can't****. It's because they won't.""*
+
+*>* Except that anyone in the IT industry knows that big tech companies **cant release** something very fast because of politicking and bureaucracy in the system. It takes years to release something into public in big tech compared to startups.
+
+*""Data on the intellectual contribution to AI from various research organizations. Some of organizations publish knowledge and open-source code for the entire world to use.* ***Others just consume it.""***
+
+***>*** Then adds a graph where the big tech is obviously at the top of the race for most number of AI-related research papers (*without normalizing it to the number of researchers per org*)
+
+*""It's nothing revolutionary, although that's the way it's perceived in the public,"" the computer scientist said. ""It's just that, you know, it's well put together, it's nicely done.""*
+
+\> Except that it is indeed revolutionary in terms of the ***applied research*** framework -- *adding on top of open-source, state-of-the-art research and quickly putting it into production for people to use.*
+
+*""my point is that even* ***the engineering work isn't particularly difficult.*** *I bet that there will be half a dozen similar similar systems within 6 months. If that happens, it's because the underlying science has been around for a while, and the engineering is pretty straightforward.""*
+
+""*I'm trying to correct a \*perception\* by the public & the media who see chatGPT as this incredibly new, innovative, & unique technological breakthrough that is far ahead of everyone else.*  ***It's just not.""***
+
+""*One can regurgitate Python code without any understanding of reality.""*
+
+""*No one is saying LLMs are not useful. I have forcefully said so myself, following the short-lived release of FAIR's* ***Galactica****. People crucified it because it could generate nonsense.* ***ChatGPT*** *does the same thing. But again, that doesn't mean they are not useful.""*
+
+He also seems to undermine the rapid engineering work and MLOps that come with ChatGPT which is funny because Meta hasn't released any substantial product from their research that has seen the light of the day for a week. Also, GPT3 to ChatGPT in itself in a research perspective is a jump. Maybe not as incremental as what Lecun does every paper, but compared to an average paper in the field, it is.
+
+To say that LLMs are not *intelligent* and it just *regurgitates Python code* probably haven't used CoPilot, for example. 
+
+It's a classic case of a researcher-engineer beef. And that a startup can profit from derivatives of research that big tech has published. OpenAI broke their perspective on the profit from research. Big tech tried to produce revolutionary research papers on a surplus but never puts them into production thinking that they are the only companies that could if they want to. Then once one company created a derivative of a large research work and profited from it, it baffled them. Although people could argue that Stable Diffusion did this first in the Generative Image Space.
+
+It's one thing to correct misconceptions in the public. It's also one thing not to be petty about the overnight success of a product and an immediate rise of a company that got embraced warmly by tech and non-tech people. It's petty to gatekeep. At the end of the day, ML is not just about research, it's **applied research**. It's useless until it reaches the end of the tunnel. 99% of research papers out there are just tiny updates over the state of the art which has been a pointless race for about  a year or two, with no reproducible code or published data. 
+
+Inventing combustion engine is just as important as putting it in the car."
+3,Few questions about scalability of chatGPT [D],25,10lp3g4,https://www.reddit.com/r/MachineLearning/comments/10lp3g4/few_questions_about_scalability_of_chatgpt_d/,36,1674730099.0,"I have two questions about chatGPT. I don't come from a machine learning background. I am just a programmer. So bear with me if they sound a bit dumb.
+
+I was checking about chatGPT a bit the last week. I went through their papers and also tried out a fine tuning by myself by creating some fictional world and giving it some examples. 
+
+The first thing I wondered is what is very special about the model than the large data and parameter set it has, that other competitors can't do. I ask this because I have seen a lot of ""google killer"" discussions in some places. From what I understood from their papers I thought it is something another company with the computing power and the filtered data can have up and running in few months. I see their advantage in rolling out to the public because with feedbacks from actual users all over the world it can potentially be retrained.
+
+The second thing I wondered is its scalability. It feels to me that it is a very big challenge to keep it scalable in the future. Currently getting a long text out of it is kind of painful because it has to continuously generate. I think it is continuously calculating with the huge parameter set it has. I wonder also about new trends, if it needs to be retrained. I also used it for a fine tuning, where I created a fictional world with its own law and rules and the fine tuning took hours in the queue - so is it creating separate parameters for my case? that would be a lot considering how much parameter set they have."
+4,[D] is it time to investigate retrieval language models?,45,10g5r52,https://www.reddit.com/r/MachineLearning/comments/10g5r52/d_is_it_time_to_investigate_retrieval_language/,10,1674145043.0,"With ChatGPT going mainstream and the general push to make products out of LM, a problem remain about the cost of running such models.
+
+To me, it seems counterproductive to put both language modelling and knowledge inside the model weights. 
+
+Is it time to shift to retrieval LM like Retro to keep the cost down while offering the same products?
+
+It would possibly allow Google or others to offer a free assistant service, using embeddings similarity search to retrieve results from the Internet so the model itself could possibly even run on edge devices?
+
+What are your thoughts about that subject?"

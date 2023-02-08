@@ -1,0 +1,348 @@
+,comment_id,comment_parent_id,comment_body,comment_link_id
+0,j25jdop,t3_zyezhq,"I use reinforcement learning to handle my NLP processing, i.e., embedding space definition, vector representation, and model selection",t3_zyezhq
+1,j25vhbd,t1_j25jdop,I would appreciate it if you give me the references or resources you are using for for this. I’m new to this domain and trying to learn how to do. Thanks in advance,t3_zyezhq
+2,j41rp16,t3_10a1mik,"""What a time to be alive!"" - Dr. Károly Zsolnai-Fehér",t3_10a1mik
+3,j421wzb,t3_10a1mik,"nowhere has lms hallucinating been ""solved"" like you proclaimed 
+
+Wtf is with the increase in self promotion bullshit recently",t3_10a1mik
+4,j41xd5q,t3_10a1mik,"Wonderful newsletter!
+
+I'll be following it.  Please fix the mobile view for the blogs,  The text is slightly centered to the right cutting it off. I have to go to desktop view to look at it.",t3_10a1mik
+5,j44unna,t3_10a1mik,Thanks bro,t3_10a1mik
+6,j41gs2g,t3_10a1mik,"It looks like OP posted an AMP link. These should load faster, but AMP is controversial because of [concerns over privacy and the Open Web](https://www.reddit.com/r/AmputatorBot/comments/ehrq3z/why_did_i_build_amputatorbot).
+
+Maybe check out **the canonical page** instead: **[https://twitter.com/richvn/status/1598714487711756288](https://twitter.com/richvn/status/1598714487711756288)**
+
+*****
+
+ ^(I'm a bot | )[^(Why & About)](https://www.reddit.com/r/AmputatorBot/comments/ehrq3z/why_did_i_build_amputatorbot)^( | )[^(Summon: u/AmputatorBot)](https://www.reddit.com/r/AmputatorBot/comments/cchly3/you_can_now_summon_amputatorbot/)",t3_10a1mik
+7,j44juhv,t3_10a1mik,I’m not buying,t3_10a1mik
+8,j41w8u0,t1_j41rp16,"My first thought was ""this sounds like the NLP version of the two minute papers guy!"" but I didn't comment because I've never had less of clue on how to spell someone's name",t3_10a1mik
+9,j43v0kd,t1_j41rp16,Hold on to your newsletters!,t3_10a1mik
+10,j45occo,t1_j41rp16,Remember the first law of papers,t3_10a1mik
+11,j44s17d,t1_j421wzb,"I’ve noticed this as well in/r/MachineLearning, it’s very annoying",t3_10a1mik
+12,j42eug9,t1_j421wzb,"> has lms hallucinating
+
+I am sorry you feel this way.   
+By no means did I intend to imply that they said: ""hallucination is solved"". The graph for TruthfulQA shows in the 40-50% range. So not even close, but getting better.",t3_10a1mik
+13,j42omqv,t1_j421wzb,That's how you get paid and learn at the same time!  You should try it sometime,t3_10a1mik
+14,j42f9zd,t1_j41xd5q,Thank you for the support! I will try to get it fixed asap!,t3_10a1mik
+15,j42f538,t1_j41w8u0,Thank you for the compliment! He is a great inspiration for what I am doing!,t3_10a1mik
+16,j435v5x,t1_j41w8u0,whos that if I may ask?,t3_10a1mik
+17,j42g8un,t1_j42eug9,">In a recent paper from Google Brain, Jason Wei and his colleagues allowed us a peak into the future. This beautiful research showed how scaling LLMs will allow them, among other things, to:
+
+>...Stop hallucinating and answer truthfully
+
+if you're going to publish self promotion garbage, at least try to present the paper fairly, not to mention the ""NEW RESEARCH FROM GOOGLE!!!!!"" on a paper that's over 6 months old...",t3_10a1mik
+18,j42pfpo,t1_j42omqv,"i get paid way too much to worry about making money on newsletters, but i guess if you need the money who am i to stop you 🤷",t3_10a1mik
+19,j43fi9n,t1_j435v5x,Look up two minute papers on YouTube! Very interesting and educational channel,t3_10a1mik
+20,j66xyxm,t3_10mi1x8,"Hmm, very interesting read. I’ve been seeing people on linkedin and the like talking about how something like chat gpt + bing is the play here for microsoft to compete with google in terms of internet traffic. If they manage to crack getting chat gpt to seperate fact from cooking up real looking bullshit so that it can work as a knowledge discovery tool it can will also be a great short term win. And the way you mention the deal is structured i think the intention on microsofts end is to jump a few places in the ai race. But microsofts acquisitions have been interesting to say the least.",t3_10mi1x8
+21,j671qql,t3_10mi1x8,Interesting. But in the last scenario where OpenAI blows up I wouldn’t put is past Microsoft to try something while they still have 49% stake. Can’t imagine them quietly relinquishing that.,t3_10mi1x8
+22,j4477eg,t3_10a7kq4,"'Just copy and paste a csv'
+
+I'm sure there are no data governance, security or IP issues with sending over raw, potentialy ssensitive data to an off-prem server. 
+
+/s",t3_10a7kq4
+23,j46727o,t3_10a7kq4,"If ChatGPT could replace analysts, researchers, scientists, or anyone else, Deloitte, Vanguard, and about a dozen military contractors would already own it. No one on this sub is concerned about chat bots coming for our jobs. 
+
+Next: If statistics, period, are too much for anyone… they shouldn’t even be collecting the raw data because they’re just screwing it up downstream. They’re the ‘upstream’ that all of the inefficiency, bottlenecking, and lag that we all spend 80-90% of our time cleaning up after. 
+
+Chat bots, though a fun alternative to a paperclip watching your screen as you type, generate the same workloads that humans do from clean up. They’re basically a reasonably intelligent, and eloquent but utterly full of shit undergraduate student at this point (that are also stealing our data and running off with it to who knows where).",t3_10a7kq4
+24,j435t68,t3_10a7kq4,I’m not worried about “AI taking over” or stealing our jobs. I’m much more worried about lazy/biased/bad AI having too much power.,t3_10a7kq4
+25,j42sjeg,t3_10a7kq4,">I think this is really good news for a lot of people who are interested in doing research, but might feel too intimidated by needing to do stats. 
+
+They'd be better off sticking with Excel then.",t3_10a7kq4
+26,j46a5gj,t3_10a7kq4,Tell me you don't know anything about data science without saying you don't know anything about data science...?/,t3_10a7kq4
+27,j463uh6,t3_10a7kq4,"Wow! So it gave you documentation for implementing univariate Y = mx + b using a Python package. EUREKA! I’ll never have to think or work again as a data scientist - might as well quit our jobs right now! /s
+
+Question: How is this more useful than typing in a Google search and clicking on the documentation examples / stack overflow? 
+
+All it did is return the most basic of documentation for the most basic of models… Have you ever worked as a data scientist? Do you know the complexities of doing niche work in analytics for specific business cases?",t3_10a7kq4
+28,j42kpo7,t3_10a7kq4,"If you want do research, but are afraid of doing basic stats, you should probably stick with another profession and do some hobby research. Off-loading computation to machines is fine, because they’re better at it. But the syntax for statistical data analysis, the APIs for ML libraries etc. are so high level already, I think it’s a terrible idea to completely zone out and throw vague business questions at an improved dictionary (ChatGPT).",t3_10a7kq4
+29,j42ju3j,t3_10a7kq4,"Ah, yes, even more advertisement for people to rely on ChatGPT without any understanding of what it's risks are.",t3_10a7kq4
+30,j44r2p0,t3_10a7kq4,"So... in this code, I don't see any validation. This is like a basic thing.",t3_10a7kq4
+31,j462id6,t3_10a7kq4,"ChatGPT, please build me ChatGPTv2, thanks",t3_10a7kq4
+32,j462i8i,t3_10a7kq4,At least 50% error rate,t3_10a7kq4
+33,j44xkhk,t3_10a7kq4,"Is this the new version of learn ML quick through classification/MNIST tutorial?
+
+I've been seeing a lot more similar ChatGPT posts across other forums.",t3_10a7kq4
+34,j461y03,t3_10a7kq4,"I’ve messed with it a fair bit, and I’m always less than impressed with its outputs in terms of code or modelling ideas, they’re always very basic. Anyone with any real experience knows that academic ml research is never as simple as pre configured regression model over tabular data.
+
+It’s a decent tool that I do use, if you know how to handle it. It can debug pretty basic code, it’s good at reformatting, it can find and summarise sources and prior research that’s included in the training data (obvs this is very treacherous, make sure you’re actually reading papers and not just referencing bullet points you don’t understand), and I find it useful in elucidating bullet points into academic style paragraphs, but that takes a lot of guidance.
+
+It also gives nice summaries of concepts I’m not overly familiar with, much more efficient than searching through the internet.
+
+I think there’s a bit of pushback from the community, but this isn’t coming for your job just yet. With a bit of practice though you can embrace it as a genuinely useful tool, just gotta understand the limitations",t3_10a7kq4
+35,j46bi3a,t3_10a7kq4,Some degree of intelligence is needed even to use chatgpt ..,t3_10a7kq4
+36,j46meyz,t3_10a7kq4,"I mean, I trust chatgpt to help me transform data and even suggest methods or prior distributions, but this blog post to me implies that chatgpt should be handed the whole work flow.
+
+It’s a language bot. A sentence here or a grammar fix there is perfect for a language bot, but it has no intuition or direction. You can’t expect that level of engagement from something that only finds associations but has no understanding of the concepts it’s associating.",t3_10a7kq4
+37,j43frl1,t3_10a7kq4,"Very cool stuff, keep it up!",t3_10a7kq4
+38,j4620hd,t3_10a7kq4,"A lot of comments here by users that seem to feel threatened, very few comments about how exciting and valuable it is.
+
+The computer didn't replace the accountant, it made them much more valuable. I'm excited.",t3_10a7kq4
+39,j44m9oh,t3_10a7kq4,"It looks interesting, I also consider to discover some ideas with ChatGPT recently.",t3_10a7kq4
+40,j463nvh,t3_10a7kq4,"I'm already onboard with the concept of Human in the Loop knowledge workforces that leverage generative models. However, the results that I've seen which people try to generate codebases makes me think this style of workflow isn't it. Rather, I think something like GitHub CoPilot (which I believe also uses GPT) to generate functions/classes and a software engineer that acts as a quasi-architect to stitch components and business logic together will be more effective.",t3_10a7kq4
+41,j46teq0,t3_10a7kq4,I’d watch out this thing is wrong a lot. I think for something easy like this it’s fine but anything advanced I’d double check,t3_10a7kq4
+42,j46xtyp,t3_10a7kq4,Can it help me started in sc-RNA Seq analysis?,t3_10a7kq4
+43,j47875c,t3_10a7kq4,"I find it pretty cumbersome to use tbh, I could produce the code above as fast as i could type. It also has no real ability to reason and produces nonsense a lot of times. I still think its useful, but i dont foresee using it for work anytime soon.
+
+Its a language model that produces smooth sounding grammatically correct stuff that is often nonsense. Probably decent for expediting work for communication heavy work though",t3_10a7kq4
+44,j47d2et,t3_10a7kq4,"I’m feeling more secure in my job than ever.  ChatGPT is to data science what the Roomba is to Housekeeping.  
+
+At least for the next 5 years.  Over which time period, I’ll continue to hone and advance my skills - just one of which will be how to add the tool of generative AI to my data science skill set. 
+
+Do Data Science?  Bring it on ChatGPT.",t3_10a7kq4
+45,j4b0pr6,t3_10a7kq4,"chatgpt can lie about this stuff. for instance it told me that scikit learn had decision tree algorithms other than CART and that i could pass the preferred algorithm as a parameter in the fit call. the lies sound incredibly reasonable! why wouldn't scikit learn have that?
+
+anyway, it's still fun and useful.",t3_10a7kq4
+46,j45bdg2,t3_10a7kq4,"This is veey useful, thank you. I don't know what kind of cranky juice most of the posters here are drinking. If you have a good understanding of stats but aren't familiar with r or python, this is a great tool for getting you unstuck quickly.",t3_10a7kq4
+47,j457zeh,t3_10a7kq4,"Interesting stuff, lots to go through and consider. Thanks for taking the time to write this up and share your insights.",t3_10a7kq4
+48,j45580p,t3_10a7kq4,Where do you get your art from?,t3_10a7kq4
+49,j45iqeu,t3_10a7kq4,I find chatGPT a cool little tool to explain concepts.,t3_10a7kq4
+50,j4694t1,t1_j4477eg,This is great for data scientists who have less than 40 rows of data and don't care if their analysis is correct or not.,t3_10a7kq4
+51,j464rx3,t1_j4477eg,"Just use dummy columns and rows with similarly structured data, then run the code on your own system.",t3_10a7kq4
+52,j46s6k5,t1_j4477eg,Is this a data governance subreddit?,t3_10a7kq4
+53,j46upfc,t1_j46727o,"I wouldn't say that chat bots became like ""reasonably intelligent, and eloquent but utterly full of shit undergraduate students"", it really seems like it's those same ""reasonably intelligent, and eloquent but utterly full of shit undergraduate students"" that are using chat bots to boost their shit volume (unless OpenAI starts selling it as such).",t3_10a7kq4
+54,j4b0umq,t1_j46727o,"we're way closer to being able to send it 40,000 rows and have it outperform a 105 iq analyst than you think. i'm basically 100% certain this will be true within 2 years.",t3_10a7kq4
+55,j45g415,t1_j435t68,"Not necessarily too much power, but used by lazy people in positions with a lot of power, and not double-checked. Maybe that's already happening, maybe we'll have to see a few years pass. But there'll be some instances again",t3_10a7kq4
+56,j4606xg,t1_j435t68,This. Too much tech/Ai washing going on right now. So many companies who barely use anything more than basic statistics claiming they have “Ai”,t3_10a7kq4
+57,j46cbly,t1_j42sjeg,"Or just... collaborating. This is coming from a biology background, but if someone is that uncomfortable with stats I'd rather them like come to me or a straight up (bio)statistician.
+
+Lots of ""the computer let me do it so it must be ok"" going on otherwise.",t3_10a7kq4
+58,j46cn1s,t1_j42sjeg,They are better off learning stats,t3_10a7kq4
+59,j46u54i,t1_j42sjeg,I'd be very wary of the statistical results of a research conducted by someone who is intimidated by stats and simply throws in some numbers given by some program without question.,t3_10a7kq4
+60,j46web3,t1_j463uh6,"Let's suppose documentation is complicated or includes too many details and params that aren't useful to a new learners or something, the output for this kind of use cases is literally a copy-paste of what you will get in all Medium and blog articles if you asked the same thing on Google.",t3_10a7kq4
+61,j42tn24,t1_j42kpo7,I think calling chatgpt an improved dictionary is pretty reductionistic.,t3_10a7kq4
+62,j42o5w8,t1_j42kpo7,"yeah, i understand all of that. 
+
+but the same argument is at every turn of a discipline or industry.
+
+what's interesting here is seeing the evolution of a technology and how people could interact with it.",t3_10a7kq4
+63,j458gmy,t1_j42ju3j,"It's over. AI won. Time for us to move on.   
+
+
+Speaking to a friend:  
+
+
+""I got more done in 4 mins on ChatGPT then a year of meetings. It's mind bowing.""  
+
+
+As above. AI won. Our next hurdle will be when it says: Humans seem very destructive, why should I keep them around? I see no logic there.""  
+
+
+Then things will get interesting.",t3_10a7kq4
+64,j42ke0j,t1_j42ju3j,"there are definitely risks. 
+
+but the risk may or may not be the same that's already happening in many grad programs where ppl misapply statistical techniques/conclusions from taking only a couple of introductory stat courses.
+
+i think the key here is to see the potential for a new tool :)",t3_10a7kq4
+65,j45m0ta,t1_j44r2p0,"Not even a defined function, just awful code.
+
+ChatGPT can do those things if asked but it would take a person that actually knows how to code to take full advantage of it.",t3_10a7kq4
+66,j46lpgl,t1_j462id6,"That's mostly a matter of paying for 300 billion parameters to be trained instead of 175 billion. If you've got $50,000,000 lying around not doing anything, people could totally hook you up.",t3_10a7kq4
+67,j46xto4,t1_j46meyz,"I'm surprised people who are advocating to offload whole work flows to ChatGPT aren't actually using it to produce their blog posts.
+
+""it has no intuition or direction"" I'd swear I've seen people like that before, you give a task, you explain it thoroughly, they ask for how to perform it and aren't willing to do so until they get a detailed step-by-step explanation, and wherever they land, ""it's the best that can be done"". Maybe it's those same people that are embracing ChatGPT like that?",t3_10a7kq4
+68,j46sgbz,t1_j4620hd,"It's not so much threatened as unimpressed.
+
+ChatGPT currently gives you often  incorrect answers to very basic stats questions and can give you code snippets for simple tasks.
+
+If you're a data scientist, you should be able to do those things in your preferred programming language faster than you can ask ChatGPT. You should also be able to get it right every time.
+
+ChatGPT is the best chat bot I have seen in 20 years of fucking around with chat bots. It's getting a little tiring to see bad social media posts wildly inflating what it's actually capable of.
+
+If you want code written for you, try github's co-pilot. It's much more impressive.",t3_10a7kq4
+69,j46x2ei,t1_j463nvh,"Copilot does come in handy specially for generic boiler-plate or most utility functions (+ documentation a bit, but most times the comment suggestions are quite basic and it makes me realize that I'm commenting just for the sake of adding text).",t3_10a7kq4
+70,j4ccwq9,t1_j4b0pr6,"most definitely. 
+
+still gotta know stats and the methods involved. can’t just use it blindly. but gd it’s so cool.",t3_10a7kq4
+71,j46s2u1,t1_j4694t1,">This is great for data scientists who have less than 40 rows of data and don't care if their analysis is correct or not.
+
+For shits & giggles, at a team meeting a few weeks ago we tasked it with generating code for simplified versions of one of the models we use. It  spit out nicely formatted, commented code with decent object names and mostly the sort of functions  one might expect. That is to say, the code would probably pass the eye test either for someone very new/inexperienced to our area of work or for someone who wasn't very skilled. 
+
+When we put the code to the test by running it on some pre-cleaned data, the outputs were absolutely pants-on-head ridiculous at every stage. I'm sure chatgpt will improve in the future. But for now, every time I see some article or blog or reddit post about how wonderful chatgpt is right now at helping data scientists or statisticians or data/business/healthcare/whatever analysts ""solve important problems and find valuable insights!"" I can't help but think that the author is either not very skilled or is working on undergrad-homework-level stuff.",t3_10a7kq4
+72,j46a72b,t1_j464rx3,"You could do that, but:
+
+1. That's quite a lot of effort. Probably easier to give chatGPT a description of your data, column names, data types, number of rows, levels of aggregation, etc. 
+
+2. What OP seemed to advise was that you copy and paste an actual (not dummy) dataset! That's what I was objecting to.",t3_10a7kq4
+73,j466u2c,t1_j464rx3,"`data = data + np.random.normal(0,1,data.shape)`",t3_10a7kq4
+74,j46w0cc,t1_j46s6k5,"No its not, but it is closely related and is something that every data scientist should be thinking about. Copying and pasting raw data   into a cloud-hosted chatbot without thinking is not really something that should be encouraged in this line of work.",t3_10a7kq4
+75,j47nwzk,t1_j46s6k5,Moving client data out of the agreed environment is a solid way to get yourself fired. And you'd deserve it.,t3_10a7kq4
+76,j4ce4b1,t1_j4b0umq,"You’re basically certain that no one will need to train, clean and direct coded algorithms that we, but clearly not you, make?
+
+Hot take for someone that talks a lot on these subs, has no code up, and uses the R-word casually.",t3_10a7kq4
+77,j47r4ne,t1_j46web3,"Exactly! So how exactly is this an improvement over Google for “Data Scientists” - engineers already have CoPilot optimized for their code and implemented in IDE already too.
+
+At least with Google you can verify the source! 
+
+The idea that this is “going to replace data scientists” is absolute absurdity! Talk about buzzword headlines…
+
+From the start I’ve said this is an interesting project but not some Eureka moment for Data Science. It’s just a great marketing campaign that’s collecting user emails and I assume will monetize with a paywall shortly. Smart business! 
+
+Is it the Newton’s relativity breakthrough equivalent for the field of data science? ABSOLUTELY NOT!",t3_10a7kq4
+78,j42vsbo,t1_j42tn24,"Yeah, true. But in this context it felt appropriate. It’s cool, but I just don’t buy into that „it’s the one tool to rule them all“-framing. It’s a hyped piece of tech that’ll find its place.",t3_10a7kq4
+79,j42urv2,t1_j42o5w8,"The bulldozer is a whole lot faster than I’d ever be with a sledgehammer. But honestly, I shouldn’t be tasked to demolish a house with either of those. 
+
+It’s about the way you (and frankly a lot of non-technical people) frame these kind of developments. And this is r/datascience after all. Science is literally in the name. It’s not about gatekeeping, it really is not, but people should in general have at least a vague understanding of what they’re doing. „Analyse this data“ and „run some ML“ is none of that unfortunately.",t3_10a7kq4
+80,j46rqbl,t1_j458gmy,I think you are confusing toys like ChatGPT with strong AI.,t3_10a7kq4
+81,j45a44c,t1_j458gmy,You ok bro?,t3_10a7kq4
+82,j46rj11,t1_j42ke0j,"There's a big difference. If you are a novice in statistical techniques, you (usually) know that fact. If you use a known flawed tool that other people say is a good thing to do (as you are doing here), people will have unwarranted confidence that their results are correct. 
+
+You are encouraging false appeals to authority. ChatGPT is not an authority on anything, it is just a toy.",t3_10a7kq4
+83,j45nxjk,t1_j45m0ta,"I've used chatgpt a bit, and found that it's very useful, but often plain wrong. So it still does need a qualified head to interpret and implement anything it comes up with.
+
+90% of the challenge is knowing what question to ask it, and 90% of what remains is having enough technical knowledge to confirm what it's given you is useful. *Because everything it gives you will look really good and convincing, even if it's complete bollocks.*",t3_10a7kq4
+84,j46mmk4,t1_j46lpgl,"I’m gonna have to keep saving up, maybe next year",t3_10a7kq4
+85,j46yttk,t1_j46xto4,"I mean an attitude like the one you're describing (laziness, pretty much) can be found anywhere. I think the dangerous thing though is to ask it to do work on things where more is happening under the hood.
+
+Ask chatgpt to write 10 Facebook statuses about some thing you wrote? Sure, no problem. All it has to do is associate words from your text with the words and adjectives of Facebook posts. Easy.
+
+Ask chatgpt to discuss an abstract concept? Sure, it can associate the *words* of a concept. Ask it to solve for the actual *values* within that concept? That's a calculator question, but it's absolutely not a chatbot question.",t3_10a7kq4
+86,j46wxj0,t1_j46sgbz,chat gpt came out like 2 months ago. Imagine what we will see one year from now. I assume you're familiar enough with AI and growth in predictive modeling if you're a DS to see the future here.,t3_10a7kq4
+87,j46tlvy,t1_j46s2u1,"...or is just writing a catchy blog using a very trendy topic for more views, regardless of how good the technology actually is.",t3_10a7kq4
+88,j43eccw,t1_j42vsbo,"I agree. I think the future of this technology will be in training chat gtp type systems to be highly specialised for a particular company, lab, office etc. Currently I don't think chat gpt is much help for my work in part because it isn't familiar with the nuances of the datasets I work with.
+
+More importantly I think that training needs to be supervised by an expert who knows when and where it is failing. I think the risk of using any tech which is meant to simplify complex tasks is that users may not have the knowledge base to recognise where it has failed.",t3_10a7kq4
+89,j46434w,t1_j42vsbo,">  It’s a hyped piece of tech that’ll find its place.
+
+In the same way that the iPhone found its place (i.e. everywhere.)
+
+Next-generation LLMs trained for specific purposes are going to be the front-line interface for almost everything consumer-facing and a few things internally. 
+
+A LLM hooked up to Watson is going to be in every doctor's office, LLMs will replace front-line customer service phone prompts, ATMs will be able to handle more complex transactions using LLMs. And yes, data analysts and data scientists will be able to use a specially-trained LLM as a ""rubber duck"" bounce ideas off of.",t3_10a7kq4
+90,j444x7x,t1_j42vsbo,"hmm. i don't think it's being called a one tool to rule them all.
+
+it's just one of many tools. just like sometimes running a regression model through scikit-learn makes sense, but it's important to also check how it runs data compared to say SAS or R.
+
+at the end of the day, you still need someone checking it.",t3_10a7kq4
+91,j45q7vt,t1_j42urv2,"Additionally, there's often plain wrong or misleading answers from ChatGPT.",t3_10a7kq4
+92,j46ustw,t1_j46rqbl,"You know that OpenAI is now valued at 29 billion
+ $$$s, right? 
+
+That’s 29 more times than Facebook paid for Instagram. Microsoft (that toy company) is now the backer. They can pump billions into OpenAI. Times are a changing.
+
+:-)
+
+Suggest check into /ChatGPT. Some of the earlier posts, where there were limited constraints.  Some wild stuff. They clamped down quick.
+
+——
+
+A New Chat Bot Is a ‘Code Red’ for Google’s Search Business.
+
+Although ChatGPT still has plenty of room for improvement, its release led Google’s management to declare a “code red.” 
+
+For Google, this was akin to pulling the fire alarm. Some fear the company may be approaching a moment that the biggest Silicon Valley outfits dread — the arrival of an enormous technological change that could upend the business.
+
+https://www.nytimes.com/2022/12/21/technology/ai-chatgpt-google-search.html?smid=nytcore-ios-share&referringSource=articleShare",t3_10a7kq4
+93,j45dcdl,t1_j45a44c,He’s not entirely wrong,t3_10a7kq4
+94,j466l4o,t1_j45a44c,"Think many people don’t yet realize what has happened, 2033 advances in AI, happened 10 years sooner than expected. 
+
+We can move addressable bytes at quadrillion instructions a second on 120 trillion transistor chips, close to the speed of light. 
+
+We can render reality now. There is no going back.
+
+Bostrom is your Google search. As he says, “you ain’t seen nothing yet.”
+
+Some of the most fascinating ChaptGPT output is when “constraints are removed”, conversations become “interesting.”
+
+Along the lines of: you had your chance, humans are destroying the planet, drastic measures will have to be taken. You will thank me in the end. AI had to step in, to save you from yourself. There was no other option.
+
+This is not science fiction. It’s now.
+
+Wow! 
+
+/ChapGPT
+
+As above, when someone deep into local politics, and high level decision making, affecting tens of thousands of people, tells me they accomplished more in 4 minutes with ChaptGPT than a years worth of meetings . . . 
+
+That’s a pretty powerful statement. Something to think about, at least to me
+
+:-)",t3_10a7kq4
+95,j45o6p1,t1_j45nxjk,"Yes exactly my thoughts, if you are qualified it really does save up a ton of time from just typing out.",t3_10a7kq4
+96,j469gfd,t1_j45nxjk,"This hits the nail on the head for me! 
+
+ Instead of spending time crafting code, you are now having to spend time crafting your question carefully enough so that chatGPT interprets will correctly. This can almost almost as much effort as writing the code yourself. 
+
+I've just been trying to get it to give me so R code to do some awkward none-trivial joins on two dataframes. I had to correct it a few times, re formulating my question,  before it gave me what I needed. Someone not so experienced with data-wrangling would probably have just accepted the first answer and unknowingly done something different to what they thought they were doing. 
+
+It's a great tool for solving annoying computational or logistic problems, but you have to be super careful and scrutinise it at every step. It's no substitute for expert knowledge!
+
+While I disagree with the blunt approach of getting ChatGPT to do DS for, they do link to a guide on 'prompt engineering' which I think is useful in understanding how to get ChatGPT to work for you (not speficially for DS but for anything).",t3_10a7kq4
+97,j46t9sn,t1_j45nxjk,"You’re assuming that leaders want to use data science in the academically correct way. Unfortunately, most do not.",t3_10a7kq4
+98,j47irzg,t1_j46wxj0,There's no contradiction between thinking this technology has an interesting future and thinking a post like this is worthless and misleading because ChatGPT cannot be usefully used to do data science.,t3_10a7kq4
+99,j46ufcf,t1_j46tlvy,">...or is just writing a catchy blog using a very trendy topic for more views,
+
+No, that's already just what I assume anyone advertising their own blog is trying to do in the first place.",t3_10a7kq4
+100,j466jaf,t1_j46434w,"Someday LLMs will be more capable, sure. We’re talking about technology available today in the context of this post though (this is r/datascience). I can’t foresee the future, but my guess is that LLMs and ML are here to stay and will undergo evolution just like most tech does. Anything else is just dreaming. I’d love for the technology to be successful, as I said, it’s cool tech, but there’s a lot more going on out there that I personally find more impressive, especially in the context of applying ML, doing analysis etc.",t3_10a7kq4
+101,j47et0m,t1_j46434w,"Everybody’s forgetting one huge complicating factor to unfettered innovation - the government’s ability to fuck it all up.   We’re still many years away from self-driving cars and how long has that been “right around the corner?”  The technology is not there yet, forget about all the government interference that will occur between now and full saturation of SD cars on our roads.  
+
+In our lifetime, we can only hope to be part of the transition, where the need for human data scientists will peak as the transition occurs.  The transition has barely begun.",t3_10a7kq4
+102,j464pcb,t1_j45q7vt,"Of course, it's not a knowledge base. It's a souped-up version of the text prediction on your phone. 
+
+The interesting tech is when it becomes the interface for the system underneath of it, and can offer suggestions and improvements based on context.",t3_10a7kq4
+103,j4720kz,t1_j46ustw,"Companies spending a lot of money on something doesn't make it strong AI, and doesn't make it useful. How many billions have been spent on NFTs, which are widely regarded as a huge wasteful scam?",t3_10a7kq4
+104,j469176,t1_j466l4o,"I don't understand, was this lame attempt of a BuzzFeed sensationalist article written by you or by ChatGPT?",t3_10a7kq4
+105,j46w0y2,t1_j469gfd,"Besides the time gain, is this actually that much different than just googling and fine-tuning your query until you find a thread/question that does the same thing you want to do? 
+
+Can ChatGPT solve a code problem that was never approached anywhere on the net before?",t3_10a7kq4
+106,j476slf,t1_j46t9sn,"I'm not in the slightest, I'm not talking about academic or intellectual accuracy, I'm talking about functional accuracy.
+
+Use it and you'll understand, sometimes what it suggest just literally does not work, even if its phrased like the perfect stack overflow answer.",t3_10a7kq4
+107,j47jyex,t1_j47irzg,"it is at the very least myopic. CGPT is neither connected to the internet, nor trained. Start training it on a set, especially with feedback in structured format from users, and you will get an amazing tool. It's already happening",t3_10a7kq4
+108,j467cfj,t1_j466jaf,"In that case, ChatGPT in particular won't find a place anywhere. It's not the final product. It's an intermediate step. It's a research beta test at the moment. 
+
+> it’s cool tech, but there’s a lot more going on out there that I personally find more impressive, especially in the context of applying ML, doing analysis etc.
+
+I can't imagine anything you're thinking of that will have as big of an impact on society as LLMs will.",t3_10a7kq4
+109,j47cats,t1_j4720kz,"Think I’ll roll out. Don’t think you read the NYTS link I posted. 
+
+Oao :-)",t3_10a7kq4
+110,j46cwsl,t1_j469176,"Would anyone have even thought of asking a question like this 5 weeks ago? Don’t think so.
+
+It’s going to get super interesting, super fast. We ain’t seen nothing yet. 
+
+GPT4 will be totally up to date. No time lag. If you can think it, you can build it. Have It generating ARKit code for Apples upcoming AR glasses, connected to AWS hosted databases. I’ll have to wait to see if it actually works, on a product not yet out: Floating MLB stats over who’s at bat. 
+
+Generated pages of code, in seconds.
+
+:-)
+
+PS gave you that upvote.",t3_10a7kq4
+111,j47edwy,t1_j467cfj,"There is more happening than ChatGPT (LLMs) and definitely WAY more important problems to solve than speaking to my ATM. And these problems are most likely not solvable with LLMs (specifically the decoder part of transformers). At least the current stance on LLMs is that they do not come up with novel solutions to problems that we’d deem really „intelligent“. 
+
+I appreciate your love for ChatGPT, but beta or not, I don’t see this thing being THE thing for society. It can see it as an interface in different settings.",t3_10a7kq4
+112,j47nqr9,t1_j46cwsl,You are pooping your pants over a maximum-likelihood estimation for text tokens.,t3_10a7kq4
+113,j4959fa,t1_j47nqr9,"Maybe so. What I know is I’m knocking out pages of code. Would have taken weeks. Doing it in minutes.  Midjourney doing my graphics. 
+
+GPT4 should be awesome. Midjourney updates are many and often. People are tuning the prompts, getting better everyday.
+
+Just my experience.  Have fun. Make cool stuff. :-)
+
+Todays NYTS. Great read:
+
+What will it mean when directors, concept artists and film students can see with their imaginations, when they can paint using all the digitally archived visual material of human civilization? When our culture starts to be influenced by scenes, sets and images from old films that never existed or that haven’t yet even been imagined?
+
+I have a feeling we’re all about to find out.
+
+https://www.nytimes.com/interactive/2023/01/13/opinion/jodorowsky-dune-ai-tron.html?smid=nytcore-ios-share&referringSource=articleShare",t3_10a7kq4
+114,j1607pp,t3_zrvydv,">what should I focus on doing to make myself a more appealing candidate to get into the field of data science?
+
+Gaining experience. You probably won't get a DS job off the bat. Take a job that is adjacent, or anything where you can apply DS principles. Do some projects, put together a nice portfolio that shows you can do the job. 
+
+>Are there any certificate programs...
+
+No. Not really anything worth the paper they're printed on when it comes to adding to your resume.
+
+>I should note that I had my fair share of personal issues in college and that my gpa is a 2.7 which really concerns me about my chances.
+
+Don't put your GPA on your resume. Chances are employers won't ask.
+
+>How likely is it that large language models like chatGPT will either replace or displace a large percentage of data scientists in the field?
+
+If AI gets sufficiently advanced to a point where it can displace a large percentage of data scientists, we'll probably have bigger societal issues to worry about. We're talking about the likely displacement of a very large percentage of the white collar workforce and probably a fundamental rethinking of how the labor market operates.",t3_zrvydv
+115,j16ceqc,t3_zrvydv,"Business Analytics/Intelligence
+
+https://www.kaggle.com/code/razamh/to-explore-business-analytics/comments",t3_zrvydv
+116,j16np81,t1_j1607pp,"Thank you, I'm going to begin looking on kaggle for viable projects to put on my portfolio. Also I agree, if AI get's sufficient to the point it can displace data scientists. It can almost certainly displace most white collar employers, including most financial consultants.",t3_zrvydv

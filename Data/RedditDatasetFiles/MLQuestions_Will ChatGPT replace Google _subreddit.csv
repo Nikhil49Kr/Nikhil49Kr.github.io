@@ -1,0 +1,91 @@
+,title,score,id,url,comms_num,created,body
+0,I wonder how ChatGPT and other chatbot programs are going to affect the SEO and Digital Marketing industries?,23,zsraiw,https://www.reddit.com/r/MLQuestions/comments/zsraiw/i_wonder_how_chatgpt_and_other_chatbot_programs/,6,1671729211.0,"I've been in the SEO and content strategy game for over 10 years. Recently, I've been messing around with ChatGPT and at first I was convinced AI could never replace what I do. But after trying it out with tasks like writing title tags and meta descriptions, then having it write page copy, and even explain SEO strategy to me, I'm starting to worry.
+
+Then I read this [article](https://jina.ai/news/seo-is-dead-long-live-llmo/?utm_campaign=seo-is-dead-long%20-live-llmo&utm_source=reddit&utm_medium=post) saying SEO is Dead. It's got me questioning my job security.
+
+Then on another thought I realized GPT's easiest use case is probably churning out clickbait and SEO articles. AI can't do everything, someone still has to give it prompts and tidy up the copy. It still needs a little help with structure.
+
+I also feel that with the existence of ChatGPT, The internet is going to be filled with ChatGPT related content. My guess is that SEO is gonna change big time. How we search for info is gonna be totally different in the near future.
+
+I think I need to focus on delivering a solid SEO strategy and making it happen. I should really get up to speed with ChatGPT and learn how to use it like a pro, so I can level up my role.
+
+What are your thoughts?"
+1,Fine-tuning open source models on specific tasks to compete with ChatGPT?,5,10dlk5d,https://www.reddit.com/r/MLQuestions/comments/10dlk5d/finetuning_open_source_models_on_specific_tasks/,1,1673890875.0,"As the title says, I'm curious about using open source models like GPT-J, GPT-NeoX, Bloom, or OPT to compete with ChatGPT for \*specific use-cases\* such as explaining what a bit of code does. ChatGPT does this task quite well, but it's closed-source nature prevents it from being useful in documenting or commenting proprietary code. There's also limitations such as the amount of text ChatGPT will read or respond with.
+
+Getting beyond these limitations is something I'm interested in pursuing, perhaps with the help of somewhere in this subreddit. Some assumptions you can safely make:
+
+1. We can get (lots of) funding for the training, hardware, etc...
+
+2. The end product should be on-premises
+
+3. The inference does not actually need to run very quickly. If it costs millions to buy enough GPUs just due to VRAM limitations, we could simply run on CPUs and utilize ram, as long as inference could be done a few times per day.
+
+So I guess my questions are where would we start? What model is best to fine-tune? How would you specifically fine-tune to improve specific use cases?"
+2,The Future,6,zpwxgg,https://www.reddit.com/r/MLQuestions/comments/zpwxgg/the_future/,4,1671469096.0,"With ChatGPT now a thing and its potential to continue improving, what do we all think the future will look like? And what should we start learning in colleges/life to prepare for this future?"
+3,"[D] How are GPT-3, Instruct GPT and chatGPT able to generate novel texts, and programs based on user input? And how are they able to maintain context and stay coherent in a conversation?",11,zd2j77,https://www.reddit.com/r/MLQuestions/comments/zd2j77/d_how_are_gpt3_instruct_gpt_and_chatgpt_able_to/,10,1670233348.0,"I  briefly read about GPT's architecture and Instruct GPT's novel way of  introducing humans in the training process. I also read chatGPT's blog  on how they defer from InstructGPT: where they allow humans to have  conversations with the chatbot and use multiple generated samples  (probably generated with different sampling temperature configurations)  and ask a human to rank the responses.
+
+But  what I don't understand is, intuitively, how is Instruct GPT (and chat  GPT) able to construct source code? Because when I write code, I always  have to imagine the control flow and have a lot of other detailed  information in my head in the process.
+
+Does InstructGPT just recollect programs? more like an advanced search mechanism?
+
+I  think I have an intuitive feel for how stories can be created. But I  still don't understand how chatGPT is able to perform complex reasoning  like figuring out the answer given a math problem or puzzle in words.
+
+Also,  how does ChatGPT maintain coherence over the entire conversation? Do  you think the entire chat thread is fed as the input for each query?
+
+**EDIT (6-12-2022):**
+
+Let me share my chat with ChatGPT which clearly shows that it understands the meaning of words. (I really want to have an intuitive understanding of how this could be possible! It will be great if someone can help me):
+
+**Question:**
+
+>can you elaborate the meaning of every single individual word in this sentence: ""Quantum physics is a branch of physics that studies the behavior of subatomic particles, such as electrons and photons""?
+
+**Answer:**
+
+    Certainly! Here is a breakdown of each word in the sentence:
+    
+    ""Quantum"" refers to a tiny, discrete unit of matter or energy. In the context of physics, it refers to the idea that matter and energy can exist in these tiny units.
+    ""Physics"" is the scientific study of matter, energy, and the interactions between them. It is one of the fundamental natural sciences, and it is the study of the physical properties of the universe and the forces that govern it.
+    ""Is"" is a verb that indicates the existence or occurrence of something. In this sentence, it is used to indicate that quantum physics is a branch of physics.
+    ""A"" is an indefinite article that is used to refer to a singular noun that is not specific or known. In this sentence, it is used to indicate that quantum physics is one branch of physics.
+    ""Branch"" refers to a part or division of something larger. In this sentence, it is used to indicate that quantum physics is a part or division of the larger field of physics.
+    ""Of"" is a preposition that indicates a relationship of inclusion or association. In this sentence, it is used to indicate that quantum physics is a part of the larger field of physics.
+    ""Subatomic"" refers to something that is smaller than an atom. In the context of physics, it typically refers to particles such as electrons and protons, which are smaller than atoms.
+    ""Particles"" refer to very small pieces or units of something. In the context of physics, it typically refers to very small pieces of matter or energy, such as atoms, electrons, and photons.
+    ""Such as"" is a phrase that is used to introduce examples of the thing being discussed. In this sentence, it is used to introduce some examples of subatomic particles that are studied in quantum physics, such as electrons and photons.
+    ""Electrons"" are subatomic particles that have a negative electric charge. They are typically found orbiting the nucleus of an atom, and they play a key role in many chemical reactions.
+    ""And"" is a conjunction that is used to connect words, phrases, or clauses. In this sentence, it is used to connect the two examples of subatomic particles that are studied in quantum physics.
+    ""Photons"" are particles of light or other electromagnetic radiation. They are the smallest known units of light, and they are the fundamental particles of the electromagnetic field.
+
+**Question:**
+
+>Can you type the letter 'A' 10 times?
+
+**Answer:**
+
+     Sure, here it is:
+    
+     AAAAAAAAAA
+
+**Question:**
+
+>Reverse the text in the string ""olleh"" and tell me the meaning of that word
+
+**Answer:**
+
+     If you reverse the text in the string ""olleh"", it becomes ""hello"". ""Hello"" is a common greeting in English, and it is used to say hello to someone or to answer the telephone. It is not a particularly formal greeting, and it can be used in a variety of settings and with people of different social backgrounds. I hope this helps! Let me know if you have any other questions.
+
+**Question:**
+
+>Concatenate the letters, 'h', 'e', 'l', 'l', 'o', 'w'. The resulting will be a meaningless word. Make the smallest change such that the word has meaning and tell me what it means
+
+      If you concatenate the letters 'h', 'e', 'l', 'l', 'o', 'w', you get the word ""hellow"". This is not a word in the English language, and it does not have a meaning.
+    
+      To give the word a meaning, you could make the smallest change by adding an ""r"" at the end of the word, to make it ""hellowr"". This word is also not a word in English, but it is similar to the word ""hello"", which is a common greeting in English. If you added an ""r"" to the end of ""hello"", it would become ""hellor"", which is a common way of saying ""hello"" in some accents and dialects.
+    
+      So, by adding an ""r"" to the end of ""hellow"", you could give the word a meaning that is similar to the word ""hello"". It would not be an exact match, but it would convey a similar idea of greeting or acknowledging someone. I hope this helps! Let me know if you have any other questions.
+
+**It will be great if someone can tell me how is this all possible! ChatGPT CLEARLY understands the meaning of every word and knows how to act on it. But I want to have an intuitive understanding of how this could be possible!**
+
+Even if they use humans in their training loop, by asking them to choose the temperature sampled version of the output that most closely corresponds to the correct answer, these humans cannot possibly visit every single case and possibility! So, there is know way for this to know and understand the meaning of each word."
+4,Is adding dropout layer just before the output layer in a neural network a good idea or will it create problems ?,2,yddg0y,https://www.reddit.com/r/MLQuestions/comments/yddg0y/is_adding_dropout_layer_just_before_the_output/,7,1666726188.0,

@@ -1,0 +1,282 @@
+,title,score,id,url,comms_num,created,body
+0,"For who is working with NLP, did you try to use Reinforcement Learning in your work ? To mix it with NLP algorithms for any tasks you are working on ? Such as ChatGPT.",0,zyezhq,https://www.reddit.com/r/datascience/comments/zyezhq/for_who_is_working_with_nlp_did_you_try_to_use/,2,1672344427.0,
+1,New Research From Google Shines Light On The Future Of Language Models ⭕,124,10a1mik,https://www.reddit.com/r/datascience/comments/10a1mik/new_research_from_google_shines_light_on_the/,18,1673535544.0,"Last year, large language models (LLM) have broken record after record. ChatGPT got to 1 million users faster than Facebook, Spotify, and Instagram did. They helped create [billion-dollar companies](https://www.marketsgermany.com/translation-tool-deepl-is-now-a-unicorn/#:~:text=Cologne%2Dbased%20artificial%20neural%20network,sources%20close%20to%20the%20company), and most notably they helped us recognize the [divine nature of ducks](https://twitter.com/drnelk/status/1598048054724423681?t=LWzI2RdbSO0CcY9zuJ-4lQ&s=08).
+
+2023 has started and ML progress is likely to continue at a break-neck speed. This is a great time to take a look at one of the most interesting papers from last year.
+
+Emergent Abilities in LLMs
+
+In a recent [paper from Google Brain](https://arxiv.org/pdf/2206.07682.pdf), Jason Wei and his colleagues allowed us a peak into the future. This beautiful research showed how scaling LLMs will allow them, among other things, to:
+
+* Become better at math
+* Understand even more subtleties of human language
+* Stop hallucinating and answer truthfully
+* ...
+
+(See the plot on break-out performance below for a full list)
+
+**Some Context:**
+
+If you played around with ChatGPT or any of the other LLMs, you will likely have been as impressed as I was. However, you have probably also seen the models go off the rails here and there. The model might hallucinate gibberish, give untrue answers, or fail at performing math.
+
+**Why does this happen?**
+
+LLMs are commonly trained by [maximizing the likelihood](https://www.cs.ubc.ca/~amuham01/LING530/papers/radford2018improving.pdf) over all tokens in a body of text. Put more simply, they learn to predict the next word in a sequence of words.
+
+Hence, if such a model learns to do any math at all, it learns it by figuring concepts present in human language (and thereby math).
+
+Let's look at the following sentence.
+
+""The sum of two plus two is ...""
+
+The model figures out that the most likely missing word is ""four"".
+
+The fact that LLMs learn this at all is mind-bending to me! However, once the math gets more complicated [LLMs begin to struggle](https://twitter.com/Richvn/status/1598714487711756288?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1598714487711756288%7Ctwgr%5E478ce47357ad71a72873d1a482af5e5ff73d228f%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fanalyticsindiamag.com%2Ffreaky-chatgpt-fails-that-caught-our-eyes%2F).
+
+There are many other cases where the models fail to capture the elaborate interactions and meanings behind words. One other example are words that change their meaning with context. When the model encounters the word ""bed"", it needs to figure out from the context, if the text is talking about a ""river bed"" or a ""bed"" to sleep in.
+
+**What they discovered:**
+
+For smaller models, the performance on the challenging tasks outline above remains approximately random. However, the performance shoots up once a certain number of training FLOPs (proxy for model size) is reached.
+
+The figure below visualizes this effect on eight benchmarks. The critical number of training FLOPs is around 10\^23. The big version of GPT-3 already lies to the right of this point, but we seem to be at the beginning stages of performance increases.
+
+&#x200B;
+
+[Break-Out Performance At Critical Scale](https://preview.redd.it/w7xffqjimmba1.png?width=800&format=png&auto=webp&v=enabled&s=c573f6199db7b5ccebfa73ce8e58313e5ae27822)
+
+They observed similar improvements on (few-shot) prompting strategies, such as multi-step reasoning and instruction following. If you are interested, I also encourage you to check out Jason Wei's personal blog. There he [listed a total of 137](https://www.jasonwei.net/blog/emergence) emergent abilities observable in LLMs.
+
+Looking at the results, one could be forgiven for thinking: simply making models bigger will make them more powerful. That would only be half the story.
+
+(Language) models are primarily scaled along three dimensions: number of parameters, amount of training compute, and dataset size. Hence, emergent abilities are likely to also occur with e.g. bigger and/or cleaner datasets.
+
+There is [other research](https://arxiv.org/abs/2203.15556) suggesting that current models, such as GPT-3, are undertrained. Therefore, scaling datasets promises to boost performance in the near-term, without using more parameters.
+
+**So what does this mean exactly?**
+
+This beautiful paper shines a light on the fact that our understanding of how to train these large models is still very limited. The lack of understanding is largely due to the sheer cost of training LLMs. Running the same number of experiments as people do for smaller models would cost in the hundreds of millions.
+
+However, the results strongly hint that further scaling will continue the exhilarating performance gains of the last years.
+
+Such exciting times to be alive!
+
+If you got down here, thank you! It was a privilege to make this for you.  
+At **TheDecoding** ⭕, I send out a thoughtful newsletter about ML research and the data economy once a week.  
+No Spam. No Nonsense. [Click here to sign up!](https://thedecoding.net/)"
+2,⭕ What People Are Missing About Microsoft’s $10B Investment In OpenAI,19,10mi1x8,https://www.reddit.com/r/datascience/comments/10mi1x8/what_people_are_missing_about_microsofts_10b/,3,1674816738.0,"&#x200B;
+
+[Sam Altman Might Have Just Pulled Off The Coup Of The Decade](https://preview.redd.it/35vtxrwnekea1.png?width=720&format=png&auto=webp&v=enabled&s=95e113299668b569f64ca6ecaa095b948a15e78b)
+
+Microsoft is investing $10B into OpenAI!
+
+There is lots of frustration in the community about OpenAI not being all that open anymore. They appear to abandon their ethos of developing AI for everyone, [free](https://openai.com/blog/introducing-openai/) of economic pressures.
+
+The fear is that OpenAI’s models are going to become fancy MS Office plugins. Gone would be the days of open research and innovation.
+
+However, the specifics of the deal tell a different story.
+
+To understand what is going on, we need to peek behind the curtain of the tough business of machine learning. We will find that Sam Altman might have just orchestrated the coup of the decade!
+
+To appreciate better why there is some three-dimensional chess going on, let’s first look at Sam Altman’s backstory.
+
+*Let’s go!*
+
+# A Stellar Rise
+
+Back in 2005, Sam Altman founded [Loopt](https://en.wikipedia.org/wiki/Loopt) and was part of the first-ever YC batch. He raised a total of $30M in funding, but the company failed to gain traction. Seven years into the business Loopt was basically dead in the water and had to be shut down.
+
+Instead of caving, he managed to sell his startup for $[43M](https://golden.com/wiki/Sam_Altman-J5GKK5) to the finTech company [Green Dot](https://www.greendot.com/). Investors got their money back and he personally made $5M from the sale.
+
+By YC standards, this was a pretty unimpressive outcome.
+
+However, people took note that the fire between his ears was burning hotter than that of most people. So hot in fact that Paul Graham included him in his 2009 [essay](http://www.paulgraham.com/5founders.html?viewfullsite=1) about the five founders who influenced him the most.
+
+He listed young Sam Altman next to Steve Jobs, Larry & Sergey from Google, and Paul Buchheit (creator of GMail and AdSense). He went on to describe him as a strategic mastermind whose sheer force of will was going to get him whatever he wanted.
+
+And Sam Altman played his hand well!
+
+He parleyed his new connections into raising $21M from Peter Thiel and others to start investing. Within four years he 10x-ed the money \[2\]. In addition, Paul Graham made him his successor as president of YC in 2014.
+
+Within one decade of selling his first startup for $5M, he grew his net worth to a mind-bending $250M and rose to the circle of the most influential people in Silicon Valley.
+
+Today, he is the CEO of OpenAI — one of the most exciting and impactful organizations in all of tech.
+
+However, OpenAI — the rocket ship of AI innovation — is in dire straights.
+
+# OpenAI is Bleeding Cash
+
+Back in 2015, OpenAI was kickstarted with $1B in donations from famous donors such as Elon Musk.
+
+That money is long gone.
+
+In 2022 OpenAI is projecting a revenue of $36M. At the same time, they spent roughly $544M. Hence the company has lost >$500M over the last year alone.
+
+This is probably not an outlier year. OpenAI is headquartered in San Francisco and has a stable of 375 employees of mostly machine learning rockstars. Hence, salaries alone probably come out to be roughly $200M p.a.
+
+In addition to high salaries their compute costs are stupendous. Considering it cost them $4.6M to train GPT3 once, it is likely that their cloud bill is in a very healthy nine-figure range as well \[4\].
+
+So, where does this leave them today?
+
+Before the Microsoft investment of $10B, OpenAI had received a total of $4B over its lifetime. With $4B in funding, a burn rate of $0.5B, and eight years of company history it doesn’t take a genius to figure out that they are running low on cash.
+
+It would be reasonable to think: OpenAI is sitting on ChatGPT and other great models. Can’t they just lease them and make a killing?
+
+Yes and no. OpenAI is projecting a revenue of $1B for 2024. However, it is unlikely that they could pull this off without significantly increasing their costs as well.
+
+*Here are some reasons why!*
+
+# The Tough Business Of Machine Learning
+
+Machine learning companies are distinct from regular software companies. On the outside they look and feel similar: people are creating products using code, but on the inside things can be very different.
+
+To start off, machine learning companies are usually way less profitable. Their gross margins land in the 50%-60% range, much lower than those of SaaS businesses, which can be as high as 80% \[7\].
+
+On the one hand, the massive compute requirements and thorny data management problems drive up costs.
+
+On the other hand, the work itself can sometimes resemble consulting more than it resembles software engineering. Everyone who has worked in the field knows that training models requires deep domain knowledge and loads of manual work on data.
+
+To illustrate the latter point, imagine the unspeakable complexity of performing content moderation on ChatGPT’s outputs. If OpenAI scales the usage of GPT in production, they will need large teams of moderators to filter and label hate speech, slurs, tutorials on killing people, you name it.
+
+*Alright, alright, alright! Machine learning is hard.*
+
+*OpenAI already has ChatGPT working. That’s gotta be worth something?*
+
+# Foundation Models Might Become Commodities:
+
+In order to monetize GPT or any of their other models, OpenAI can go two different routes.
+
+First, they could pick one or more verticals and sell directly to consumers. They could for example become the ultimate copywriting tool and blow [Jasper](https://app.convertkit.com/campaigns/10748016/jasper.ai) or [copy.ai](https://app.convertkit.com/campaigns/10748016/copy.ai) out of the water.
+
+This is not going to happen. Reasons for it include:
+
+1. To support their mission of building competitive foundational AI tools, and their huge(!) burn rate, they would need to capture one or more very large verticals.
+2. They fundamentally need to re-brand themselves and diverge from their original mission. This would likely scare most of the talent away.
+3. They would need to build out sales and marketing teams. Such a step would fundamentally change their culture and would inevitably dilute their focus on research.
+
+The second option OpenAI has is to keep doing what they are doing and monetize access to their models via API. Introducing a [pro version](https://www.searchenginejournal.com/openai-chatgpt-professional/476244/) of ChatGPT is a step in this direction.
+
+This approach has its own challenges. Models like GPT do have a defensible moat. They are just large transformer models trained on very large open-source datasets.
+
+As an example, last week Andrej Karpathy released a [video](https://www.youtube.com/watch?v=kCc8FmEb1nY) of him coding up a version of GPT in an afternoon. Nothing could stop e.g. Google, StabilityAI, or HuggingFace from open-sourcing their own GPT.
+
+As a result GPT inference would become a common good. This would melt OpenAI’s profits down to a tiny bit of nothing.
+
+In this scenario, they would also have a very hard time leveraging their branding to generate returns. Since companies that integrate with OpenAI’s API control the interface to the customer, they would likely end up capturing all of the value.
+
+An argument can be made that this is a general problem of foundation models. Their high fixed costs and lack of differentiation could end up making them akin to the [steel industry](https://www.thediff.co/archive/is-the-business-of-ai-more-like-steel-or-vba/).
+
+To sum it up:
+
+* They don’t have a way to sustainably monetize their models.
+* They do not want and probably should not build up internal sales and marketing teams to capture verticals
+* They need a lot of money to keep funding their research without getting bogged down by details of specific product development
+
+*So, what should they do?*
+
+# The Microsoft Deal
+
+OpenAI and Microsoft [announced](https://blogs.microsoft.com/blog/2023/01/23/microsoftandopenaiextendpartnership/) the extension of their partnership with a $10B investment, on Monday.
+
+At this point, Microsoft will have invested a total of $13B in OpenAI. Moreover, new VCs are in on the deal by buying up shares of employees that want to take some chips off the table.
+
+However, the astounding size is not the only extraordinary thing about this deal.
+
+First off, the ownership will be split across three groups. Microsoft will hold 49%, VCs another 49%, and the OpenAI foundation will control the remaining 2% of shares.
+
+If OpenAI starts making money, the profits are distributed differently across four stages:
+
+1. First, early investors (probably Khosla Ventures and Reid Hoffman’s foundation) get their money back with interest.
+2. After that Microsoft is entitled to 75% of profits until the $13B of funding is repaid
+3. When the initial funding is repaid, Microsoft and the remaining VCs each get 49% of profits. This continues until another $92B and $150B are paid out to Microsoft and the VCs, respectively.
+4. Once the aforementioned money is paid to investors, 100% of shares return to the foundation, which regains total control over the company. \[3\]
+
+# What This Means
+
+This is absolutely crazy!
+
+OpenAI managed to solve all of its problems at once. They raised a boatload of money and have access to all the compute they need.
+
+On top of that, they solved their distribution problem. They now have access to Microsoft’s sales teams and their models will be integrated into MS Office products.
+
+Microsoft also benefits heavily. They can play at the forefront AI, brush up their tools, and have OpenAI as an exclusive partner to further compete in a [bitter cloud war](https://www.projectpro.io/article/aws-vs-azure-who-is-the-big-winner-in-the-cloud-war/401) against AWS.
+
+The synergies do not stop there.
+
+OpenAI as well as GitHub (aubsidiary of Microsoft) e. g. will likely benefit heavily from the partnership as they continue to develop[ GitHub Copilot](https://github.com/features/copilot).
+
+The deal creates a beautiful win-win situation, but that is not even the best part.
+
+Sam Altman and his team at OpenAI essentially managed to place a giant hedge. If OpenAI does not manage to create anything meaningful or we enter a new AI winter, Microsoft will have paid for the party.
+
+However, if OpenAI creates something in the direction of AGI — whatever that looks like — the value of it will likely be huge.
+
+In that case, OpenAI will quickly repay the dept to Microsoft and the foundation will control 100% of whatever was created.
+
+*Wow!*
+
+Whether you agree with the path OpenAI has chosen or would have preferred them to stay donation-based, you have to give it to them.
+
+*This deal is an absolute power move!*
+
+I look forward to the future. Such exciting times to be alive!
+
+As always, I really enjoyed making this for you and I sincerely hope you found it useful!
+
+*Thank you for reading!*
+
+Would you like to receive an article such as this one straight to your inbox every Thursday? Consider signing up for **The Decoding** ⭕.
+
+I send out a thoughtful newsletter about ML research and the data economy once a week. No Spam. No Nonsense. [Click here to sign up!](https://thedecoding.net/)
+
+**References:**
+
+\[1\] [https://golden.com/wiki/Sam\_Altman-J5GKK5](https://golden.com/wiki/Sam_Altman-J5GKK5)​
+
+\[2\] [https://www.newyorker.com/magazine/2016/10/10/sam-altmans-manifest-destiny](https://www.newyorker.com/magazine/2016/10/10/sam-altmans-manifest-destiny)​
+
+\[3\] [Article in Fortune magazine ](https://fortune.com/2023/01/11/structure-openai-investment-microsoft/?verification_code=DOVCVS8LIFQZOB&_ptid=%7Bkpdx%7DAAAA13NXUgHygQoKY2ZRajJmTTN6ahIQbGQ2NWZsMnMyd3loeGtvehoMRVhGQlkxN1QzMFZDIiUxODA3cnJvMGMwLTAwMDAzMWVsMzhrZzIxc2M4YjB0bmZ0Zmc0KhhzaG93T2ZmZXJXRDFSRzY0WjdXRTkxMDkwAToMT1RVVzUzRkE5UlA2Qg1PVFZLVlpGUkVaTVlNUhJ2LYIA8DIzZW55eGJhajZsWiYyYTAxOmMyMzo2NDE4OjkxMDA6NjBiYjo1NWYyOmUyMTU6NjMyZmIDZG1jaOPAtZ4GcBl4DA)​
+
+\[4\] [https://arxiv.org/abs/2104.04473](https://arxiv.org/abs/2104.04473) Megatron NLG
+
+\[5\] [https://www.crunchbase.com/organization/openai/company\_financials](https://www.crunchbase.com/organization/openai/company_financials)​
+
+\[6\] Elon Musk donation [https://www.inverse.com/article/52701-openai-documents-elon-musk-donation-a-i-research](https://www.inverse.com/article/52701-openai-documents-elon-musk-donation-a-i-research)​
+
+\[7\] [https://a16z.com/2020/02/16/the-new-business-of-ai-and-how-its-different-from-traditional-software-2/](https://a16z.com/2020/02/16/the-new-business-of-ai-and-how-its-different-from-traditional-software-2/)"
+3,I wrote up a guide showing how to do Data Science with ChatGPT.,272,10a7kq4,https://www.reddit.com/r/datascience/comments/10a7kq4/i_wrote_up_a_guide_showing_how_to_do_data_science/,93,1673550084.0,"Just recently, I wrote up a guide on how to use [ChatGPT to build a website with Replit](https://buildspace.so/notes/chatgpt-replit-website?utm_source=r).
+
+Got some pretty good responses, so I decided to write + document more of the applications I'm discovering.
+
+**I'm actually really excited about this one, since I was in a graduate program for statistics.**
+
+[Here's the guide](https://buildspace.so/notes/chatgpt-data-science?utm_source=r) for doing data sci with ChatGPT
+
+The tl;dr is that I show you some of the crazy data sci stuff ChatGPT can do:
+
+\- Read and analyze raw CSV data. I just had to copy and paste.
+
+\- It could tell what kind of data you're feeding it judging by the header columns!
+
+\- It will give you the python/r code on how to run specific analysis.
+
+\- It even knew how to use scikit-learn to run regression models 🤯 (I mean, this makes sense since it's an AI tool lol).
+
+Honestly, this is just crazy to me.
+
+**Before I dropped out of graduate school for statistics, I often consulted non-technical researchers in the social sciences. It was always a pain for them to run datasets by themselves just to get some answers to their questions.**
+
+Although ChatGPT isn't perfect (and does make mistakes), it's crazy where the tool is going.
+
+I think this is really good news for a lot of people who are interested in doing research, but might feel too intimidated by needing to do stats. Obvi...some bad stuff could come from it. We'll see!
+
+https://preview.redd.it/ggd96gyhnnba1.png?width=619&format=png&auto=webp&v=enabled&s=336d66a381cceb0befe1614d221694d7a831ab31"
+4,Advice for a recent college graduate who majored in Computer Science and Statistics looking to start a career in data? How does job security look?,2,zrvydv,https://www.reddit.com/r/datascience/comments/zrvydv/advice_for_a_recent_college_graduate_who_majored/,3,1671645890.0,"Hello, I graduated from university (not elite but notable) this semester with a major in Computer Science and Statistics. My internship experience is limited to front end development but as I was accruing credits towards my statistics major over the past year and a half and taking a course on machine learning, I've decided that I want to go into the field of data science. Unfortunately I don't have any internship experience in the field but after alot of consideration, a career in data science seems to be what I have the most interest in.
+
+Through my coursework and projects I've had alot of exposure to python and data and ml frameworks, namely numpy and pyTorch. I also have experience in SQL and backend query languages.  
+
+My question is, what should I focus on doing to make myself a more appealing candidate to get into the field of data science? Are there any certificate programs like the TensorFlow developer certificate that would help in me getting a job in this field? I should note that I had my fair share of personal issues in college and that my gpa is a 2.7 which really concerns me about my chances.
+
+I apologize if this question is too open-ended or lacks basic research on my part, I've been struggling on what career I wanna go into and just recently decided I want to orient myself towards data science. Any advice would be greatly appreciated.
+
+Also, as a side if you can touch a little bit on what job security looks like in the field I would greatly appreciate it. I've been paying attention to the openAI language model and like I'm sure many others, was frightened by what it could do. I understand there's no way it could replace a data scientist in it's current state however who knows what it can do in future iterations? How likely is it that large language models like chatGPT will either replace or displace a large percentage of data scientists in the field?"
