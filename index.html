@@ -21,6 +21,9 @@
 						<ul>
 							<li><a href="#intro">Introduction</a></li>
 							<li><a href="#one">Data</a></li>
+							<li><a href="#two">Clustering</a></li>
+							<li><a href="#three">ARM</a></li>
+							<li><a href="#four">LDA</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -55,7 +58,6 @@ Google's stated mission is to "organize the world's information and make it univ
 				<!-- One -->
 					<section id="one" class="wrapper style2 spotlights">
 						<section>
-							<a href="#" class="image"><img src="https://kadence.com/wp-content/uploads/2022/04/As-introduction-to-Data-collection-in-marketing-research.jpg" alt="" data-position="center center" /></a>
 							<div class="content">
 								<div class="inner">
 									<h2>Data Collection and Methodology</h2>
@@ -89,7 +91,6 @@ Google's stated mission is to "organize the world's information and make it univ
 							</div>
 						</section>
 						<section>
-							<a href="#" class="image"><img src="https://i0.wp.com/www.michaelchimenti.com/wp-content/uploads/2014/07/6957593947_75f7aaecd0_z.jpg" alt="" data-position="top center" /></a>
 							<div class="content">
 								<div class="inner">
 									<h2>Data before cleaning</h2>
@@ -113,7 +114,6 @@ Google's stated mission is to "organize the world's information and make it univ
 							</div>
 						</section>
 						<section>
-							<a href="#" class="image"><img src="https://uploads-ssl.webflow.com/5a00e7aa079aa40001b3c4fb/5d5c22e040c6beab16860e8e_data-cleaning-thumb.png" alt="" data-position="25% 25%" /></a>
 							<div class="content">
 								<div class="inner">
 									<h2>Data after cleaning</h2>
@@ -138,8 +138,350 @@ Google's stated mission is to "organize the world's information and make it univ
 							</div>
 						</section>
 					</section>
-
 				
+				<!-- Two -->
+				<section id="two" class="wrapper style2 spotlights">
+					<section>
+						<div class="content">
+							<div class="inner">
+								<h2>Clustering</h2>
+								<p>Clustering is a machine learning technique used to group similar objects together in a dataset based on their inherent similarities. The objective of clustering is to partition a given dataset into several groups, or clusters, such that objects in the same group are more similar to each other than to those in other groups. The process of clustering involves assigning each data point to a cluster based on some similarity metric. There are several algorithms used in clustering, including k-means, hierarchical clustering, and density-based clustering. Clustering is used in various applications such as customer segmentation, image segmentation, anomaly detection, and recommender systems. For example, clustering can be used to group customers with similar behavior together in order to personalize marketing campaigns or to identify fraudulent behavior based on anomalies in a dataset. 
+								</p>
+								
+							</div>
+						</div>
+					</section>
+					<section>
+						<div class="content">
+							<div class="inner">
+								<h2>Overview</h2>
+								<p>The data for this project was gathered by making API calls or web scraping which meant the data gathered came without labels. Hence, the
+									clustering methods can be used to convert this data without labels into data with labels by clustering the same into similar groups. The methods used 
+									to do the same here are :
+								<ul>
+									<li>K Means</li>
+									<li>Hierarchical Clustering</li>
+								</ul> 
+								By using the methods above, I intend to find the optimal number of clusters in my unlabeled data in a more automated way.
+							 </p>
+								
+							</div>
+						</div>
+					</section>
+					<section>
+						<div class="content">
+							<div class="inner">
+								<h2>Data Prep</h2>
+								<p>As expected, the data gathered can't be directly used for modeling purpose. It has to be cleaned.
+									Cleaning text-data is a typical pre-processing task for data science and machine learning. It consists of getting rid of the less useful parts of text through stopword removal, dealing with capitalization, special characters and other details.Specifically, these steps were taken to do the same here :
+									<ul>
+										<li>Sneak peek into the data</li>
+										<li>Whitespace/Punctuation/Normalize Case</li>
+										<li>Stopwords removal</li>
+										<li>Stemming</li>
+										<li>Lemmatization</li>
+										<li>Link removal</li>
+										<li>Vectorization using CountVectorizer and TfidfVectorizer</li>
+									</ul>
+								Snapshot of data after cleaning : <br/><br/>
+								<img src="images/Clean.png" alt="Clean" width="400" height="400"/>
+								<br/>
+								Script used for data procession and cleaning : <a href="https://colab.research.google.com/drive/16FyHdkw5OkLxCgIExuys4CiYoT7Okxwz?usp=sharing" target="_blank">Data_Cleaning.ipynb</a>	
+								</p>
+						
+							</div>
+						</div>
+					</section>
+
+					<section>
+						<div class="content">
+							<div class="inner">
+								<h2>Code</h2>
+								<p>
+								Script used for Kmeans Clustering : <a href="https://colab.research.google.com/drive/16FyHdkw5OkLxCgIExuys4CiYoT7Okxwz?usp=sharing" target="_blank">KMeans.ipynb</a>
+								<br/>
+								Script used for Hierarchical Clustering : <a href="https://colab.research.google.com/drive/16FyHdkw5OkLxCgIExuys4CiYoT7Okxwz?usp=sharing" target="_blank">Hierarchical.R</a>	
+								</p>
+						
+							</div>
+						</div>
+					</section>
+
+					<section>
+						<div class="content">
+							<div class="inner">
+								<h2>Results</h2>
+								<p>Elbow method plot :
+									<br/>
+								<img src="images/Elbow.png" alt="Clean" width="400" height="400"/>
+								<br/>
+									Silhoutte method plot : <br/><img src="images/Sil.png" alt="Clean" width="400" height="400"/>
+								<br/><br/>
+								As can be seen from the above , 4 seems to be value of k which seems to be optimal.	
+								</p>
+							</div>
+						</div>
+					</section>
+
+					<section>
+		
+						<div class="content">
+							<div class="inner">
+								<h2>Conclusion</h2>
+								<p>
+									Hence, the data aggregated from various sources for this project can be divided into four separate categories.
+									<br/><br/>
+									<h3>Top words per cluster :</h3>
+									<br/>
+									<h4>Cluster 0 :</h4>
+									<ul>
+										<li>ai</li>
+										<li>like</li>
+										<li>think</li>
+										<li>time</li>
+										<li>work</li>
+										<li>job</li>
+										<li>know</li>
+										<li>good</li>
+										<li>need</li>
+										<li>cover</li>
+									</ul>
+									<h4>Cluster 1 :</h4>
+									<ul>
+										<li>google</li>
+										<li>search</li>
+										<li>chatgpt</li>
+										<li>ai</li>
+										<li>like</li>
+										<li>results</li>
+										<li>engine</li>
+										<li>use</li>
+										<li>better</li>
+										<li>think</li>
+									</ul>
+									<h4>Cluster 2 :</h4>
+									<ul>
+										<li>chatgpt</li>
+										<li>like</li>
+										<li>write</li>
+										<li>better</li>
+										<li>know</li>
+										<li>use</li>
+										<li>job</li>
+										<li>code</li>
+										<li>using</li>
+										<li>time</li>
+									</ul>
+									<h4>Cluster 3 :</h4>
+									<ul>
+										<li>people</li>
+										<li>jobs</li>
+										<li>ai</li>
+										<li>work</li>
+										<li>like</li>
+										<li>going</li>
+										<li>think</li>
+										<li>job</li>
+										<li>replace</li>
+										<li>new</li>
+									</ul>
+
+								</p>
+						
+							</div>
+						</div>
+					</section>
+				</section>
+			
+			<!-- Three -->
+			<section id="three" class="wrapper style2 spotlights">
+				<section>
+					<div class="content">
+						<div class="inner">
+							<h2>ARM</h2>
+							<p>Association rule mining is a data mining technique that involves finding relationships or associations between variables in a large dataset. Specifically, it aims to discover patterns and relationships among the items in a dataset, based on how frequently they occur together. 
+								The main goal of association rule mining is to identify the underlying patterns and rules that govern the behavior of a particular dataset. This can be useful in a variety of real-world applications, such as :
+								<ul>
+									<li>Market Basket Analysis</li>
+									<li>Fraud Detection</li>
+									<li>Web Usage Analysis</li>
+									<li>Social Network Analysis</li>
+								</ul>
+								Overall, association rule mining is a powerful tool for discovering hidden patterns and relationships in large datasets, which can be used to make informed decisions and drive business value in a variety of real-world applications. 
+							</p>
+							
+						</div>
+					</div>
+				</section>
+				<section>
+					<div class="content">
+						<div class="inner">
+							<h2>Overview</h2>
+							<p>
+								While ARM can be useful for analyzing and understanding complex relationships between variables, it may not be the best approach to answer questions like "Will ChatGPT replace Google."
+								To answer this question, we need to consider various factors such as the current market share, user adoption, technological advancements, and competitive landscape. 
+								ARM may not be able to capture all of these factors, and the patterns or relationships it identifies may not provide a definitive answer to the question.That being said, 
+								since we have a dataset containing responses to the question, we can still use ARM to identify interesting associations or patterns in the data. For example, you could use ARM to identify frequent co-occurrences of keywords or phrases related to ChatGPT and Google in the responses.
+							</p>
+							
+						</div>
+					</div>
+				</section>
+				<section>
+					<div class="content">
+						<div class="inner">
+							<h2>Data Prep</h2>
+							<p>As expected, the data gathered can't be directly used for modeling purpose. It has to be cleaned.
+								Cleaning text-data is a typical pre-processing task for data science and machine learning. It consists of getting rid of the less useful parts of text through stopword removal, dealing with capitalization, special characters and other details.Specifically, these steps were taken to do the same here :
+								<ul>
+									<li>Sneak peek into the data</li>
+									<li>Whitespace/Punctuation/Normalize Case</li>
+									<li>Stopwords removal</li>
+									<li>Stemming</li>
+									<li>Lemmatization</li>
+									<li>Link removal</li>
+									<li>Vectorization using CountVectorizer and TfidfVectorizer</li>
+								</ul>
+							Snapshot of data after cleaning : <br/><br/>
+							<img src="images/Clean.png" alt="Clean" width="400" height="400"/>
+							<br/>
+							Script used for data procession and cleaning : <a href="https://colab.research.google.com/drive/16FyHdkw5OkLxCgIExuys4CiYoT7Okxwz?usp=sharing" target="_blank">Data_Cleaning.ipynb</a>	
+							</p>
+					
+						</div>
+					</div>
+				</section>
+
+				<section>
+					<div class="content">
+						<div class="inner">
+							<h2>Code</h2>
+							<p>
+							Script used for ARM : <a href="https://colab.research.google.com/drive/16FyHdkw5OkLxCgIExuys4CiYoT7Okxwz?usp=sharing" target="_blank">KMeans.ipynb</a>
+							</p>
+					
+						</div>
+					</div>
+				</section>
+
+				<section>
+					<div class="content">
+						<div class="inner">
+							<h2>Results</h2>
+							<p>As expected, the data gathered can't be directly used for modeling purpose. It has to be cleaned.
+								Cleaning text-data is a typical pre-processing task for data science and machine learning. It consists of getting rid of the less useful parts of text through stopword removal, dealing with capitalization, special characters and other details.Specifically, these steps were taken to do the same here :
+							</p>
+					
+						</div>
+					</div>
+				</section>
+
+				<section>
+					<div class="content">
+						<div class="inner">
+							<h2>Conclusion</h2>
+							<p>
+								
+							</p>
+					
+						</div>
+					</div>
+				</section>
+			</section>
+
+			<!-- Four -->
+			<section id="four" class="wrapper style2 spotlights">
+				<section>
+					<div class="content">
+						<div class="inner">
+							<h2>Topic Modeling</h2>
+							<p>Topic modeling is a statistical technique that involves identifying topics or themes that are present in a collection of documents. It is often used in natural language processing and text mining applications to uncover the underlying structure of a large corpus of text.
+
+								At a high level, topic modeling works by analyzing the frequency of words and phrases in a collection of documents and identifying groups of words that tend to appear together. These groups of words are known as "topics," and they can be used to summarize the content of the documents and identify common themes or patterns.
+								
+								Topic modeling has a wide range of applications in the real world, including :
+								<ul>
+									<li>Text Classification</li>
+									<li>Recommender Systems</li>
+									<li>Sentiment Analysis</li>
+									<li>Market Research</li>
+									<li>Trend Analysis</li>
+								</ul>
+								Overall, topic modeling is a powerful tool for uncovering the underlying structure and themes in large collections of text, which can be used to inform a wide range of real-world applications. 
+							</p>
+							
+						</div>
+					</div>
+				</section>
+				<section>
+					<div class="content">
+						<div class="inner">
+							<h2>Overview</h2>
+							<p>
+								Out of all the use cases mentioned above, I intend to use Topic Modeling for the purpose of Text Classification in this project. 
+							</p>
+						</div>
+					</div>
+				</section>
+				<section>
+					<div class="content">
+						<div class="inner">
+							<h2>Data Prep</h2>
+							<p>As expected, the data gathered can't be directly used for modeling purpose. It has to be cleaned.
+								Cleaning text-data is a typical pre-processing task for data science and machine learning. It consists of getting rid of the less useful parts of text through stopword removal, dealing with capitalization, special characters and other details.Specifically, these steps were taken to do the same here :
+								<ul>
+									<li>Sneak peek into the data</li>
+									<li>Whitespace/Punctuation/Normalize Case</li>
+									<li>Stopwords removal</li>
+									<li>Stemming</li>
+									<li>Lemmatization</li>
+									<li>Link removal</li>
+									<li>Vectorization using CountVectorizer and TfidfVectorizer</li>
+								</ul>
+							Snapshot of data after cleaning : <br/><br/>
+							<img src="images/Clean.png" alt="Clean" width="400" height="400"/>
+							<br/>
+							Script used for data procession and cleaning : <a href="https://colab.research.google.com/drive/16FyHdkw5OkLxCgIExuys4CiYoT7Okxwz?usp=sharing" target="_blank">Data_Cleaning.ipynb</a>	
+							</p>
+					
+						</div>
+					</div>
+				</section>
+				<section>
+					<div class="content">
+						<div class="inner">
+							<h2>Code</h2>
+							<p>
+							Script used for Topic Modeling : <a href="https://colab.research.google.com/drive/1H-0osBdNtbseU9DpU9V4_bN5tRgMH55v?usp=sharing" target="_blank">TopicModeling.ipynb</a>
+							</p>
+					
+						</div>
+					</div>
+				</section>
+
+				<section>
+					<div class="content">
+						<div class="inner">
+							<h2>Results</h2>
+							<p></p>
+					
+						</div>
+					</div>
+				</section>
+
+				<section>
+					<div class="content">
+						<div class="inner">
+							<h2>Conclusion</h2>
+							<p>
+								
+							</p>
+					
+						</div>
+					</div>
+				</section>
+			</section>
+
 			</div>
 
 		<!-- Footer -->
