@@ -463,7 +463,115 @@ Google's stated mission is to "organize the world's information and make it univ
 					<div class="content">
 						<div class="inner">
 							<h2>Results</h2>
-							<p></p>
+							<p>The approach to finding the optimal number of topics is to build many LDA models with different values of number of topics (k) and pick the one that gives the highest coherence value.
+								Choosing a ‘k’ that marks the end of a rapid growth of topic coherence usually offers meaningful and interpretable topics. Picking an even higher value can sometimes provide more granular sub-topics.
+								If you see the same keywords being repeated in multiple topics, it’s probably a sign that the ‘k’ is too large. Keeping this in mind and as show in the coherence plot below :<br/>
+								<img src="images/Coherence_LDA.png" alt="Clean" width="400" height="400"/>
+								<br/>
+								We can see that the optimal number of topics here is 20. Hence,the optimal LDA model is built with 20 different topics where each topic is a combination of keywords and each keyword contributes a certain weightage to the topic.
+								You can see the keywords for each topic and the weightage(importance) of each keyword below : 
+								<br/><br/>
+								(0,
+  '0.072*"also" + 0.054*"much" + 0.039*"lot" + 0.036*"thing" + 0.035*"ask" + '
+  '0.033*"ads" + 0.033*"question" + 0.028*"money" + 0.028*"internet" + '
+  '0.027*"asked"'),<br/><br/>
+ (1,
+  '0.141*"google" + 0.096*"chatgpt" + 0.048*"search" + 0.041*"even" + '
+  '0.033*"one" + 0.030*"use" + 0.027*"cannot" + 0.027*"better" + '
+  '0.024*"answer" + 0.023*"need"'),<br/><br/>
+ (2,
+  '0.040*"everything" + 0.024*"brain" + 0.024*"coding" + 0.023*"start" + '
+  '0.023*"everyone" + 0.020*"try" + 0.019*"whole" + 0.017*"almost" + '
+  '0.014*"generation" + 0.013*"stupid"'),<br/><br/>
+ (3,
+  '0.134*"people" + 0.052*"years" + 0.048*"really" + 0.042*"actually" + '
+  '0.036*"without" + 0.028*"probably" + 0.028*"making" + 0.027*"yes" + '
+  '0.026*"maybe" + 0.021*"bad"'),<br/><br/>
+ (4,
+  '0.114*"know" + 0.046*"sure" + 0.034*"pretty" + 0.030*"big" + 0.029*"us" + '
+  '0.027*"free" + 0.026*"example" + 0.025*"great" + 0.025*"possible" + '
+  '0.024*"tool"'),<br/><br/>
+ (5,
+  '0.082*"human" + 0.060*"still" + 0.024*"content" + 0.021*"said" + '
+  '0.020*"superman" + 0.020*"writing" + 0.018*"tools" + 0.017*"creative" + '
+  '0.017*"humans" + 0.014*"needs"'),<br/><br/>
+ (6,
+  '0.090*"things" + 0.068*"want" + 0.054*"say" + 0.031*"stuff" + 0.022*"lol" + '
+  '0.022*"correct" + 0.021*"basically" + 0.020*"system" + 0.016*"stop" + '
+  '0.015*"care"'),<br/><br/>
+ (7,
+  '0.086*"right" + 0.032*"ever" + 0.028*"product" + 0.025*"products" + '
+  '0.021*"least" + 0.020*"remember" + 0.017*"build" + 0.016*"post" + '
+  '0.014*"gmail" + 0.013*"edit"'),<br/><br/>
+ (8,
+  '0.071*"well" + 0.037*"technology" + 0.035*"far" + 0.034*"mean" + '
+  '0.032*"help" + 0.027*"similar" + 0.023*"page" + 0.019*"lamda" + '
+  '0.018*"advice" + 0.017*"wanted"'),<br/><br/>
+ (9,
+  '0.058*"never" + 0.050*"gpt" + 0.035*"chat" + 0.033*"problem" + '
+  '0.029*"might" + 0.024*"models" + 0.024*"company" + 0.022*"anyone" + '
+  '0.021*"tell" + 0.021*"mind"'),<br/><br/>
+ (10,
+  '0.032*"let" + 0.030*"always" + 0.027*"real" + 0.025*"market" + 0.021*"away" '
+  '+ 0.018*"clone" + 0.017*"wait" + 0.017*"simple" + 0.016*"talking" + '
+  '0.016*"invented"'),<br/><br/>
+ (11,
+  '0.126*"ai" + 0.049*"time" + 0.043*"something" + 0.032*"work" + '
+  '0.032*"already" + 0.030*"way" + 0.021*"many" + 0.020*"take" + 0.018*"room" '
+  '+ 0.015*"job"'),<br/><br/>
+ (12,
+  '0.051*"data" + 0.044*"model" + 0.039*"code" + 0.037*"language" + '
+  '0.037*"using" + 0.034*"write" + 0.030*"understand" + 0.027*"someone" + '
+  '0.023*"based" + 0.022*"text"'),<br/><br/>
+ (13,
+  '0.091*"like" + 0.088*"would" + 0.023*"anything" + 0.019*"wrong" + '
+  '0.019*"find" + 0.016*"point" + 0.014*"though" + 0.012*"saying" + '
+  '0.012*"two" + 0.012*"around"'),<br/><br/>
+ (14,
+  '0.090*"get" + 0.086*"make" + 0.045*"go" + 0.029*"business" + '
+  '0.024*"nothing" + 0.023*"means" + 0.020*"put" + 0.020*"run" + '
+  '0.019*"machine" + 0.018*"exactly"'),<br/><br/>
+ (15,
+  '0.064*"able" + 0.058*"every" + 0.034*"best" + 0.031*"getting" + 0.024*"end" '
+  '+ 0.023*"likely" + 0.022*"done" + 0.022*"version" + 0.021*"lead" + '
+  '0.021*"doubt"'),<br/><br/>
+ (16,
+  '0.085*"art" + 0.058*"results" + 0.038*"made" + 0.027*"useful" + '
+  '0.021*"software" + 0.019*"public" + 0.019*"test" + 0.015*"accuracy" + '
+  '0.015*"train" + 0.014*"illegal"'),<br/><br/>
+ (17,
+  '0.099*"think" + 0.080*"could" + 0.070*"going" + 0.057*"see" + '
+  '0.043*"different" + 0.041*"microsoft" + 0.027*"openai" + 0.025*"day" + '
+  '0.014*"huge" + 0.013*"comes"'),<br/><br/>
+ (18,
+  '0.049*"questions" + 0.042*"instead" + 0.033*"makes" + 0.030*"knowledge" + '
+  '0.025*"learn" + 0.022*"game" + 0.022*"hard" + 0.021*"ability" + '
+  '0.017*"asking" + 0.017*"user"'),<br/><br/>
+ (19,
+  '0.102*"good" + 0.039*"read" + 0.035*"got" + 0.029*"part" + 0.023*"believe" '
+  '+ 0.022*"result" + 0.021*"scale" + 0.018*"interview" + 0.017*"general" + '
+  '0.017*"last"')
+								<br/><br/>
+								<h5>How to interpret this ? </h5>
+								<br/>
+								Topic 0 is a represented as '0.072*"also" + 0.054*"much" + 0.039*"lot" + 0.036*"thing" + 0.035*"ask" + ' '0.033*"ads" + 0.033*"question" + 0.028*"money" + 0.028*"internet" + ' '0.027*"asked"'.
+
+								It means the top 10 keywords that contribute to this topic are: ‘also’, ‘much, ‘thing’.. and so on and the weight of ‘also’ on topic 0 is 0.072.
+								
+								The weights reflect how important a keyword is to that topic.
+								
+								Looking at these keywords, we can probably guess that this topic could be about Chat GPT making money via Ads in the future.<br/>
+								<br/><img src="images/LDA.png" alt="Clean" width="800" height="600"/>
+<br/><br/>
+								Each bubble on the left-hand side plot represents a topic. The larger the bubble, the more prevalent is that topic.
+
+A good topic model will have fairly big, non-overlapping bubbles scattered throughout the chart instead of being clustered in one quadrant.
+
+A model with too many topics, will typically have many overlaps, small sized bubbles clustered in one region of the chart.
+
+We have successfully built a good looking topic model.
+
+							</p>
 					
 						</div>
 					</div>
@@ -474,7 +582,8 @@ Google's stated mission is to "organize the world's information and make it univ
 						<div class="inner">
 							<h2>Conclusion</h2>
 							<p>
-								
+								To conclude, we started with understanding what topic modeling can do. Then, we built a basic topic model using Gensim’s LDA and visualized the topics using pyLDAvis.
+								Finally, we saw how to find the optimal number of topics using coherence scores and how we can come to a logical understanding of how to choose the optimal model.
 							</p>
 					
 						</div>
