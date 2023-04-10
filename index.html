@@ -39,6 +39,7 @@
 					<section id="intro" class="wrapper style1 fullscreen fade-up">
 						<div class="inner">
 							<h1>Will ChatGPT replace Google ?</h1>
+							<img src="images/Chat-GPT-vs-Google-Search.webp" alt="Clean" width="600" height="400"/>
 							<p>Since OpenAI released ChatGPT, there has been a lot of speculation about what its killer app will be. And perhaps topping the list is online search. According to The New York Times, Google’s management has declared a “code red” and is scrambling to protect its online search monopoly against the disruption that ChatGPT will bring.
 								<br/><br/> First, let's start by understanding what ChatGPT and Google are respectively.<br/>
 								<h1>Google</h1>
@@ -732,7 +733,8 @@ Furthermore, by using different data for training and testing, we can also preve
 							<p>Decision Trees are a type of machine learning algorithm used for both classification and regression tasks. They are a non-parametric and supervised learning method that builds a model in the form of a tree structure.
 								<br/><br/>
 								The algorithm works by recursively partitioning the feature space into smaller and smaller regions, based on the values of the input features, until the target variable (class label or continuous value) is predicted with a high degree of accuracy. The tree structure consists of decision nodes, which represent the tests performed on the input features, and leaf nodes, which represent the predicted class or value.
-								<br/><br/>
+								<br/><br/>Sample Decision Tree : <br/><img src="images/DT_Explanation.png" alt="Clean" width="400" height="250"/><br/>
+								Confusion Matrix : <br/><img src="images/ConfusionMatrix.jpg" alt="Clean" width="350" height="250"/><br/>
 								Decision Trees have several advantages, including their interpretability, flexibility, and ability to handle both categorical and continuous features. They are also relatively easy to use and understand, and can be used in a wide range of applications, including:
 								<ul>
 								<li>Classification: Decision Trees can be used for classification tasks, where the goal is to predict a categorical target variable. They are often used in applications such as customer segmentation, fraud detection, and medical diagnosis.</li>
@@ -907,7 +909,13 @@ Furthermore, by using different data for training and testing, we can also preve
 								<br/>
 								<h3>Why disjoint ?</h3><br/>
 								The main reason why the test and train sets for machine learning (ML) must be disjoint is to evaluate the performance of the ML model on data that it has not seen before. If we use the same data for training and testing, then the model will simply memorize the data and will perform very well on the training set, but poorly on any new data that it encounters. This phenomenon is known as overfitting, where the model fits too closely to the training data and fails to generalize to new data. By keeping the test and train sets separate, we can simulate the scenario where the model is presented with new data that it has not seen before. The model can then be evaluated on this new data to get an estimate of its performance on unseen data.<br/><br/>
-	Furthermore, by using different data for training and testing, we can also prevent any biases that may be present in the training data from affecting the evaluation of the model. If the test and train sets overlap, any biases in the training data will also be present in the test data, leading to an overestimation of the model's performance.<br/><br/>In summary, keeping the test and train sets disjoint is important to accurately evaluate the performance of an ML model on new, unseen data and to prevent biases from affecting the evaluation.
+	Furthermore, by using different data for training and testing, we can also prevent any biases that may be present in the training data from affecting the evaluation of the model. If the test and train sets overlap, any biases in the training data will also be present in the test data, leading to an overestimation of the model's performance.<br/><br/>In summary, keeping the test and train sets disjoint is important to accurately evaluate the performance of an ML model on new, unseen data and to prevent biases from affecting the evaluation.<br/><br/>
+								<h3>Why SVM works on numeric data ?</h3><br/>
+								The reason SVM works on labeled numeric data is that it is designed to find the best decision boundary that separates the two classes of data. The algorithm works by mapping the data to a high-dimensional feature space and then finding a hyperplane that maximally separates the classes.
+
+SVM works well on labeled numeric data because it is easy to represent the data in a numeric format, and the algorithm can then use mathematical techniques to find the optimal hyperplane that separates the data points. Additionally, SVM can handle non-linearly separable data by using kernel functions that transform the data into a higher-dimensional space where it can be linearly separable.
+
+In summary, SVM works on labeled numeric data because it is designed to find the best decision boundary that separates the classes of data, and numeric data is easily representable and can be manipulated mathematically to find the optimal hyperplane.
 								<br/><br/>Script used for data procession and cleaning : <a href="https://colab.research.google.com/drive/16FyHdkw5OkLxCgIExuys4CiYoT7Okxwz?usp=sharing" target="_blank">Data_Cleaning.ipynb</a><br/>
 								Link to sample data : <a href="https://github.com/Nikhil49Kr/Nikhil49Kr.github.io/blob/main/Data/LabeledData-ChatGPT.csv">Sample Data</a>	
 								</p>
