@@ -24,6 +24,9 @@
 							<li><a href="#two">Clustering</a></li>
 							<li><a href="#three">ARM</a></li>
 							<li><a href="#four">LDA</a></li>
+							<li><a href="#five">Naive Bayes</a></li>
+							<li><a href="#six">Decision Trees</a></li>
+							<li><a href="#seven">SVM</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -98,10 +101,10 @@ Google's stated mission is to "organize the world's information and make it univ
 										finally used for the analysis. After that the final .csv file which is being used for analysis was labelled manually. The following four labels are being used to describe the views addressed about whether 
 									chatGPT will replace Google or not ?
 									<ul>
-										<li>Yes</li>
-										<li>No</li>
-										<li>Neutral</li>
-										<li>Maybe</li>
+										<li>AI and Job Disruption</li>
+										<li>Search Engines and Information Retrieval</li>
+										<li>Future of jobs</li>
+										<li>Content Generation</li>
 									</ul> 
 									Snapshot of data before cleaning :<br/><br/>
 									<img src="images/Unclean.png" alt="Unclean" width="400" height="400"/>
@@ -597,6 +600,369 @@ We have successfully built a good looking topic model.
 					</div>
 				</section>
 			</section>
+
+			<!-- Five -->
+			<section id="five" class="wrapper style2 spotlights">
+				<section>
+					<div class="content">
+						<div class="inner">
+							<h2>Naïve Bayes</h2>
+							<p>Naive Bayes is a probabilistic algorithm used in machine learning for classification tasks. It is based on Bayes' theorem, which is a fundamental concept in probability theory. Naive Bayes assumes that the probability of each feature (i.e., input variable) is independent of the others, hence the term "naive."
+								<br/><br/>
+								The algorithm works by first training on a dataset with labeled examples, where it calculates the probability of each feature given each class. This is known as the prior probability. Then, when presented with a new, unlabeled example, it calculates the likelihood of each class given the observed features, using the prior probabilities from the training data.
+								<br/><br/>
+								The Naive Bayes algorithm is relatively simple to implement and can handle large datasets with high-dimensional features. It can be used for both binary and multi-class classification problems, and has been shown to perform well in a variety of applications, including email spam detection, sentiment analysis, and document classification. It can also be used as a baseline model to compare against more complex models.
+								<br/>
+								<br/>
+								Advantages : <br/>
+								<ul>
+								<li>Simplicity: Naive Bayes is a simple and easy-to-understand algorithm, making it easy to implement and interpret.</li>
+								<li>Fast and Scalable: Naive Bayes is a lightweight algorithm, which makes it fast and scalable, even on large datasets with high-dimensional features.</li>
+								<li>Good Accuracy: Despite its simplicity, Naive Bayes can often achieve high accuracy in classification tasks, particularly in text classification problems.</li>
+								<li>Handles Missing Data: Naive Bayes can handle missing data gracefully, without requiring imputation.</li>
+								<li>Works Well with Small Data: Naive Bayes requires a relatively small amount of training data to produce good results, making it ideal for problems with limited data.</li>
+								</ul>
+								Disadvantages : <br/>
+								<ul>
+								<li>Assumes Independent Features: Naive Bayes assumes that all features are independent, which is often not true in real-world problems.</li>
+								<li>Sensitive to Irrelevant Features: Naive Bayes can be sensitive to irrelevant features, which can negatively impact performance.</li>
+								<li>Limited Expressiveness: Naive Bayes has limited expressiveness, meaning it may not be able to capture complex relationships between features.</li>
+								<li>Biased Predictions: If the training data is biased towards a particular class, Naive Bayes can produce biased predictions.</li>
+								<li>Can't Handle Continuous Variables: Naive Bayes assumes that features are categorical or binary, making it unsuitable for problems with continuous variables. However, this can be addressed by discretizing continuous variables.</li>
+								</ul>
+								<br/><br/>
+								Overall, Naive Bayes is a useful algorithm for classification tasks, particularly in text classification problems. However, it is important to consider its assumptions and limitations before applying it to a problem. 
+							</p>
+							
+						</div>
+					</div>
+				</section>
+				<section>
+					<div class="content">
+						<div class="inner">
+							<h2>Overview</h2>
+							<p>
+								In this project, I intend to use Naive Bayes for the purpose of Text Classification and have it classify the text data that was
+								scraped into one of the following four categories :
+								<ul>
+									<li>AI and Job Disruption</li>
+									<li>Search Engines and Information Retrieval</li>
+									<li>Future of jobs</li>
+									<li>Content Generation</li>
+								</ul> 
+							</p>
+						</div>
+					</div>
+				</section>
+				<section>
+					<div class="content">
+						<div class="inner">
+							<h2>Data Prep</h2>
+							<p>In supervised learning, the machine learning algorithm is trained on a labeled dataset, where the input data is paired with corresponding output or target values. The algorithm learns to map input data to output values by minimizing the error or loss between its predicted output and the true output values in the training data. Once the model has been trained on the labeled data, it can make predictions on new, unseen data. Without labeled data, the machine learning algorithm has no way of learning the correct output or target values for a given input. Hence, labeled data is essential for supervised learning because it is used to train machine learning algorithms to make predictions or classifications based on input data.
+							<br/><br/>
+							Snapshot of Data used : <br/>
+							<img src="images/Sample_Data.png" alt="Clean" width="400" height="400"/>
+							<br/>
+							Snapshot of Training data : <br/>
+							<img src="images/SampleTrain.png" alt="Clean" width="400" height="400"/>
+							<br/>
+							Snapshot of Test data : <br/>
+							<img src="images/SampleTest.png" alt="Clean" width="400" height="400"/>
+							<br/>
+							<h3>How the data was split ?</h3><br/>
+							The data was split using Stratified Sampling. Stratified sampling is particularly useful when the subgroups have different distributions or proportions of a particular characteristic that is of interest. For example, in a population of students, the subgroups may be based on their gender, with male and female students forming two different strata. If we want to ensure that the sample obtained is representative of the population as a whole, we would need to ensure that the proportion of male and female students in the sample is similar to that in the population. By using stratified sampling, we can ensure that each subgroup is adequately represented in the sample, which can improve the accuracy and precision of statistical estimates. It also helps to reduce bias that may result from using simple random sampling techniques, where the sample may not adequately represent all subgroups in the population.
+							<br/>
+							<br/>
+							<h3>Why disjoint ?</h3><br/>
+							The main reason why the test and train sets for machine learning (ML) must be disjoint is to evaluate the performance of the ML model on data that it has not seen before. If we use the same data for training and testing, then the model will simply memorize the data and will perform very well on the training set, but poorly on any new data that it encounters. This phenomenon is known as overfitting, where the model fits too closely to the training data and fails to generalize to new data. By keeping the test and train sets separate, we can simulate the scenario where the model is presented with new data that it has not seen before. The model can then be evaluated on this new data to get an estimate of its performance on unseen data.<br/><br/>
+Furthermore, by using different data for training and testing, we can also prevent any biases that may be present in the training data from affecting the evaluation of the model. If the test and train sets overlap, any biases in the training data will also be present in the test data, leading to an overestimation of the model's performance.<br/><br/>In summary, keeping the test and train sets disjoint is important to accurately evaluate the performance of an ML model on new, unseen data and to prevent biases from affecting the evaluation.
+							<br/><br/>Script used for data procession and cleaning : <a href="https://colab.research.google.com/drive/16FyHdkw5OkLxCgIExuys4CiYoT7Okxwz?usp=sharing" target="_blank">Data_Cleaning.ipynb</a><br/>
+							Link to sample data : <a href="https://github.com/Nikhil49Kr/Nikhil49Kr.github.io/blob/main/Data/LabeledData-ChatGPT.csv">Sample Data</a>	
+							</p>
+					
+						</div>
+					</div>
+				</section>
+				<section>
+					<div class="content">
+						<div class="inner">
+							<h2>Code</h2>
+							<p>
+							Script used for Naive Bayes : <a href="https://colab.research.google.com/drive/14dstZuE277Z_A1bdaTuvBm40iKLr-qKe?usp=sharing" target="_blank">NaiveBayes.ipynb</a>
+							</p>
+					
+						</div>
+					</div>
+				</section>
+
+				<section>
+					<div class="content">
+						<div class="inner">
+							<h2>Results</h2>
+							<p>Accuracy : 76.125%<br/><br/>
+								Confusion Matrix :<br/>
+								<img src="images/NB.png" alt="Clean" width="400" height="400"/>
+								
+
+							</p>
+					
+						</div>
+					</div>
+				</section>
+
+				<section>
+					<div class="content">
+						<div class="inner">
+							<h2>Conclusion</h2>
+							<p>
+								The accuracy obtained using Naive Bayes is low when compared to other algorithms used for this project.
+							</p>
+					
+						</div>
+					</div>
+				</section>
+			</section>
+
+			<!-- Six -->
+			<section id="six" class="wrapper style2 spotlights">
+				<section>
+					<div class="content">
+						<div class="inner">
+							<h2>Decision Trees</h2>
+							<p>Decision Trees are a type of machine learning algorithm used for both classification and regression tasks. They are a non-parametric and supervised learning method that builds a model in the form of a tree structure.
+								<br/><br/>
+								The algorithm works by recursively partitioning the feature space into smaller and smaller regions, based on the values of the input features, until the target variable (class label or continuous value) is predicted with a high degree of accuracy. The tree structure consists of decision nodes, which represent the tests performed on the input features, and leaf nodes, which represent the predicted class or value.
+								<br/><br/>
+								Decision Trees have several advantages, including their interpretability, flexibility, and ability to handle both categorical and continuous features. They are also relatively easy to use and understand, and can be used in a wide range of applications, including:
+								<ul>
+								<li>Classification: Decision Trees can be used for classification tasks, where the goal is to predict a categorical target variable. They are often used in applications such as customer segmentation, fraud detection, and medical diagnosis.</li>
+								
+								<li>Regression: Decision Trees can also be used for regression tasks, where the goal is to predict a continuous target variable. They are often used in applications such as predicting housing prices, forecasting demand, and predicting stock prices.</li>
+								
+								<li>Feature Selection: Decision Trees can be used for feature selection, where the goal is to identify the most important features for predicting the target variable. This can be useful in reducing the dimensionality of the input space and improving model performance.</li>
+								
+								<li>Anomaly Detection: Decision Trees can also be used for anomaly detection, where the goal is to identify outliers or anomalies in the data. They can be used in applications such as fraud detection and intrusion detection.</li>
+								</ul>
+								Overall, Decision Trees are a versatile and useful algorithm for a wide range of machine learning tasks, particularly in situations where interpretability and flexibility are important. However, it is important to be aware of their limitations, such as their tendency to overfit on noisy data and their susceptibility to bias.</p>
+							
+						</div>
+					</div>
+				</section>
+				<section>
+					<div class="content">
+						<div class="inner">
+							<h2>Overview</h2>
+							<p>
+								In this project, out of all the use cases mentioned above, I intend to use Decision Trees for the purpose of Text Classification and have it classify the text data that was
+								scraped into one of the following four categories :
+								<ul>
+									<li>AI and Job Disruption</li>
+									<li>Search Engines and Information Retrieval</li>
+									<li>Future of jobs</li>
+									<li>Content Generation</li>
+								</ul> 
+							</p>
+						</div>
+					</div>
+				</section>
+				<section>
+					<div class="content">
+						<div class="inner">
+							<h2>Data Prep</h2>
+							<p>In supervised learning, the machine learning algorithm is trained on a labeled dataset, where the input data is paired with corresponding output or target values. The algorithm learns to map input data to output values by minimizing the error or loss between its predicted output and the true output values in the training data. Once the model has been trained on the labeled data, it can make predictions on new, unseen data. Without labeled data, the machine learning algorithm has no way of learning the correct output or target values for a given input. Hence, labeled data is essential for supervised learning because it is used to train machine learning algorithms to make predictions or classifications based on input data.
+								<br/><br/>
+								Snapshot of Data used : <br/>
+								<img src="images/Sample_Data.png" alt="Clean" width="400" height="400"/>
+								<br/>
+								Snapshot of Training data : <br/>
+								<img src="images/SampleTrain.png" alt="Clean" width="400" height="400"/>
+								<br/>
+								Snapshot of Test data : <br/>
+								<img src="images/SampleTest.png" alt="Clean" width="400" height="400"/>
+								<br/>
+								<h3>How the data was split ?</h3><br/>
+								The data was split using Stratified Sampling. Stratified sampling is particularly useful when the subgroups have different distributions or proportions of a particular characteristic that is of interest. For example, in a population of students, the subgroups may be based on their gender, with male and female students forming two different strata. If we want to ensure that the sample obtained is representative of the population as a whole, we would need to ensure that the proportion of male and female students in the sample is similar to that in the population. By using stratified sampling, we can ensure that each subgroup is adequately represented in the sample, which can improve the accuracy and precision of statistical estimates. It also helps to reduce bias that may result from using simple random sampling techniques, where the sample may not adequately represent all subgroups in the population.
+								<br/>
+								<br/>
+								<h3>Why disjoint ?</h3><br/>
+								The main reason why the test and train sets for machine learning (ML) must be disjoint is to evaluate the performance of the ML model on data that it has not seen before. If we use the same data for training and testing, then the model will simply memorize the data and will perform very well on the training set, but poorly on any new data that it encounters. This phenomenon is known as overfitting, where the model fits too closely to the training data and fails to generalize to new data. By keeping the test and train sets separate, we can simulate the scenario where the model is presented with new data that it has not seen before. The model can then be evaluated on this new data to get an estimate of its performance on unseen data.<br/><br/>
+	Furthermore, by using different data for training and testing, we can also prevent any biases that may be present in the training data from affecting the evaluation of the model. If the test and train sets overlap, any biases in the training data will also be present in the test data, leading to an overestimation of the model's performance.<br/><br/>In summary, keeping the test and train sets disjoint is important to accurately evaluate the performance of an ML model on new, unseen data and to prevent biases from affecting the evaluation.
+								<br/><br/>Script used for data procession and cleaning : <a href="https://colab.research.google.com/drive/16FyHdkw5OkLxCgIExuys4CiYoT7Okxwz?usp=sharing" target="_blank">Data_Cleaning.ipynb</a><br/>
+								Link to sample data : <a href="https://github.com/Nikhil49Kr/Nikhil49Kr.github.io/blob/main/Data/LabeledData-ChatGPT.csv">Sample Data</a>
+								</p>
+					
+						</div>
+					</div>
+				</section>
+				<section>
+					<div class="content">
+						<div class="inner">
+							<h2>Code</h2>
+							<p>
+							Script used for Decision Trees : <a href="https://colab.research.google.com/drive/14dstZuE277Z_A1bdaTuvBm40iKLr-qKe?usp=sharing" target="_blank">DecisionTrees.ipynb</a>
+							</p>
+					
+						</div>
+					</div>
+				</section>
+
+				<section>
+					<div class="content">
+						<div class="inner">
+							<h2>Results</h2>
+							<p>Accuracy(DT1) : 96.125%<br/><br/>
+								Confusion Matrix(DT1) :<br/>
+								<img src="images/DT1.png" alt="Clean" width="400" height="400"/>
+								<br/>
+								Accuracy(DT2) : 95.75%<br/><br/>
+								Confusion Matrix(DT2) :<br/>
+								<img src="images/DT2.png" alt="Clean" width="400" height="400"/>
+								<br/>
+								Accuracy(DT3) : 95.375%<br/><br/>
+								Confusion Matrix(DT3) :<br/>
+								<img src="images/DT3.png" alt="Clean" width="400" height="400"/>
+
+							</p>
+					
+						</div>
+					</div>
+				</section>
+
+				<section>
+					<div class="content">
+						<div class="inner">
+							<h2>Conclusion</h2>
+							<p>
+								The accuracy obtained using Decision Trees is quite good when compared to other algorithms used for this project. Even when we look at the confusion matrix we 
+								notice that the Decision Tree classifier has classified almost all classes correctly. When we compare the three, Decision Tree 1 seems to give the best result
+								with regards to accuracy.
+							</p>
+					
+						</div>
+					</div>
+				</section>
+			</section>
+
+			<!-- Seven -->
+			<section id="seven" class="wrapper style2 spotlights">
+				<section>
+					<div class="content">
+						<div class="inner">
+							<h2>SVM</h2>
+							<p>Support Vector Machines (SVMs) are a type of supervised machine learning algorithm used for classification and regression analysis. The goal of SVM is to create a hyperplane that can best separate the data points into different classes.
+								<br/>
+								<br/>
+								In simple terms, SVMs identify the best possible line or plane that separates the different classes in the dataset with the maximum margin. The margin is defined as the distance between the hyperplane and the closest data points from each class. By maximizing the margin, SVMs create a robust classifier that is less likely to overfit to the training data.
+								<br/>
+								SVMs can be used for a variety of applications, including:
+								<ul>
+								<li>Image classification: SVMs can be used to classify images into different categories, such as recognizing handwritten digits, detecting cancer cells in medical images, or identifying objects in satellite images.</li>
+								
+								<li>Text classification: SVMs can be used to classify text documents into different categories, such as spam detection, sentiment analysis, or topic classification.</li>
+								
+								<li>Bioinformatics: SVMs can be used to classify proteins, genes, or microarray data, for example, to predict disease outcomes or drug responses.</li>
+								
+								<li>Fraud detection: SVMs can be used to detect fraudulent transactions, such as credit card fraud or insurance fraud.</li>
+								</ul>
+								Overall, SVMs are a powerful machine learning algorithm that can be used for a wide range of applications where classification or regression analysis is needed.</p>
+							
+						</div>
+					</div>
+				</section>
+				<section>
+					<div class="content">
+						<div class="inner">
+							<h2>Overview</h2>
+							<p>
+								In this project, I intend to use SVM for the purpose of Text Classification and have it classify the text data that was
+								scraped into one of the following four categories :
+								<ul>
+									<li>AI and Job Disruption</li>
+									<li>Search Engines and Information Retrieval</li>
+									<li>Future of jobs</li>
+									<li>Content Generation</li>
+								</ul> 
+							</p>
+						</div>
+					</div>
+				</section>
+				<section>
+					<div class="content">
+						<div class="inner">
+							<h2>Data Prep</h2>
+							<p>In supervised learning, the machine learning algorithm is trained on a labeled dataset, where the input data is paired with corresponding output or target values. The algorithm learns to map input data to output values by minimizing the error or loss between its predicted output and the true output values in the training data. Once the model has been trained on the labeled data, it can make predictions on new, unseen data. Without labeled data, the machine learning algorithm has no way of learning the correct output or target values for a given input. Hence, labeled data is essential for supervised learning because it is used to train machine learning algorithms to make predictions or classifications based on input data.
+								<br/><br/>
+								Snapshot of Data used : <br/>
+								<img src="images/Sample_Data.png" alt="Clean" width="400" height="400"/>
+								<br/>
+								Snapshot of Training data : <br/>
+								<img src="images/SampleTrain.png" alt="Clean" width="400" height="400"/>
+								<br/>
+								Snapshot of Test data : <br/>
+								<img src="images/SampleTest.png" alt="Clean" width="400" height="400"/>
+								<br/>
+								<h3>How the data was split ?</h3><br/>
+								The data was split using Stratified Sampling. Stratified sampling is particularly useful when the subgroups have different distributions or proportions of a particular characteristic that is of interest. For example, in a population of students, the subgroups may be based on their gender, with male and female students forming two different strata. If we want to ensure that the sample obtained is representative of the population as a whole, we would need to ensure that the proportion of male and female students in the sample is similar to that in the population. By using stratified sampling, we can ensure that each subgroup is adequately represented in the sample, which can improve the accuracy and precision of statistical estimates. It also helps to reduce bias that may result from using simple random sampling techniques, where the sample may not adequately represent all subgroups in the population.
+								<br/>
+								<br/>
+								<h3>Why disjoint ?</h3><br/>
+								The main reason why the test and train sets for machine learning (ML) must be disjoint is to evaluate the performance of the ML model on data that it has not seen before. If we use the same data for training and testing, then the model will simply memorize the data and will perform very well on the training set, but poorly on any new data that it encounters. This phenomenon is known as overfitting, where the model fits too closely to the training data and fails to generalize to new data. By keeping the test and train sets separate, we can simulate the scenario where the model is presented with new data that it has not seen before. The model can then be evaluated on this new data to get an estimate of its performance on unseen data.<br/><br/>
+	Furthermore, by using different data for training and testing, we can also prevent any biases that may be present in the training data from affecting the evaluation of the model. If the test and train sets overlap, any biases in the training data will also be present in the test data, leading to an overestimation of the model's performance.<br/><br/>In summary, keeping the test and train sets disjoint is important to accurately evaluate the performance of an ML model on new, unseen data and to prevent biases from affecting the evaluation.
+								<br/><br/>Script used for data procession and cleaning : <a href="https://colab.research.google.com/drive/16FyHdkw5OkLxCgIExuys4CiYoT7Okxwz?usp=sharing" target="_blank">Data_Cleaning.ipynb</a><br/>
+								Link to sample data : <a href="https://github.com/Nikhil49Kr/Nikhil49Kr.github.io/blob/main/Data/LabeledData-ChatGPT.csv">Sample Data</a>	
+								</p>
+					
+						</div>
+					</div>
+				</section>
+				<section>
+					<div class="content">
+						<div class="inner">
+							<h2>Code</h2>
+							<p>
+							Script used for SVM : <a href="https://colab.research.google.com/drive/14dstZuE277Z_A1bdaTuvBm40iKLr-qKe?usp=sharing" target="_blank">SVM.ipynb</a>
+							</p>
+					
+						</div>
+					</div>
+				</section>
+
+				<section>
+					<div class="content">
+						<div class="inner">
+							<h2>Results</h2>
+							<p>Accuracy (Linear Kernel): 98.00%<br/>
+								Confusion Matrix(Linear Kernel) :<br/>
+								<img src="images/Linear.png" alt="Clean" width="400" height="400"/><br/>
+								<br/>Accuracy (Polynomial Kernel): 48.125%<br/>
+								Confusion Matrix (Polynomial Kernel):<br/>
+								<img src="images/Polynomial.png" alt="Clean" width="400" height="400"/><br/>
+								<br/>Accuracy (RBF Kernel): 96.625%<br/>
+								Confusion Matrix (RBF Kernel):<br/>
+								<img src="images/RBF.png" alt="Clean" width="400" height="400"/>
+								
+
+							</p>
+					
+						</div>
+					</div>
+				</section>
+
+				<section>
+					<div class="content">
+						<div class="inner">
+							<h2>Conclusion</h2>
+							<p>
+								Out of all the three Kernel's used the best accuracy is obtained when using the Linear and RBF Kernels. Even when we look at the confusion matrix for both we 
+								notice that they have classified almost all classes correctly.
+							</p>
+					
+						</div>
+					</div>
+				</section>
+			</section>
+
+			
 
 			</div>
 
